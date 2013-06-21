@@ -890,7 +890,7 @@ export CSV2RDF4LOD_PUBLISH_DATAHUB_METADATA="true"
 # (done in bin/secondary/cr-linksets.sh)
 #
 export CSV2RDF4LOD_PUBLISH_DATAHUB_METADATA_OUR_BUBBLE_ID="twc-logd" 
-export CSV2RDF4LOD_PUBLISH_DATAHUB_METADATA_OUR_BUBBLE_ID="" 
+export CSV2RDF4LOD_PUBLISH_DATAHUB_METADATA_OUR_BUBBLE_ID="ichoose"
 
 #
 # Customize: Notify Ping The Semantic Web about all published datasets.
