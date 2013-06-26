@@ -77,20 +77,20 @@
       #   conversion:symbol        "";
       #   conversion:interpretation conversion:null; 
       #];
-      #conversion:enhance [
-      #   conversion:domain_template "thing_[r]";
-      #   conversion:domain_name     "Thing";
-      #];
-      #conversion:enhance [
-      #   conversion:class_name "Thing";
-      #   conversion:subclass_of <http://purl.org/...>;
-      #];
+      conversion:enhance [
+         conversion:domain_template "[#2]";
+         conversion:domain_name     "Supplier";
+      ];
+      conversion:enhance [
+         conversion:class_name "Supplier";
+         conversion:subclass_of foaf:Organization;
+      ];
       conversion:enhance [
          ov:csvCol          1;
          ov:csvHeader       "SuppID";
          #conversion:bundled_by [ ov:csvCol 1 ];
          #conversion:label   "SuppID";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -174,7 +174,7 @@
          ov:csvHeader       "email";
          #conversion:bundled_by [ ov:csvCol 1 ];
          #conversion:label   "email";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property foaf:mbox;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
