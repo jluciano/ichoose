@@ -14,3 +14,4 @@ export CSV2RDF4LOD_HOME="/home/ichoose/opt/prizms/repos/csv2rdf4lod-automation"
 export CSV2RDF4LOD_PUBLISH_VIRTUOSO="true"
 export CSV2RDF4LOD_PUBLISH_SUBSET_SAMPLES="true"
 export JENAROOT=/home/ichoose/opt/apache-jena-2.10.0
+export DATAFAQS_HOME="/home/ichoose/opt/prizms/repos/DataFAQs"
