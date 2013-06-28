@@ -190,7 +190,7 @@
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
-         conversion:range   todo:Literal;
+         conversion:range   xsd:integer;
          #conversion:range_name  "Thing";
       ];
       conversion:enhance [

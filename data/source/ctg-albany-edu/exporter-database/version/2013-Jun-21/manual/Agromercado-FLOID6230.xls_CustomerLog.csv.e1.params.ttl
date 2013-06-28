@@ -77,14 +77,14 @@
       #   conversion:symbol        "";
       #   conversion:interpretation conversion:null; 
       #];
-      #conversion:enhance [
+      conversion:enhance [
       #   conversion:domain_template "thing_[r]";
-      #   conversion:domain_name     "Thing";
-      #];
-      #conversion:enhance [
-      #   conversion:class_name "Thing";
-      #   conversion:subclass_of <http://purl.org/...>;
-      #];
+         conversion:domain_name     "Customer";
+      ];
+      conversion:enhance [
+         conversion:class_name "Customer";
+         conversion:subclass_of foaf:Agent;
+      ];
       conversion:enhance [
          ov:csvCol          1;
          ov:csvHeader       "CustID";
