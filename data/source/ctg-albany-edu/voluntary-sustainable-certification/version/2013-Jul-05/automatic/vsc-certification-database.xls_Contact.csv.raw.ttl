@@ -1,0 +1,138 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-June-22/> .
+@prefix provenance_raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/provenance/voluntary-sustainable-certification/vsc-certification-database.xls-contact/version/2013-Jul-05/conversion/raw/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix voluntary-sustainable-certification: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/> .
+@prefix ctg-albany-edu_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/vocab/> .
+@prefix base_vocab: <http://ichoose.tw.rpi.edu/vocab/> .
+@prefix local_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vocab/> .
+@prefix raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vocab/raw/> .
+@prefix : <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-contact/version/2013-Jul-05/> .
+@prefix ns1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-contact/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-contact> rdfs:label "vsc-certification-database.xls-contact" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> .
+
+raw:flo_id a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "FLO-ID" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05/conversion/raw> ;
+	rdfs:label "FLO-ID" ;
+	rdfs:range rdfs:Literal .
+
+raw:phone a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "Phone" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05/conversion/raw> ;
+	rdfs:label "Phone" ;
+	rdfs:range rdfs:Literal .
+
+raw:fax a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "Fax" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05/conversion/raw> ;
+	rdfs:label "Fax" ;
+	rdfs:range rdfs:Literal .
+
+raw:email a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "Email" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05/conversion/raw> ;
+	rdfs:label "Email" ;
+	rdfs:range rdfs:Literal .
+
+raw:homepage a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "Homepage" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05/conversion/raw> ;
+	rdfs:label "Homepage" ;
+	rdfs:range rdfs:Literal .
+
+:thing_2 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:flo_id "1341.0" ;
+	raw:phone "5.149079853E9" ;
+	raw:fax "5.149079855E9" ;
+	raw:email "patterson@coopcoffees.com" ;
+	raw:homepage "http://www.coopcoffees.com/" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-contact> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-contact> ;
+	ov:csvRow "2"^^xsd:integer .
+
+:thing_3 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:flo_id "2178.0" ;
+	raw:phone "2.013334556E9" ;
+	raw:fax "2.013334566E9" ;
+	raw:email "collocini@idmpal.com" ;
+	raw:homepage "http://www.idmpal.com" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-contact> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-contact> ;
+	ov:csvRow "3"^^xsd:integer .
+
+:thing_4 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:flo_id "3341.0" ;
+	raw:phone "8.433368901E9" ;
+	raw:fax "8.433368906E9" ;
+	raw:email "aliceinwonderland@icaju.coffee.com" ;
+	raw:homepage "http://www.icaju.coffee.com/" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-contact> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-contact> ;
+	ov:csvRow "4"^^xsd:integer .
+
+:thing_5 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:flo_id "7855.0" ;
+	raw:phone "2.00889002E8" ;
+	raw:fax "2.00889004E8" ;
+	raw:email "hernandez@yahoo.com" ;
+	raw:homepage "http://www.uniontosepan.org/ " ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-contact> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-contact> ;
+	ov:csvRow "5"^^xsd:integer .
+
+:thing_6 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:flo_id "2215.0" ;
+	raw:phone "9.19223442E8" ;
+	raw:fax "9.19223447E8" ;
+	raw:email "maradona@gmail.com" ;
+	raw:homepage "http://www.mayavinic.com/ " ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-contact> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-contact> ;
+	ov:csvRow "6"^^xsd:integer .
+
+:thing_7 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:flo_id "3992.0" ;
+	raw:phone "9.19554788E8" ;
+	raw:fax "9.19554738E8" ;
+	raw:email "oscar.tabarez@lycos.com" ;
+	raw:homepage "http://www.ccda.galeon.com/ " ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-contact> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-contact> ;
+	ov:csvRow "7"^^xsd:integer .

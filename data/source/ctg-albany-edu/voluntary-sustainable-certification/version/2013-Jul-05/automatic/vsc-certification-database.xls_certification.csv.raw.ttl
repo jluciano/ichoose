@@ -1,0 +1,180 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-June-22/> .
+@prefix provenance_raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/provenance/voluntary-sustainable-certification/vsc-certification-database.xls-certification/version/2013-Jul-05/conversion/raw/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix voluntary-sustainable-certification: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/> .
+@prefix ctg-albany-edu_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/vocab/> .
+@prefix base_vocab: <http://ichoose.tw.rpi.edu/vocab/> .
+@prefix local_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vocab/> .
+@prefix raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vocab/raw/> .
+@prefix : <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-certification/version/2013-Jul-05/> .
+@prefix ns1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-certification/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-certification> rdfs:label "vsc-certification-database.xls-certification" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> .
+
+raw:flo_id a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "FLO-ID" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05/conversion/raw> ;
+	rdfs:label "FLO-ID" ;
+	rdfs:range rdfs:Literal .
+
+raw:year a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "YEAR" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05/conversion/raw> ;
+	rdfs:label "YEAR" ;
+	rdfs:range rdfs:Literal .
+
+raw:cert_date a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "CERT-DATE" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05/conversion/raw> ;
+	rdfs:label "CERT-DATE" ;
+	rdfs:range rdfs:Literal .
+
+raw:service a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "SERVICE" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05/conversion/raw> ;
+	rdfs:label "SERVICE" ;
+	rdfs:range rdfs:Literal .
+
+raw:info_on_serv a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "INFO_ON_SERV" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05/conversion/raw> ;
+	rdfs:label "INFO_ON_SERV" ;
+	rdfs:range rdfs:Literal .
+
+raw:status a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "STATUS" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05/conversion/raw> ;
+	rdfs:label "STATUS" ;
+	rdfs:range rdfs:Literal .
+
+raw:last_cert_dec a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "LAST-CERT-DEC" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05/conversion/raw> ;
+	rdfs:label "LAST-CERT-DEC" ;
+	rdfs:range rdfs:Literal .
+
+raw:valid_until a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "VALID UNTIL" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05/conversion/raw> ;
+	rdfs:label "VALID UNTIL" ;
+	rdfs:range rdfs:Literal .
+
+:thing_2 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:flo_id "1341.0" ;
+	raw:year "2007.0" ;
+	raw:cert_date "26.03.2007" ;
+	raw:service "Trade-Payer" ;
+	raw:info_on_serv "Licensee" ;
+	raw:status "Certified-Certified" ;
+	raw:last_cert_dec "20/03/2010" ;
+	raw:valid_until "06/03/2013" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-certification> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-certification> ;
+	ov:csvRow "2"^^xsd:integer .
+
+:thing_3 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:flo_id "2178.0" ;
+	raw:year "2008.0" ;
+	raw:cert_date "06.06.2008" ;
+	raw:service "Trade-Payer" ;
+	raw:info_on_serv "Licensee" ;
+	raw:status "Certified-Certified" ;
+	raw:last_cert_dec "06/06/2011" ;
+	raw:valid_until "06/06/2014" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-certification> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-certification> ;
+	ov:csvRow "3"^^xsd:integer .
+
+:thing_4 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:flo_id "3341.0" ;
+	raw:year "2008.0" ;
+	raw:cert_date "18.08.2008" ;
+	raw:service "Trade-Payer" ;
+	raw:info_on_serv "Licensee" ;
+	raw:status "Certified-Certified" ;
+	raw:last_cert_dec "20/08/2011" ;
+	raw:valid_until "18/08/2014" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-certification> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-certification> ;
+	ov:csvRow "4"^^xsd:integer .
+
+:thing_5 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:flo_id "7855.0" ;
+	raw:year "2010.0" ;
+	raw:cert_date "21.05.2010" ;
+	raw:service "Small Producers Organization" ;
+	raw:info_on_serv "Generic FAIRTRADE Trade" ;
+	raw:status "Certified-Certified" ;
+	raw:last_cert_dec "20/05/2011" ;
+	raw:valid_until "21/05/2016" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-certification> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-certification> ;
+	ov:csvRow "5"^^xsd:integer .
+
+:thing_6 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:flo_id "2215.0" ;
+	raw:year "2011.0" ;
+	raw:cert_date "14.11.2011" ;
+	raw:service "Small Producers Organization" ;
+	raw:info_on_serv "Generic FAIRTRADE Trade" ;
+	raw:status "Certified-Certified" ;
+	raw:last_cert_dec "14/11/2012" ;
+	raw:valid_until "14/11/2016" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-certification> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-certification> ;
+	ov:csvRow "6"^^xsd:integer .
+
+:thing_7 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:flo_id "3992.0" ;
+	raw:year "2011.0" ;
+	raw:cert_date "15.09.2011" ;
+	raw:service "Small Producers Organization" ;
+	raw:info_on_serv "Generic FAIRTRADE Trade" ;
+	raw:status "Certified-Certified" ;
+	raw:last_cert_dec "15/09/2012" ;
+	raw:valid_until "15/09/2011" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-certification> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-certification> ;
+	ov:csvRow "7"^^xsd:integer .

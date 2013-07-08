@@ -1,0 +1,329 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-June-22/> .
+@prefix provenance_raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/provenance/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result/version/2013-Jul-05/conversion/raw/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix voluntary-sustainable-certification: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/> .
+@prefix ctg-albany-edu_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/vocab/> .
+@prefix base_vocab: <http://ichoose.tw.rpi.edu/vocab/> .
+@prefix local_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vocab/> .
+@prefix raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vocab/raw/> .
+@prefix : <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result/version/2013-Jul-05/> .
+@prefix ns1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> rdfs:label "vsc-certification-database.xls-audit-result" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> .
+
+raw:year a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "YEAR" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05/conversion/raw> ;
+	rdfs:label "YEAR" ;
+	rdfs:range rdfs:Literal .
+
+raw:audit_no a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "AUDIT_NO" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05/conversion/raw> ;
+	rdfs:label "AUDIT_NO" ;
+	rdfs:range rdfs:Literal .
+
+raw:audit_date a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "AUDIT_DATE" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05/conversion/raw> ;
+	rdfs:label "AUDIT_DATE" ;
+	rdfs:range rdfs:Literal .
+
+raw:auditor a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "AUDITOR" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05/conversion/raw> ;
+	rdfs:label "AUDITOR" ;
+	rdfs:range rdfs:Literal .
+
+raw:certif_officer a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "CERTIF. OFFICER" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05/conversion/raw> ;
+	rdfs:label "CERTIF. OFFICER" ;
+	rdfs:range rdfs:Literal .
+
+raw:risk_category a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "RISK CATEGORY" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05/conversion/raw> ;
+	rdfs:label "RISK CATEGORY" ;
+	rdfs:range rdfs:Literal .
+
+raw:annotation_to_operator a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "ANNOTATION TO OPERATOR" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05/conversion/raw> ;
+	rdfs:label "ANNOTATION TO OPERATOR" ;
+	rdfs:range rdfs:Literal .
+
+raw:average_score_certification_mode a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "AVERAGE SCORE CERTIFICATION MODE" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05/conversion/raw> ;
+	rdfs:label "AVERAGE SCORE CERTIFICATION MODE" ;
+	rdfs:range rdfs:Literal .
+
+raw:final_average_score a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "FINAL AVERAGE SCORE" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05/conversion/raw> ;
+	rdfs:label "FINAL AVERAGE SCORE" ;
+	rdfs:range rdfs:Literal .
+
+:thing_2 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:year "2011.0" ;
+	raw:audit_no "AO-00023" ;
+	raw:audit_date "20/05/2011" ;
+	raw:auditor "Radamel Falcao" ;
+	raw:certif_officer "Martin Siebel" ;
+	raw:risk_category "Minimum" ;
+	raw:annotation_to_operator "none" ;
+	raw:average_score_certification_mode "n/a" ;
+	raw:final_average_score "0.0" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	ov:csvRow "2"^^xsd:integer .
+
+:thing_3 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:year "2012.0" ;
+	raw:audit_no "AO-00245" ;
+	raw:audit_date "14/11/2012" ;
+	raw:auditor "Radamel Falcao" ;
+	raw:certif_officer "Martin Siebel" ;
+	raw:risk_category "Moderate" ;
+	raw:annotation_to_operator "Corrective Measure Required" ;
+	raw:average_score_certification_mode "n/a" ;
+	raw:final_average_score "0.0" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	ov:csvRow "3"^^xsd:integer .
+
+:thing_4 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:year "2012.0" ;
+	raw:audit_no "AO-00220" ;
+	raw:audit_date "15/09/2012" ;
+	raw:auditor "Radamel Falcao" ;
+	raw:certif_officer "Marijn Janssen" ;
+	raw:risk_category "Minimum" ;
+	raw:annotation_to_operator "none" ;
+	raw:average_score_certification_mode "n/a" ;
+	raw:final_average_score "0.0" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	ov:csvRow "4"^^xsd:integer .
+
+:thing_5 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:year "" ;
+	raw:audit_no "" ;
+	raw:audit_date "" ;
+	raw:auditor "" ;
+	raw:certif_officer "" ;
+	raw:risk_category "" ;
+	raw:annotation_to_operator "" ;
+	raw:average_score_certification_mode "" ;
+	raw:final_average_score "" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	ov:csvRow "5"^^xsd:integer .
+
+:thing_6 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:year "" ;
+	raw:audit_no "" ;
+	raw:audit_date "" ;
+	raw:auditor "" ;
+	raw:certif_officer "" ;
+	raw:risk_category "" ;
+	raw:annotation_to_operator "" ;
+	raw:average_score_certification_mode "" ;
+	raw:final_average_score "" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	ov:csvRow "6"^^xsd:integer .
+
+:thing_7 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:year "" ;
+	raw:audit_no "" ;
+	raw:audit_date "" ;
+	raw:auditor "" ;
+	raw:certif_officer "" ;
+	raw:risk_category "" ;
+	raw:annotation_to_operator "" ;
+	raw:average_score_certification_mode "" ;
+	raw:final_average_score "" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	ov:csvRow "7"^^xsd:integer .
+
+:thing_8 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:year "" ;
+	raw:audit_no "" ;
+	raw:audit_date "" ;
+	raw:auditor "" ;
+	raw:certif_officer "" ;
+	raw:risk_category "" ;
+	raw:annotation_to_operator "" ;
+	raw:average_score_certification_mode "" ;
+	raw:final_average_score "" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	ov:csvRow "8"^^xsd:integer .
+
+:thing_9 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:year "" ;
+	raw:audit_no "" ;
+	raw:audit_date "" ;
+	raw:auditor "" ;
+	raw:certif_officer "" ;
+	raw:risk_category "" ;
+	raw:annotation_to_operator "" ;
+	raw:average_score_certification_mode "" ;
+	raw:final_average_score "" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	ov:csvRow "9"^^xsd:integer .
+
+:thing_10 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:year "" ;
+	raw:audit_no "" ;
+	raw:audit_date "" ;
+	raw:auditor "" ;
+	raw:certif_officer "" ;
+	raw:risk_category "" ;
+	raw:annotation_to_operator "" ;
+	raw:average_score_certification_mode "" ;
+	raw:final_average_score "" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	ov:csvRow "10"^^xsd:integer .
+
+:thing_11 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:year "" ;
+	raw:audit_no "" ;
+	raw:audit_date "" ;
+	raw:auditor "" ;
+	raw:certif_officer "" ;
+	raw:risk_category "" ;
+	raw:annotation_to_operator "" ;
+	raw:average_score_certification_mode "" ;
+	raw:final_average_score "" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	ov:csvRow "11"^^xsd:integer .
+
+:thing_12 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:year "" ;
+	raw:audit_no "" ;
+	raw:audit_date "" ;
+	raw:auditor "" ;
+	raw:certif_officer "" ;
+	raw:risk_category "" ;
+	raw:annotation_to_operator "" ;
+	raw:average_score_certification_mode "" ;
+	raw:final_average_score "" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	ov:csvRow "12"^^xsd:integer .
+
+:thing_13 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:year "" ;
+	raw:audit_no "" ;
+	raw:audit_date "" ;
+	raw:auditor "" ;
+	raw:certif_officer "" ;
+	raw:risk_category "" ;
+	raw:annotation_to_operator "" ;
+	raw:average_score_certification_mode "" ;
+	raw:final_average_score "" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	ov:csvRow "13"^^xsd:integer .
+
+:thing_14 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:year "" ;
+	raw:audit_no "" ;
+	raw:audit_date "" ;
+	raw:auditor "" ;
+	raw:certif_officer "" ;
+	raw:risk_category "" ;
+	raw:annotation_to_operator "" ;
+	raw:average_score_certification_mode "" ;
+	raw:final_average_score "" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	ov:csvRow "14"^^xsd:integer .
+
+:thing_15 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:year "" ;
+	raw:audit_no "" ;
+	raw:audit_date "" ;
+	raw:auditor "" ;
+	raw:certif_officer "" ;
+	raw:risk_category "" ;
+	raw:annotation_to_operator "" ;
+	raw:average_score_certification_mode "" ;
+	raw:final_average_score "" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	ov:csvRow "15"^^xsd:integer .
+
+:thing_16 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jul-05> ;
+	raw:year "" ;
+	raw:audit_no "" ;
+	raw:audit_date "" ;
+	raw:auditor "" ;
+	raw:certif_officer "" ;
+	raw:risk_category "" ;
+	raw:annotation_to_operator "" ;
+	raw:average_score_certification_mode "" ;
+	raw:final_average_score "" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/vsc-certification-database.xls-audit-result> ;
+	ov:csvRow "16"^^xsd:integer .
