@@ -78,8 +78,8 @@
       #   conversion:interpretation conversion:null; 
       #];
       conversion:enhance [
-         conversion:domain_template [#1];
-         conversion:domain_name     "Applicant";
+         conversion:domain_template "[/sd]applicantID/[#1]";
+         conversion:domain_name     "ApplicantID";
       ];
       #conversion:enhance [
       #   conversion:class_name "Thing";
@@ -151,7 +151,7 @@
          ov:csvHeader       "Country";
          #conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "Country";
-         conversion:equivalent_property con:Country;
+         conversion:equivalent_property geonames:countryCode;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
