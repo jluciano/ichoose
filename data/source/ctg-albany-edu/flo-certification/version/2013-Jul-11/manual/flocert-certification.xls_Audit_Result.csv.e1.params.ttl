@@ -89,7 +89,7 @@
          ov:csvCol          1;
          ov:csvHeader       "AuditYear";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "AuditYear";
+         conversion:label   "Audit Year";
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "Year of particular audit";
@@ -97,7 +97,7 @@
          conversion:range   todo:Literal;
          #conversion:range_name  "Thing";
       ];
-conversion:equivalent_property       conversion:enhance [
+         conversion:enhance [
          ov:csvCol          2;
          ov:csvHeader       "AuditNo.";
          #conversion:bundled_by [ ov:csvCol 1 ];
