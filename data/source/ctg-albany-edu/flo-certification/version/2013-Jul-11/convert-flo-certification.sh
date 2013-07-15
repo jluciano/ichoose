@@ -39,12 +39,12 @@ destDir="automatic"                 # convention has led to always be 'automatic
 
 
 #-----------------------------------
-# manual/flocert-certification.xls_Address.csv
+# manual/flo-certification.xls_Address.csv
 sourceDir="manual"
-datafile="flocert-certification.xls_Address.csv"
+datafile="flo-certification.xls_Address.csv"
 data="$sourceDir/$datafile"
 # Bootstrap conversion parameters (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-trigger):
-subjectDiscriminator="flocert-certification.xls-address"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
+subjectDiscriminator="flo-certification.xls-address"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
 commentCharacter=""                 # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 cellDelimiter=","                   # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 header=                             # Line that header is on; only needed if not '1'. '0' means no header.
@@ -57,12 +57,12 @@ source $CSV2RDF4LOD_HOME/bin/convert.sh
 
 
 #-----------------------------------
-# manual/flocert-certification.xls_Audit_Result.csv
+# manual/flo-certification.xls_Audit_Result.csv
 sourceDir="manual"
-datafile="flocert-certification.xls_Audit_Result.csv"
+datafile="flo-certification.xls_Audit_Result.csv"
 data="$sourceDir/$datafile"
 # Bootstrap conversion parameters (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-trigger):
-subjectDiscriminator="flocert-certification.xls-audit-result"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
+subjectDiscriminator="flo-certification.xls-audit-result"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
 commentCharacter=""                 # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 cellDelimiter=","                   # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 header=                             # Line that header is on; only needed if not '1'. '0' means no header.
@@ -75,12 +75,12 @@ source $CSV2RDF4LOD_HOME/bin/convert.sh
 
 
 #-----------------------------------
-# manual/flocert-certification.xls_Audit_Status.csv
+# manual/flo-certification.xls_Audit_Status.csv
 sourceDir="manual"
-datafile="flocert-certification.xls_Audit_Status.csv"
+datafile="flo-certification.xls_Audit_Status.csv"
 data="$sourceDir/$datafile"
 # Bootstrap conversion parameters (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-trigger):
-subjectDiscriminator="flocert-certification.xls-audit-status"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
+subjectDiscriminator="flo-certification.xls-audit-status"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
 commentCharacter=""                 # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 cellDelimiter=","                   # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 header=                             # Line that header is on; only needed if not '1'. '0' means no header.
@@ -93,12 +93,12 @@ source $CSV2RDF4LOD_HOME/bin/convert.sh
 
 
 #-----------------------------------
-# manual/flocert-certification.xls_Audit_Workflow_Status.csv
+# manual/flo-certification.xls_Audit_Workflow_Status.csv
 sourceDir="manual"
-datafile="flocert-certification.xls_Audit_Workflow_Status.csv"
+datafile="flo-certification.xls_Audit_Workflow_Status.csv"
 data="$sourceDir/$datafile"
 # Bootstrap conversion parameters (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-trigger):
-subjectDiscriminator="flocert-certification.xls-audit-workflow-status"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
+subjectDiscriminator="flo-certification.xls-audit-workflow-status"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
 commentCharacter=""                 # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 cellDelimiter=","                   # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 header=                             # Line that header is on; only needed if not '1'. '0' means no header.
@@ -111,12 +111,12 @@ source $CSV2RDF4LOD_HOME/bin/convert.sh
 
 
 #-----------------------------------
-# manual/flocert-certification.xls_certification.csv
+# manual/flo-certification.xls_certification.csv
 sourceDir="manual"
-datafile="flocert-certification.xls_certification.csv"
+datafile="flo-certification.xls_certification.csv"
 data="$sourceDir/$datafile"
 # Bootstrap conversion parameters (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-trigger):
-subjectDiscriminator="flocert-certification.xls-certification"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
+subjectDiscriminator="flo-certification.xls-certification"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
 commentCharacter=""                 # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 cellDelimiter=","                   # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 header=                             # Line that header is on; only needed if not '1'. '0' means no header.
@@ -129,12 +129,12 @@ source $CSV2RDF4LOD_HOME/bin/convert.sh
 
 
 #-----------------------------------
-# manual/flocert-certification.xls_CompanyData.csv
+# manual/flo-certification.xls_CompanyData.csv
 sourceDir="manual"
-datafile="flocert-certification.xls_CompanyData.csv"
+datafile="flo-certification.xls_CompanyData.csv"
 data="$sourceDir/$datafile"
 # Bootstrap conversion parameters (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-trigger):
-subjectDiscriminator="flocert-certification.xls-companydata"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
+subjectDiscriminator="flo-certification.xls-companydata"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
 commentCharacter=""                 # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 cellDelimiter=","                   # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 header=                             # Line that header is on; only needed if not '1'. '0' means no header.
@@ -147,12 +147,12 @@ source $CSV2RDF4LOD_HOME/bin/convert.sh
 
 
 #-----------------------------------
-# manual/flocert-certification.xls_Contact.csv
+# manual/flo-certification.xls_Contact.csv
 sourceDir="manual"
-datafile="flocert-certification.xls_Contact.csv"
+datafile="flo-certification.xls_Contact.csv"
 data="$sourceDir/$datafile"
 # Bootstrap conversion parameters (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-trigger):
-subjectDiscriminator="flocert-certification.xls-contact"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
+subjectDiscriminator="flo-certification.xls-contact"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
 commentCharacter=""                 # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 cellDelimiter=","                   # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 header=                             # Line that header is on; only needed if not '1'. '0' means no header.
