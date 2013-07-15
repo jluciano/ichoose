@@ -140,7 +140,7 @@
          conversion:label   "Non-Conformity(Analyst)";
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
-         conversion:comment "Explanation of criteria found to be non-conformity to standard;
+         conversion:comment "Explanation of criteria found to be non-conformity to standard";
          #conversion:range_template  "[/sd]thing[.]";
          conversion:range   todo:Literal;
          #conversion:range_name  "Thing";
