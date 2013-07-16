@@ -92,7 +92,7 @@
          conversion:label   "ID";
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
-         conversion:comment This is the individual identification for each entity being certified; particular to the standard body";
+         conversion:comment "This is the individual identification for each entity being certified; particular to the standard body";
          #conversion:range_template  "[/sd]thing[.]";
          conversion:range   todo:Literal;
          #conversion:range_name  "Thing";
