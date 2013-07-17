@@ -102,7 +102,7 @@
          ov:csvHeader       "AuditNo";
          #conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "Audit";
-         #conversion:equivalent_property rdf:type;
+         conversion:equivalent_property rdf:type;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
