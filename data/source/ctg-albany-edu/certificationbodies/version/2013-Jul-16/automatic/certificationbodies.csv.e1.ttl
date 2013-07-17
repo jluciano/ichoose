@@ -1,0 +1,309 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-June-22/> .
+@prefix provenance_1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/provenance/certificationbodies/version/2013-Jul-16/conversion/enhancement/1/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix certificationbodies: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16/> .
+@prefix ctg-albany-edu_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/vocab/> .
+@prefix base_vocab: <http://ichoose.tw.rpi.edu/vocab/> .
+@prefix certificationbodies_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/vocab/> .
+@prefix raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/vocab/raw/> .
+@prefix e1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/vocab/enhancement/1/> .
+@prefix certificationbodies_global_value: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
+@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
+@prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix pml: <http://provenanceweb.org/ns/pml#> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix dbpediaprop: <http://dbpedia.org/property/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix geonamesid: <http://sws.geonames.org/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vsr: <http://purl.org/twc/vocab/vsr#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+e1:standardbody a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "StandardBody" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16/conversion/enhancement/1> ;
+	rdfs:label "StandardBody" ;
+	rdfs:range rdfs:Literal ;
+	rdfs:comment "Body in charge of standard which will be used for certification" ;
+	conversion:enhances raw:standardbody .
+
+e1:certificationbody a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "CertificationBody" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16/conversion/enhancement/1> ;
+	rdfs:label "CertificationBody" ;
+	rdfs:range rdfs:Literal ;
+	rdfs:comment "Body in charge of undertaking the certification process" ;
+	conversion:enhances raw:certificationbody .
+
+e1:independency a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "Independency" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16/conversion/enhancement/1> ;
+	rdfs:label "Independency" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:independency .
+
+e1:accreditation a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "Accreditation" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16/conversion/enhancement/1> ;
+	rdfs:label "Accreditation" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:accreditation .
+
+e1:jurisdiction a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "Jurisdiction" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16/conversion/enhancement/1> ;
+	rdfs:label "Jurisdiction" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:jurisdiction .
+
+e1:certificationcriteria a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "CertificationCriteria" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16/conversion/enhancement/1> ;
+	rdfs:label "CertificationCriteria" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:certificationcriteria .
+
+certificationbodies:Flo-Cert rdfs:label "Flo-Cert" ;
+	dcterms:identifier "Flo-Cert" ;
+	coin:slug "Flo-Cert" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16> ;
+	e1:standardbody "FLO" ;
+	a "Flo-Cert" ;
+	e1:independency "3rd Party" ;
+	e1:accreditation "ISO" ;
+	e1:jurisdiction "Europe, Asia and Africa" ;
+	e1:certificationcriteria "available" ;
+	ov:csvRow "2"^^xsd:integer .
+
+certificationbodies:Fairtrade_USA rdfs:label "Fairtrade USA" ;
+	dcterms:identifier "Fairtrade USA" ;
+	coin:slug "Fairtrade_USA" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16> ;
+	e1:standardbody "FLO" ;
+	a "Fairtrade USA" ;
+	e1:independency "3rd Party" ;
+	e1:accreditation "ISO" ;
+	e1:jurisdiction "USA" ;
+	e1:certificationcriteria "available" ;
+	ov:csvRow "3"^^xsd:integer .
+
+certificationbodies:Commercio_Justo rdfs:label "Commercio Justo" ;
+	dcterms:identifier "Commercio Justo" ;
+	coin:slug "Commercio_Justo" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16> ;
+	e1:standardbody "FLO" ;
+	a "Commercio Justo" ;
+	e1:independency "3rd Party" ;
+	e1:accreditation "ISO" ;
+	e1:jurisdiction "Mexico" ;
+	e1:certificationcriteria "available" ;
+	ov:csvRow "4"^^xsd:integer .
+
+certificationbodies:RAN_Rainforest_Alliance rdfs:label "RAN (Rainforest Alliance)" ;
+	dcterms:identifier "RAN (Rainforest Alliance)" ;
+	coin:slug "RAN_Rainforest_Alliance" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16> ;
+	e1:standardbody "RAN / SAN" ;
+	a "RAN (Rainforest Alliance)" ;
+	e1:independency "Internal" ;
+	e1:accreditation "n/a" ;
+	e1:jurisdiction "Worldwide" ;
+	e1:certificationcriteria "available" ;
+	ov:csvRow "5"^^xsd:integer .
+
+certificationbodies:Control_Union rdfs:label "Control Union" ;
+	dcterms:identifier "Control Union" ;
+	coin:slug "Control_Union" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16> ;
+	e1:standardbody "UTZ Good Inside" ;
+	a "Control Union" ;
+	e1:independency "3rd Party" ;
+	e1:accreditation "ISO" ;
+	e1:jurisdiction "Worldwide" ;
+	e1:certificationcriteria "available" ;
+	ov:csvRow "6"^^xsd:integer .
+
+certificationbodies:SCS_Global_Service rdfs:label "SCS Global Service" ;
+	dcterms:identifier "SCS Global Service" ;
+	coin:slug "SCS_Global_Service" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16> ;
+	e1:standardbody "UTZ Good Inside" ;
+	a "SCS Global Service" ;
+	e1:independency "3rd Party" ;
+	e1:accreditation "ISO" ;
+	e1:jurisdiction "Worldwide" ;
+	e1:certificationcriteria "available" ;
+	ov:csvRow "7"^^xsd:integer .
+
+certificationbodies:Bio_Schaftung rdfs:label "Bio Schaftung" ;
+	dcterms:identifier "Bio Schaftung" ;
+	coin:slug "Bio_Schaftung" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16> ;
+	e1:standardbody "Fair for Life" ;
+	a "Bio Schaftung" ;
+	e1:independency "3rd Party" ;
+	e1:accreditation "ISO" ;
+	e1:jurisdiction "Worldwide" ;
+	e1:certificationcriteria "available" ;
+	ov:csvRow "8"^^xsd:integer .
+
+certificationbodies:SCS_Global_Service e1:standardbody "Starbuck & Conservation International" ;
+	e1:accreditation "n/a" ;
+	ov:csvRow "9"^^xsd:integer .
+
+certificationbodies:Control_Union e1:standardbody "Starbuck & Conservation International" ;
+	e1:accreditation "n/a" ;
+	ov:csvRow "10"^^xsd:integer .
+
+certificationbodies:DaniCert rdfs:label "DaniCert" ;
+	dcterms:identifier "DaniCert" ;
+	coin:slug "DaniCert" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16> ;
+	e1:standardbody "Dave and Nic " ;
+	a "DaniCert" ;
+	e1:independency "n/a" ;
+	e1:accreditation "n/a" ;
+	e1:jurisdiction "Worldwide" ;
+	e1:certificationcriteria "available" ;
+	ov:csvRow "11"^^xsd:integer .
+
+certificationbodies:DoveCert rdfs:label "DoveCert" ;
+	dcterms:identifier "DoveCert" ;
+	coin:slug "DoveCert" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16> ;
+	e1:standardbody "Non Violent Dove Certification" ;
+	a "DoveCert" ;
+	e1:independency "n/a" ;
+	e1:accreditation "n/a" ;
+	e1:jurisdiction "Worldwide" ;
+	e1:certificationcriteria "n/a" ;
+	ov:csvRow "12"^^xsd:integer .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-June-22/> .
+@prefix provenance_1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/provenance/certificationbodies/version/2013-Jul-16/conversion/enhancement/1/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix certificationbodies: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16/> .
+@prefix ctg-albany-edu_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/vocab/> .
+@prefix base_vocab: <http://ichoose.tw.rpi.edu/vocab/> .
+@prefix certificationbodies_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/vocab/> .
+@prefix raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/vocab/raw/> .
+@prefix e1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/vocab/enhancement/1/> .
+@prefix certificationbodies_global_value: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
+@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
+@prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix pml: <http://provenanceweb.org/ns/pml#> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix dbpediaprop: <http://dbpedia.org/property/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix geonamesid: <http://sws.geonames.org/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vsr: <http://purl.org/twc/vocab/vsr#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+certificationbodies:thing_2 con:preferredURI certificationbodies:Flo-Cert .
+
+certificationbodies:thing_3 con:preferredURI certificationbodies:Fairtrade_USA .
+
+certificationbodies:thing_4 con:preferredURI certificationbodies:Commercio_Justo .
+
+certificationbodies:thing_5 con:preferredURI certificationbodies:RAN_Rainforest_Alliance .
+
+certificationbodies:thing_6 con:preferredURI certificationbodies:Control_Union .
+
+certificationbodies:thing_7 con:preferredURI certificationbodies:SCS_Global_Service .
+
+certificationbodies:thing_8 con:preferredURI certificationbodies:Bio_Schaftung .
+
+certificationbodies:thing_9 con:preferredURI certificationbodies:SCS_Global_Service .
+
+certificationbodies:thing_10 con:preferredURI certificationbodies:Control_Union .
+
+certificationbodies:thing_11 con:preferredURI certificationbodies:DaniCert .
+
+certificationbodies:thing_12 con:preferredURI certificationbodies:DoveCert .
