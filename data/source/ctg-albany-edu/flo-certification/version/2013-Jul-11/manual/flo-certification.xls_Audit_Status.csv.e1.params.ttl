@@ -89,7 +89,7 @@
          ov:csvCol          1;
          ov:csvHeader       "ID";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "ID";
+         conversion:label   "Applicant";
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "This is the individual identification for each entity being certified; particular to the standard body";
@@ -113,8 +113,8 @@
          ov:csvCol          3;
          ov:csvHeader       "AuditNo";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "AuditNo";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:label   "Audit";
+         #conversion:equivalent_property rdf:type;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -210,7 +210,7 @@
          ov:csvHeader       "CertificationBody";
          #conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "CertificationBody";
-         #conversion:equivalent_property dcterms:identifier;
+         #conversion:equivalent_property rdf:type;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";

@@ -89,8 +89,8 @@
          ov:csvCol          1;
          ov:csvHeader       "ID";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "ID";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:label   "Applicant";
+         #conversion:equivalent_property rdf:type;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "This is the individual identification for each entity being certified; particular to the standard body";
          #conversion:range_template  "[/sd]thing[.]";
