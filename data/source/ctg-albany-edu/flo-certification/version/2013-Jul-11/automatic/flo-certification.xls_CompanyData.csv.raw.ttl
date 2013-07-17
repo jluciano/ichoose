@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-June-22/> .
+@prefix provenance_raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/provenance/flo-certification/flo-certification.xls-companydata/version/2013-Jul-11/conversion/raw/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix flo-certification: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/> .
+@prefix ctg-albany-edu_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/vocab/> .
+@prefix base_vocab: <http://ichoose.tw.rpi.edu/vocab/> .
+@prefix flo-certification_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/> .
+@prefix raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/raw/> .
+@prefix : <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/flo-certification.xls-companydata/version/2013-Jul-11/> .
+@prefix ns1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/flo-certification.xls-companydata/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/flo-certification.xls-companydata> rdfs:label "flo-certification.xls-companydata" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> .
+
+raw:id a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "ID" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/raw> ;
+	rdfs:label "ID" ;
+	rdfs:range rdfs:Literal .
+
+raw:vatnumber a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "VATNumber" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/raw> ;
+	rdfs:label "VATNumber" ;
+	rdfs:range rdfs:Literal .
+
+raw:legalstatus a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "LegalStatus" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/raw> ;
+	rdfs:label "LegalStatus" ;
+	rdfs:range rdfs:Literal .
+
+raw:companyname a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "CompanyName" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/raw> ;
+	rdfs:label "CompanyName" ;
+	rdfs:range rdfs:Literal .
+
+:thing_2 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
+	raw:id "FLO 1341" ;
+	raw:vatnumber "n/a" ;
+	raw:legalstatus "Trading Limited Incorporation" ;
+	raw:companyname """Cooperative Coffees Inc.
+FLO 2178,n/a,Trading Limited Incorporation,Importadores y Distribuidores de la Materia Para America Latina
+FLO 3341,n/a,Trading Limited Incorporation,Importadores de la Café Justo de la Paz
+FLO 7855,n/a,Cooperative,Union de Cooperativas Tosepan Titataniske
+FLO 2215,n/a,Cooperative,Union de Productores Maya Vinic
+FLO 3992,n/a,Cooperative,Comité Campesino del Altiplano Campesino del Altiplano (CCDA) Café Justifia""" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/flo-certification.xls-companydata> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/flo-certification.xls-companydata> ;
+	ov:csvRow "2"^^xsd:integer .

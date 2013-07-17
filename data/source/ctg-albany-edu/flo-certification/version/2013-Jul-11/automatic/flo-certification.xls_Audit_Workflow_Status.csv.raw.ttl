@@ -1,0 +1,138 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-June-22/> .
+@prefix provenance_raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/provenance/flo-certification/flo-certification.xls-audit-workflow-status/version/2013-Jul-11/conversion/raw/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix flo-certification: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/> .
+@prefix ctg-albany-edu_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/vocab/> .
+@prefix base_vocab: <http://ichoose.tw.rpi.edu/vocab/> .
+@prefix flo-certification_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/> .
+@prefix raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/raw/> .
+@prefix : <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/flo-certification.xls-audit-workflow-status/version/2013-Jul-11/> .
+@prefix ns1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/flo-certification.xls-audit-workflow-status/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/flo-certification.xls-audit-workflow-status> rdfs:label "flo-certification.xls-audit-workflow-status" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> .
+
+raw:workflowstatus a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "WorkflowStatus" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/raw> ;
+	rdfs:label "WorkflowStatus" ;
+	rdfs:range rdfs:Literal .
+
+raw:cc_no a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "CC_No" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/raw> ;
+	rdfs:label "CC_No" ;
+	rdfs:range rdfs:Literal .
+
+raw:compliancecriteria a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "ComplianceCriteria" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/raw> ;
+	rdfs:label "ComplianceCriteria" ;
+	rdfs:range rdfs:Literal .
+
+raw:non_conformity_audit a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "Non-Conformity_Audit" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/raw> ;
+	rdfs:label "Non-Conformity_Audit" ;
+	rdfs:range rdfs:Literal .
+
+raw:nonconformity_analyst a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "NonConformity_Analyst" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/raw> ;
+	rdfs:label "NonConformity_Analyst" ;
+	rdfs:range rdfs:Literal .
+
+raw:reasonforchange_nc a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "ReasonforChange_NC" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/raw> ;
+	rdfs:label "ReasonforChange_NC" ;
+	rdfs:range rdfs:Literal .
+
+raw:status_nc a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "Status_NC" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/raw> ;
+	rdfs:label "Status_NC" ;
+	rdfs:range rdfs:Literal .
+
+raw:auditno a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "AuditNo" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/raw> ;
+	rdfs:label "AuditNo" ;
+	rdfs:range rdfs:Literal .
+
+:thing_2 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
+	raw:workflowstatus "Finished" ;
+	raw:cc_no "3.3.3.01" ;
+	raw:compliancecriteria "You and the members of your organization have not employed children below the age of 15" ;
+	raw:non_conformity_audit "on rare occasion children was hired and work under parent's supervision" ;
+	raw:nonconformity_analyst "n/a" ;
+	raw:reasonforchange_nc "n/a" ;
+	raw:status_nc "Fulfilled" ;
+	raw:auditno "AO-00023" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/flo-certification.xls-audit-workflow-status> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/flo-certification.xls-audit-workflow-status> ;
+	ov:csvRow "2"^^xsd:integer .
+
+:thing_3 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
+	raw:workflowstatus "Evaluation of OE by Analyst" ;
+	raw:cc_no "3.3.3.02" ;
+	raw:compliancecriteria "Your member's children below 15 years only help on your member's farm after school or during holidays, the work they do is appropriate for their age, they are supervised and guided by their parent or legal guardian and they do not work for long hours or under dangerous or exploitative conditions" ;
+	raw:non_conformity_audit "on rare occasion, children perform work during non-suitable time " ;
+	raw:nonconformity_analyst "evidence of children perform work during non-suitable time more frequently" ;
+	raw:reasonforchange_nc "mismatch between salary log and time log indicate children perform work during non suitable time more hours than previously noted" ;
+	raw:status_nc "additional explanation required" ;
+	raw:auditno "AO-00245" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/flo-certification.xls-audit-workflow-status> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/flo-certification.xls-audit-workflow-status> ;
+	ov:csvRow "3"^^xsd:integer .
+
+:thing_4 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
+	raw:workflowstatus "Evaluation of OE by Analyst" ;
+	raw:cc_no "3.3.3.04" ;
+	raw:compliancecriteria "if in the past you or your members employed children under 15 for any type of work, or children under 18 for dangerous and exploitative work, you have ensured that those children do not enter or are at risk of entering into even worse forms of labour" ;
+	raw:non_conformity_audit "found indication that children were asked to use machete to clear field" ;
+	raw:nonconformity_analyst "n/a" ;
+	raw:reasonforchange_nc "n/a" ;
+	raw:status_nc "n/a" ;
+	raw:auditno "AO-00245" ;
+	ov:subjectDiscriminator <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/flo-certification.xls-audit-workflow-status> ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/flo-certification.xls-audit-workflow-status> ;
+	ov:csvRow "4"^^xsd:integer .
