@@ -1,0 +1,1137 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-64 "http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#" >
+    <!ENTITY trust_ontology "http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#"
+     xml:base="http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:trust_ontology="http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#"
+     xmlns:untitled-ontology-64="http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#dateTime -->
+
+    <rdf:Description rdf:about="&xsd;dateTime">
+        <owl:equivalentClass rdf:resource="&xsd;dateTime"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#hasAccreditationBody -->
+
+    <owl:ObjectProperty rdf:about="&trust_ontology;hasAccreditationBody"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#hasAuditAuditor -->
+
+    <owl:ObjectProperty rdf:about="&trust_ontology;hasAuditAuditor">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#hasAuditDate -->
+
+    <owl:ObjectProperty rdf:about="&trust_ontology;hasAuditDate"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#hasCertificationBody -->
+
+    <owl:ObjectProperty rdf:about="&trust_ontology;hasCertificationBody"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#hasCertificationCriteria -->
+
+    <owl:ObjectProperty rdf:about="&trust_ontology;hasCertificationCriteria"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#hasCertificationResult -->
+
+    <owl:ObjectProperty rdf:about="&trust_ontology;hasCertificationResult">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#hasCertifyingAgent -->
+
+    <owl:ObjectProperty rdf:about="&trust_ontology;hasCertifyingAgent">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#hasCharacteristic -->
+
+    <owl:ObjectProperty rdf:about="&trust_ontology;hasCharacteristic"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#hasLegalStatus -->
+
+    <owl:ObjectProperty rdf:about="&trust_ontology;hasLegalStatus"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#hasLevelOfTrustworthiness -->
+
+    <owl:ObjectProperty rdf:about="&trust_ontology;hasLevelOfTrustworthiness"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#hasNonConformityTo -->
+
+    <owl:ObjectProperty rdf:about="&trust_ontology;hasNonConformityTo">
+        <owl:inverseOf rdf:resource="&trust_ontology;isNonConformityOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#hasStandardBody -->
+
+    <owl:ObjectProperty rdf:about="&trust_ontology;hasStandardBody"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#isNonConformityOf -->
+
+    <owl:ObjectProperty rdf:about="&trust_ontology;isNonConformityOf"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#isSignedBy -->
+
+    <owl:ObjectProperty rdf:about="&trust_ontology;isSignedBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#Date -->
+
+    <owl:DatatypeProperty rdf:about="&trust_ontology;Date"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#hasAccreditationFrom -->
+
+    <owl:DatatypeProperty rdf:about="&trust_ontology;hasAccreditationFrom"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#hasAuditNo -->
+
+    <owl:DatatypeProperty rdf:about="&trust_ontology;hasAuditNo"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#hasCertificationCriteriaNo -->
+
+    <owl:DatatypeProperty rdf:about="&trust_ontology;hasCertificationCriteriaNo"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#hasCertifier -->
+
+    <owl:DatatypeProperty rdf:about="&trust_ontology;hasCertifier"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#hasStandardNo -->
+
+    <owl:DatatypeProperty rdf:about="&trust_ontology;hasStandardNo"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#hasStandardSetter -->
+
+    <owl:DatatypeProperty rdf:about="&trust_ontology;hasStandardSetter"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#isMemberOf -->
+
+    <owl:DatatypeProperty rdf:about="&trust_ontology;isMemberOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#AccreditationBody -->
+
+    <owl:Class rdf:about="&trust_ontology;AccreditationBody">
+        <owl:disjointWith rdf:resource="&trust_ontology;CertificationBody"/>
+        <owl:disjointWith rdf:resource="&trust_ontology;StandardBody"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#Audit -->
+
+    <owl:Class rdf:about="&trust_ontology;Audit">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&trust_ontology;Date"/>
+                <owl:someValuesFrom rdf:resource="&xsd;dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&trust_ontology;hasAuditAuditor"/>
+                <owl:someValuesFrom rdf:resource="&trust_ontology;Auditor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&trust_ontology;hasAuditNo"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#Auditor -->
+
+    <owl:Class rdf:about="&trust_ontology;Auditor"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#CertificationBody -->
+
+    <owl:Class rdf:about="&trust_ontology;CertificationBody"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#InternalCertificationBody -->
+
+    <owl:Class rdf:about="&trust_ontology;InternalCertificationBody">
+        <rdfs:subClassOf rdf:resource="&trust_ontology;CertificationBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&trust_ontology;hasAccreditationBody"/>
+                <owl:someValuesFrom rdf:resource="&trust_ontology;AccreditationBody"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&trust_ontology;hasAuditAuditor"/>
+                <owl:someValuesFrom rdf:resource="&trust_ontology;Auditor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#LevelOfTrustworthiness -->
+
+    <owl:Class rdf:about="&trust_ontology;LevelOfTrustworthiness"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#StandardBody -->
+
+    <owl:Class rdf:about="&trust_ontology;StandardBody"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#ThirdPartyCertificationBody -->
+
+    <owl:Class rdf:about="&trust_ontology;ThirdPartyCertificationBody">
+        <rdfs:subClassOf rdf:resource="&trust_ontology;CertificationBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&trust_ontology;hasStandardBody"/>
+                <owl:someValuesFrom rdf:resource="&trust_ontology;StandardBody"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&trust_ontology;hasAuditAuditor"/>
+                <owl:someValuesFrom rdf:resource="&trust_ontology;Auditor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&trust_ontology;hasAccreditationBody"/>
+                <owl:someValuesFrom rdf:resource="&trust_ontology;AccreditationBody"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#TrustworthinessGradeA -->
+
+    <owl:Class rdf:about="&trust_ontology;TrustworthinessGradeA">
+        <rdfs:subClassOf rdf:resource="&trust_ontology;LevelOfTrustworthiness"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&trust_ontology;hasStandardBody"/>
+                <owl:onClass rdf:resource="&trust_ontology;StandardBody"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&trust_ontology;hasAccreditationBody"/>
+                <owl:onClass rdf:resource="&trust_ontology;AccreditationBody"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&trust_ontology;hasCertificationBody"/>
+                <owl:allValuesFrom rdf:resource="&trust_ontology;ThirdPartyCertificationBody"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&trust_ontology;hasAuditAuditor"/>
+                <owl:onClass rdf:resource="&trust_ontology;Auditor"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&trust_ontology;TrustworthinessGradeB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#TrustworthinessGradeB -->
+
+    <owl:Class rdf:about="&trust_ontology;TrustworthinessGradeB">
+        <rdfs:subClassOf rdf:resource="&trust_ontology;LevelOfTrustworthiness"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&trust_ontology;hasAccreditationBody"/>
+                <owl:onClass rdf:resource="&trust_ontology;AccreditationBody"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&trust_ontology;hasAuditAuditor"/>
+                <owl:onClass rdf:resource="&trust_ontology;Auditor"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&trust_ontology;hasStandardBody"/>
+                <owl:onClass rdf:resource="&trust_ontology;StandardBody"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&trust_ontology;hasCertificationBody"/>
+                <owl:allValuesFrom rdf:resource="&trust_ontology;InternalCertificationBody"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#0 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;0"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#29717 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;29717"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#29870 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;29870"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#3.3.10 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;3.3.10"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#3.3.11 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;3.3.11"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#3.3.3.01 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;3.3.3.01"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#3.3.3.02 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;3.3.3.02"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#3.3.3.03 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;3.3.3.03"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#3.3.3.04 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;3.3.3.04"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#3.3.3.05 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;3.3.3.05"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#3.3.7 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;3.3.7"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#3.3.8 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;3.3.8"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#3.3.9 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;3.3.9"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#52200889002 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;52200889002"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#52200889004 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;52200889004"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#52919223442 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;52919223442"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#52919223447 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;52919223447"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#52919554738 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;52919554738"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#52919554788 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;52919554788"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#653286 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;653286"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#73565 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;73565"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#770100 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;770100"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#770201 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;770201"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#770202 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;770202"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#770203 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;770203"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#770204 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;770204"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#770301 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;770301"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#770302 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;770302"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#770303 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;770303"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#770304 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;770304"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#770401 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;770401"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#770402 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;770402"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#770403 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;770403"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#770404 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;770404"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#Bio_Schaftung -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;Bio_Schaftung"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#BuysProductOfOriginCountry -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;BuysProductOfOriginCountry"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#ChildLaborAbuse -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;ChildLaborAbuse"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#Commercio_Justo -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;Commercio_Justo">
+        <rdf:type rdf:resource="&trust_ontology;ThirdPartyCertificationBody"/>
+        <trust_ontology:hasStandardSetter rdf:datatype="&xsd;string">FLO Labeling International</trust_ontology:hasStandardSetter>
+        <trust_ontology:hasAccreditationFrom rdf:datatype="&xsd;string">International Standard Organization ISO</trust_ontology:hasAccreditationFrom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#Control_Union -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;Control_Union">
+        <rdf:type rdf:resource="&trust_ontology;ThirdPartyCertificationBody"/>
+        <trust_ontology:hasStandardSetter rdf:datatype="&xsd;integer">0</trust_ontology:hasStandardSetter>
+        <trust_ontology:hasAccreditationFrom rdf:datatype="&xsd;string">International Standard Organization ISO</trust_ontology:hasAccreditationFrom>
+        <owl:sameAs rdf:resource="&trust_ontology;Scientific_Certification_System_Global_Service"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#CultivatesProduct -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;CultivatesProduct"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#Dave_and_Nic_Certification -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;Dave_and_Nic_Certification">
+        <rdf:type rdf:resource="&trust_ontology;StandardBody"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#EnsureControlMeasureForChildLaborAbuseExist -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;EnsureControlMeasureForChildLaborAbuseExist"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#EnsureNoWorseFormOfLabor -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;EnsureNoWorseFormOfLabor"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#EnsureSchoolAttendance -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;EnsureSchoolAttendance"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#EnsuringHealthSafetyMoralsAndSchoolAttendance -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;EnsuringHealthSafetyMoralsAndSchoolAttendance"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#FLO_Labeling_International -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;FLO_Labeling_International">
+        <rdf:type rdf:resource="&trust_ontology;StandardBody"/>
+        <rdf:type rdf:resource="&trust_ontology;TrustworthinessGradeA"/>
+        <trust_ontology:isMemberOf rdf:datatype="&xsd;string">ISEAL</trust_ontology:isMemberOf>
+        <trust_ontology:hasCertificationBody rdf:resource="&trust_ontology;Commercio_Justo"/>
+        <trust_ontology:hasCertificationBody rdf:resource="&trust_ontology;Flo-Cert"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#Fair_For_Life -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;Fair_For_Life">
+        <rdf:type rdf:resource="&trust_ontology;ThirdPartyCertificationBody"/>
+        <trust_ontology:hasStandardSetter rdf:datatype="&xsd;string">Bio Schaftung</trust_ontology:hasStandardSetter>
+        <trust_ontology:hasStandardSetter rdf:datatype="&xsd;string">International Marketology Organization</trust_ontology:hasStandardSetter>
+        <trust_ontology:hasAccreditationFrom rdf:datatype="&xsd;string">International Standard Organization ISO</trust_ontology:hasAccreditationFrom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#Fairtrade_USA -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;Fairtrade_USA">
+        <rdf:type rdf:resource="&trust_ontology;ThirdPartyCertificationBody"/>
+        <trust_ontology:hasStandardSetter rdf:datatype="&xsd;string">FLO Labeling International</trust_ontology:hasStandardSetter>
+        <trust_ontology:hasAccreditationFrom rdf:datatype="&xsd;string">International Standard Organization ISO</trust_ontology:hasAccreditationFrom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#Flo-Cert -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;Flo-Cert">
+        <rdf:type rdf:resource="&trust_ontology;ThirdPartyCertificationBody"/>
+        <trust_ontology:hasStandardSetter rdf:datatype="&xsd;string">FLO Labeling International</trust_ontology:hasStandardSetter>
+        <trust_ontology:hasAccreditationFrom rdf:datatype="&xsd;string">International Standard Organization ISO</trust_ontology:hasAccreditationFrom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#ISEAL -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;ISEAL">
+        <rdf:type rdf:resource="&trust_ontology;AccreditationBody"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#International_Standard_Organization_ISO -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;International_Standard_Organization_ISO">
+        <rdf:type rdf:resource="&trust_ontology;AccreditationBody"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#Natural -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;Natural"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#NoChildLaborAge15 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;NoChildLaborAge15">
+        <rdfs:isDefinedBy rdf:datatype="&xsd;integer">&lt;= 15</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#Non-Violent_Dove_Certification -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;Non-Violent_Dove_Certification">
+        <rdf:type rdf:resource="&trust_ontology;StandardBody"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#OrganizationNotTookActionOnChildLaborAge15Issue -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;OrganizationNotTookActionOnChildLaborAge15Issue">
+        <rdfs:comment>Organization does not take action or resolved issues related to the non-conformity to the standard requirements</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#OrganizationNotTookActionOnNonSuitableWorkAndTimeForChildren -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;OrganizationNotTookActionOnNonSuitableWorkAndTimeForChildren"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#OrganizationNotTookActionToEnsureHSMA -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;OrganizationNotTookActionToEnsureHSMA"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#PackagesAndOrSellsUnderOwnBrand -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;PackagesAndOrSellsUnderOwnBrand"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#Rainforest_Alliance_Network -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;Rainforest_Alliance_Network">
+        <rdf:type rdf:resource="&trust_ontology;InternalCertificationBody"/>
+        <rdf:type rdf:resource="&trust_ontology;StandardBody"/>
+        <rdf:type rdf:resource="&trust_ontology;TrustworthinessGradeB"/>
+        <trust_ontology:hasCertificationBody rdf:resource="&trust_ontology;Rainforest_Alliance_Network"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#Scientific_Certification_System_Global_Service -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;Scientific_Certification_System_Global_Service">
+        <rdf:type rdf:resource="&trust_ontology;ThirdPartyCertificationBody"/>
+        <trust_ontology:hasStandardSetter rdf:datatype="&xsd;integer">0</trust_ontology:hasStandardSetter>
+        <trust_ontology:hasAccreditationFrom rdf:datatype="&xsd;string">International Standard Organization ISO</trust_ontology:hasAccreditationFrom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#SellsOutOfOriginCountry -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;SellsOutOfOriginCountry"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#Starbuck_and_Conservation_International -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;Starbuck_and_Conservation_International">
+        <rdf:type rdf:resource="&trust_ontology;StandardBody"/>
+        <rdf:type rdf:resource="&trust_ontology;TrustworthinessGradeA"/>
+        <trust_ontology:hasCertificationBody rdf:resource="&trust_ontology;Control_Union"/>
+        <trust_ontology:hasCertificationBody rdf:resource="&trust_ontology;Scientific_Certification_System_Global_Service"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#SuitableWorkOrTimeForChildrenUnderAge15 -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;SuitableWorkOrTimeForChildrenUnderAge15">
+        <rdfs:isDefinedBy rdf:datatype="&rdfs;Literal">Children Work After School or Holidays
+Work Is Appropriate for Their Age
+Work Is Supervise
+Work For Appropriate Hours
+Work Under Safe Condition
+Work Under Non-Exploitative Condition</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#UTZ_Good_Inside -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;UTZ_Good_Inside">
+        <rdf:type rdf:resource="&trust_ontology;StandardBody"/>
+        <rdf:type rdf:resource="&trust_ontology;TrustworthinessGradeA"/>
+        <trust_ontology:isMemberOf rdf:datatype="&xsd;string">ISEAL</trust_ontology:isMemberOf>
+        <trust_ontology:hasCertificationBody rdf:resource="&trust_ontology;Control_Union"/>
+        <trust_ontology:hasCertificationBody rdf:resource="&trust_ontology;Scientific_Certification_System_Global_Service"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#UniondeCooperativasTosepanTitataniske -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;UniondeCooperativasTosepanTitataniske">
+        <trust_ontology:hasNonConformityTo rdf:resource="&trust_ontology;NoChildLaborAge15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#UniondeProductoresMayaVinic -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;UniondeProductoresMayaVinic">
+        <trust_ontology:hasNonConformityTo rdf:resource="&trust_ontology;EnsureNoWorseFormOfLabor"/>
+        <trust_ontology:hasNonConformityTo rdf:resource="&trust_ontology;SuitableWorkOrTimeForChildrenUnderAge15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#Washed -->
+
+    <owl:NamedIndividual rdf:about="&trust_ontology;Washed"/>
+    
+
+
+    <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/2013-Jul-16/trust_ontology#WovenSack -->
+
+    <owl:Thing rdf:about="&trust_ontology;WovenSack">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Commercio_Justo"/>
+            <rdf:Description rdf:about="&trust_ontology;Fairtrade_USA"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Dave_and_Nic_Certification"/>
+            <rdf:Description rdf:about="&trust_ontology;Starbuck_and_Conservation_International"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;29717"/>
+            <rdf:Description rdf:about="&trust_ontology;29870"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Non-Violent_Dove_Certification"/>
+            <rdf:Description rdf:about="&trust_ontology;Starbuck_and_Conservation_International"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Rainforest_Alliance_Network"/>
+            <rdf:Description rdf:about="&trust_ontology;Starbuck_and_Conservation_International"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Dave_and_Nic_Certification"/>
+            <rdf:Description rdf:about="&trust_ontology;FLO_Labeling_International"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Dave_and_Nic_Certification"/>
+            <rdf:Description rdf:about="&trust_ontology;Non-Violent_Dove_Certification"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Starbuck_and_Conservation_International"/>
+            <rdf:Description rdf:about="&trust_ontology;UTZ_Good_Inside"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Fair_For_Life"/>
+            <rdf:Description rdf:about="&trust_ontology;Flo-Cert"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Non-Violent_Dove_Certification"/>
+            <rdf:Description rdf:about="&trust_ontology;Rainforest_Alliance_Network"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Dave_and_Nic_Certification"/>
+            <rdf:Description rdf:about="&trust_ontology;UTZ_Good_Inside"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Fair_For_Life"/>
+            <rdf:Description rdf:about="&trust_ontology;Fairtrade_USA"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Control_Union"/>
+            <rdf:Description rdf:about="&trust_ontology;Fairtrade_USA"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;FLO_Labeling_International"/>
+            <rdf:Description rdf:about="&trust_ontology;Starbuck_and_Conservation_International"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Commercio_Justo"/>
+            <rdf:Description rdf:about="&trust_ontology;Flo-Cert"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Commercio_Justo"/>
+            <rdf:Description rdf:about="&trust_ontology;Fair_For_Life"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Fairtrade_USA"/>
+            <rdf:Description rdf:about="&trust_ontology;Scientific_Certification_System_Global_Service"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;FLO_Labeling_International"/>
+            <rdf:Description rdf:about="&trust_ontology;Non-Violent_Dove_Certification"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Rainforest_Alliance_Network"/>
+            <rdf:Description rdf:about="&trust_ontology;UTZ_Good_Inside"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;29870"/>
+            <rdf:Description rdf:about="&trust_ontology;73565"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Fairtrade_USA"/>
+            <rdf:Description rdf:about="&trust_ontology;Flo-Cert"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Non-Violent_Dove_Certification"/>
+            <rdf:Description rdf:about="&trust_ontology;UTZ_Good_Inside"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;FLO_Labeling_International"/>
+            <rdf:Description rdf:about="&trust_ontology;Rainforest_Alliance_Network"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;770201"/>
+            <rdf:Description rdf:about="&trust_ontology;770202"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Flo-Cert"/>
+            <rdf:Description rdf:about="&trust_ontology;Scientific_Certification_System_Global_Service"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Fair_For_Life"/>
+            <rdf:Description rdf:about="&trust_ontology;Scientific_Certification_System_Global_Service"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Commercio_Justo"/>
+            <rdf:Description rdf:about="&trust_ontology;Control_Union"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;770301"/>
+            <rdf:Description rdf:about="&trust_ontology;770302"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Commercio_Justo"/>
+            <rdf:Description rdf:about="&trust_ontology;Scientific_Certification_System_Global_Service"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;FLO_Labeling_International"/>
+            <rdf:Description rdf:about="&trust_ontology;UTZ_Good_Inside"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Control_Union"/>
+            <rdf:Description rdf:about="&trust_ontology;Fair_For_Life"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Control_Union"/>
+            <rdf:Description rdf:about="&trust_ontology;Flo-Cert"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;29717"/>
+            <rdf:Description rdf:about="&trust_ontology;73565"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&trust_ontology;Dave_and_Nic_Certification"/>
+            <rdf:Description rdf:about="&trust_ontology;Rainforest_Alliance_Network"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
