@@ -26,38 +26,38 @@
 @prefix raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/raw/> .
 @prefix e1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/enhancement/1/> .
 @prefix flo-certification_global_value: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
-@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
-@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
-@prefix dbpediaprop: <http://dbpedia.org/property/> .
-@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
-@prefix geonamesid: <http://sws.geonames.org/> .
-@prefix bibo: <http://purl.org/ontology/bibo/> .
-@prefix dbpedia: <http://dbpedia.org/resource/> .
 @prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
-@prefix org: <http://www.w3.org/ns/org#> .
-@prefix sioc: <http://rdfs.org/sioc/ns#> .
 @prefix time: <http://www.w3.org/2006/time#> .
-@prefix sio: <http://semanticscience.org/resource/> .
-@prefix geonames: <http://www.geonames.org/ontology#> .
-@prefix pml: <http://provenanceweb.org/ns/pml#> .
-@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
-@prefix vsr: <http://purl.org/twc/vocab/vsr#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
+@prefix geonamesid: <http://sws.geonames.org/> .
+@prefix dbpediaprop: <http://dbpedia.org/property/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix pml: <http://provenanceweb.org/ns/pml#> .
 @prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix vsr: <http://purl.org/twc/vocab/vsr#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
 
-e1:id a rdf:Property ;
+e1:applicant a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "1"^^xsd:integer ;
 	ov:csvHeader "ID" ;
 	conversion:enhancement_layer "1" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/enhancement/1> ;
-	rdfs:label "ID" ;
+	rdfs:label "Applicant" ;
 	rdfs:range rdfs:Literal ;
-	conversion:enhances raw:id .
+	conversion:enhances raw:id , raw:applicant .
 
 e1:phone a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
@@ -104,7 +104,7 @@ flo-certification:FLO_1341 rdfs:label "FLO 1341" ;
 	coin:slug "FLO_1341" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 1341" ;
+	e1:applicant "FLO 1341" ;
 	e1:phone "5149079853" ;
 	e1:fax "5149079855" ;
 	e1:email "patterson@coopcoffees.com" ;
@@ -116,7 +116,7 @@ flo-certification:FLO_2178 rdfs:label "FLO 2178" ;
 	coin:slug "FLO_2178" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 2178" ;
+	e1:applicant "FLO 2178" ;
 	e1:phone "201333455" ;
 	e1:fax "2013334566" ;
 	e1:email "collocini@idmpal.com" ;
@@ -128,7 +128,7 @@ flo-certification:FLO_3341 rdfs:label "FLO 3341" ;
 	coin:slug "FLO_3341" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 3341" ;
+	e1:applicant "FLO 3341" ;
 	e1:phone "8433368901" ;
 	e1:fax "8433368906" ;
 	e1:email "aliceinwonderland@icaju.coffee.com" ;
@@ -140,7 +140,7 @@ flo-certification:FLO_7855 rdfs:label "FLO 7855" ;
 	coin:slug "FLO_7855" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 7855" ;
+	e1:applicant "FLO 7855" ;
 	e1:phone "200889002" ;
 	e1:fax "200889004" ;
 	e1:email "hernandez@yahoo.com" ;
@@ -152,7 +152,7 @@ flo-certification:FLO_2215 rdfs:label "FLO 2215" ;
 	coin:slug "FLO_2215" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 2215" ;
+	e1:applicant "FLO 2215" ;
 	e1:phone "919223442" ;
 	e1:fax "919223447" ;
 	e1:email "maradona@gmail.com" ;
@@ -164,7 +164,7 @@ flo-certification:FLO_3992 rdfs:label "FLO 3992" ;
 	coin:slug "FLO_3992" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 3992" ;
+	e1:applicant "FLO 3992" ;
 	e1:phone "919554788" ;
 	e1:fax "919554738" ;
 	e1:email "oscar.tabarez@lycos.com" ;
@@ -198,28 +198,28 @@ flo-certification:FLO_3992 rdfs:label "FLO 3992" ;
 @prefix raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/raw/> .
 @prefix e1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/enhancement/1/> .
 @prefix flo-certification_global_value: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
-@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
-@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
-@prefix dbpediaprop: <http://dbpedia.org/property/> .
-@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
-@prefix geonamesid: <http://sws.geonames.org/> .
-@prefix bibo: <http://purl.org/ontology/bibo/> .
-@prefix dbpedia: <http://dbpedia.org/resource/> .
 @prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
-@prefix org: <http://www.w3.org/ns/org#> .
-@prefix sioc: <http://rdfs.org/sioc/ns#> .
 @prefix time: <http://www.w3.org/2006/time#> .
-@prefix sio: <http://semanticscience.org/resource/> .
-@prefix geonames: <http://www.geonames.org/ontology#> .
-@prefix pml: <http://provenanceweb.org/ns/pml#> .
-@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
-@prefix vsr: <http://purl.org/twc/vocab/vsr#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
+@prefix geonamesid: <http://sws.geonames.org/> .
+@prefix dbpediaprop: <http://dbpedia.org/property/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix pml: <http://provenanceweb.org/ns/pml#> .
 @prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix vsr: <http://purl.org/twc/vocab/vsr#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
 
 flo-certification:thing_2 con:preferredURI flo-certification:FLO_1341 .
 
@@ -262,38 +262,38 @@ flo-certification:thing_7 con:preferredURI flo-certification:FLO_3992 .
 @prefix raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/raw/> .
 @prefix e1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/enhancement/1/> .
 @prefix flo-certification_global_value: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
-@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
-@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
-@prefix dbpediaprop: <http://dbpedia.org/property/> .
-@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
-@prefix geonamesid: <http://sws.geonames.org/> .
-@prefix bibo: <http://purl.org/ontology/bibo/> .
-@prefix dbpedia: <http://dbpedia.org/resource/> .
 @prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
-@prefix org: <http://www.w3.org/ns/org#> .
-@prefix sioc: <http://rdfs.org/sioc/ns#> .
 @prefix time: <http://www.w3.org/2006/time#> .
-@prefix sio: <http://semanticscience.org/resource/> .
-@prefix geonames: <http://www.geonames.org/ontology#> .
-@prefix pml: <http://provenanceweb.org/ns/pml#> .
-@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
-@prefix vsr: <http://purl.org/twc/vocab/vsr#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
+@prefix geonamesid: <http://sws.geonames.org/> .
+@prefix dbpediaprop: <http://dbpedia.org/property/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix pml: <http://provenanceweb.org/ns/pml#> .
 @prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix vsr: <http://purl.org/twc/vocab/vsr#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
 
-e1:id a rdf:Property ;
+e1:applicant a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "1"^^xsd:integer ;
 	ov:csvHeader "ID" ;
 	conversion:enhancement_layer "1" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/enhancement/1> ;
-	rdfs:label "ID" ;
+	rdfs:label "Applicant" ;
 	rdfs:range rdfs:Literal ;
-	conversion:enhances raw:id .
+	conversion:enhances raw:id , raw:applicant .
 
 e1:phone a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
@@ -362,28 +362,28 @@ e1:homepage a rdf:Property ;
 @prefix raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/raw/> .
 @prefix e1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/enhancement/1/> .
 @prefix flo-certification_global_value: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
-@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
-@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
-@prefix dbpediaprop: <http://dbpedia.org/property/> .
-@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
-@prefix geonamesid: <http://sws.geonames.org/> .
-@prefix bibo: <http://purl.org/ontology/bibo/> .
-@prefix dbpedia: <http://dbpedia.org/resource/> .
 @prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
-@prefix org: <http://www.w3.org/ns/org#> .
-@prefix sioc: <http://rdfs.org/sioc/ns#> .
 @prefix time: <http://www.w3.org/2006/time#> .
-@prefix sio: <http://semanticscience.org/resource/> .
-@prefix geonames: <http://www.geonames.org/ontology#> .
-@prefix pml: <http://provenanceweb.org/ns/pml#> .
-@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
-@prefix vsr: <http://purl.org/twc/vocab/vsr#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
+@prefix geonamesid: <http://sws.geonames.org/> .
+@prefix dbpediaprop: <http://dbpedia.org/property/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix pml: <http://provenanceweb.org/ns/pml#> .
 @prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix vsr: <http://purl.org/twc/vocab/vsr#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
 
 <http://ichoose.tw.rpi.edu/void.ttl> a void:DatasetDescription ;
 	foaf:topic <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification> ;
@@ -400,7 +400,7 @@ e1:homepage a rdf:Property ;
 	dcterms:identifier "ctg-albany-edu flo-certification" ;
 	foaf:isPrimaryTopicOf <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset_page/flo-certification> ;
 	void:subset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> , <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/subset/meta> ;
-	dcterms:modified "2013-07-16T04:01:15.427-05:00"^^xsd:dateTime .
+	dcterms:modified "2013-07-17T16:46:31.350-05:00"^^xsd:dateTime .
 
 <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> a ctg-albany-edu_vocab:Dataset , conversion:Dataset , conversion:VersionedDataset , void:Dataset , conversion:EnhancedDataset ;
 	conversion:base_uri "http://ichoose.tw.rpi.edu" ;
@@ -410,13 +410,13 @@ e1:homepage a rdf:Property ;
 	conversion:dataset_version "2013-Jul-11" ;
 	dcterms:contributor <http://ichoose.tw.rpi.edu/source/ctg-albany-edu> ;
 	dcterms:identifier "ctg-albany-edu flo-certification 2013-Jul-11" ;
-	dcterms:modified "2013-07-16T04:01:15.427-05:00"^^xsd:dateTime ;
+	dcterms:modified "2013-07-17T16:46:31.350-05:00"^^xsd:dateTime ;
 	foaf:isPrimaryTopicOf <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset_page/flo-certification/version/2013-Jul-11> ;
 	void:dataDump <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/file/flo-certification/version/2013-Jul-11/conversion/ctg-albany-edu-flo-certification-2013-Jul-11.ttl.gz> ;
 	void:subset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/enhancement/1> .
 
 <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/enhancement/1> a ctg-albany-edu_vocab:Dataset , conversion:Dataset , conversion:LayerDataset , void:Dataset , conversion:EnhancedDataset ;
-	dcterms:modified "2013-07-16T04:01:15.427-05:00"^^xsd:dateTime ;
+	dcterms:modified "2013-07-17T16:46:31.350-05:00"^^xsd:dateTime ;
 	conversion:base_uri "http://ichoose.tw.rpi.edu" ;
 	conversion:source_identifier "ctg-albany-edu" ;
 	conversion:dataset_identifier "flo-certification" ;
@@ -426,7 +426,7 @@ e1:homepage a rdf:Property ;
 	foaf:isPrimaryTopicOf <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset_page/flo-certification/version/2013-Jul-11/conversion/enhancement/1> ;
 	void:dataDump <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/file/flo-certification/version/2013-Jul-11/conversion/ctg-albany-edu-flo-certification-2013-Jul-11.e1.ttl.gz> ;
 	void:subset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/enhancement/1/subset/sample> ;
-	conversion:uses_predicate e1:email , void:inDataset , ov:csvRow , e1:phone , e1:fax , con:preferredURI , dcterms:isReferencedBy , e1:id , e1:homepage ;
+	conversion:uses_predicate e1:email , void:inDataset , ov:csvRow , e1:phone , e1:applicant , e1:fax , con:preferredURI , dcterms:isReferencedBy , e1:homepage ;
 	void:vocabulary <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/enhancement/1/> , <http://rdfs.org/ns/void#> , <http://open.vocab.org/terms/> , <http://www.w3.org/2000/10/swap/pim/contact#> , <http://purl.org/dc/terms/> .
 
 e1:email rdfs:isDefinedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/enhancement/1/> ;
@@ -441,6 +441,9 @@ ov:csvRow rdfs:isDefinedBy <http://open.vocab.org/terms/> ;
 e1:phone rdfs:isDefinedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/enhancement/1/> ;
 	prov:wasAttributedTo <http://ichoose.tw.rpi.edu> .
 
+e1:applicant rdfs:isDefinedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://ichoose.tw.rpi.edu> .
+
 e1:fax rdfs:isDefinedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/enhancement/1/> ;
 	prov:wasAttributedTo <http://ichoose.tw.rpi.edu> .
 
@@ -450,15 +453,12 @@ con:preferredURI rdfs:isDefinedBy <http://www.w3.org/2000/10/swap/pim/contact#> 
 dcterms:isReferencedBy rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
 	prov:wasAttributedTo <http://purl.org/dc> .
 
-e1:id rdfs:isDefinedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/enhancement/1/> ;
-	prov:wasAttributedTo <http://ichoose.tw.rpi.edu> .
-
 e1:homepage rdfs:isDefinedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/enhancement/1/> ;
 	prov:wasAttributedTo <http://ichoose.tw.rpi.edu> .
 
 <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/enhancement/1> void:exampleResource flo-certification:FLO_1341 , flo-certification:FLO_3992 ;
 	conversion:enhancement_identifier "1" ;
-	dcterms:created "2013-07-16T04:01:15.304-05:00"^^xsd:dateTime ;
+	dcterms:created "2013-07-17T16:46:31.228-05:00"^^xsd:dateTime ;
 	dcterms:contributor <http://ichoose.tw.rpi.edu/source/ctg-albany-edu> ;
 	dcterms:identifier "ctg-albany-edu flo-certification 2013-Jul-11 e1" .
 
@@ -469,7 +469,7 @@ e1:homepage rdfs:isDefinedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/da
 	conversion:version_identifier "2013-Jul-11" ;
 	conversion:dataset_version "2013-Jul-11" ;
 	conversion:conversion_identifier "enhancement/1" ;
-	dcterms:modified "2013-07-16T04:01:15.427-05:00"^^xsd:dateTime ;
+	dcterms:modified "2013-07-17T16:46:31.350-05:00"^^xsd:dateTime ;
 	foaf:isPrimaryTopicOf <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset_page/flo-certification/version/2013-Jul-11/conversion/enhancement/1/subset/sample> ;
 	void:dataDump <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/file/flo-certification/version/2013-Jul-11/conversion/ctg-albany-edu-flo-certification-2013-Jul-11.e1.sample.ttl> .
 
@@ -479,163 +479,163 @@ e1:homepage rdfs:isDefinedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/da
 	dcterms:identifier "ctg-albany-edu" ;
 	foaf:isPrimaryTopicOf <http://ichoose.tw.rpi.edu/source_page/ctg-albany-edu> .
 
-_:node17viq79jqx2 vann:preferredNamespacePrefix "rdf" ;
+_:node17vmod88px2 vann:preferredNamespacePrefix "rdf" ;
 	vann:preferredNamespaceUri "http://www.w3.org/1999/02/22-rdf-syntax-ns#" .
 
-_:node17viq79jqx3 vann:preferredNamespacePrefix "rdfs" ;
+_:node17vmod88px3 vann:preferredNamespacePrefix "rdfs" ;
 	vann:preferredNamespaceUri "http://www.w3.org/2000/01/rdf-schema#" .
 
-_:node17viq79jqx4 vann:preferredNamespacePrefix "xsd" ;
+_:node17vmod88px4 vann:preferredNamespacePrefix "xsd" ;
 	vann:preferredNamespaceUri "http://www.w3.org/2001/XMLSchema#" .
 
-_:node17viq79jqx5 vann:preferredNamespacePrefix "xsd2" ;
+_:node17vmod88px5 vann:preferredNamespacePrefix "xsd2" ;
 	vann:preferredNamespaceUri "http://www.w3.org/TR/xmlschema-2/#" .
 
-_:node17viq79jqx6 vann:preferredNamespacePrefix "owl" ;
+_:node17vmod88px6 vann:preferredNamespacePrefix "owl" ;
 	vann:preferredNamespaceUri "http://www.w3.org/2002/07/owl#" .
 
-_:node17viq79jqx7 vann:preferredNamespacePrefix "pmlp" ;
+_:node17vmod88px7 vann:preferredNamespacePrefix "pmlp" ;
 	vann:preferredNamespaceUri "http://inference-web.org/2.0/pml-provenance.owl#" .
 
-_:node17viq79jqx8 vann:preferredNamespacePrefix "pmlj" ;
+_:node17vmod88px8 vann:preferredNamespacePrefix "pmlj" ;
 	vann:preferredNamespaceUri "http://inference-web.org/2.0/pml-justification.owl#" .
 
-_:node17viq79jqx9 vann:preferredNamespacePrefix "tw_service" ;
+_:node17vmod88px9 vann:preferredNamespacePrefix "tw_service" ;
 	vann:preferredNamespaceUri "http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/" .
 
-_:node17viq79jqx10 vann:preferredNamespacePrefix "tw_converter" ;
+_:node17vmod88px10 vann:preferredNamespacePrefix "tw_converter" ;
 	vann:preferredNamespaceUri "http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-June-22/" .
 
-_:node17viq79jqx11 vann:preferredNamespacePrefix "provenance_1" ;
+_:node17vmod88px11 vann:preferredNamespacePrefix "provenance_1" ;
 	vann:preferredNamespaceUri "http://ichoose.tw.rpi.edu/source/ctg-albany-edu/provenance/flo-certification/version/2013-Jul-11/conversion/enhancement/1/" .
 
-_:node17viq79jqx12 vann:preferredNamespacePrefix "conversion" ;
+_:node17vmod88px12 vann:preferredNamespacePrefix "conversion" ;
 	vann:preferredNamespaceUri "http://purl.org/twc/vocab/conversion/" .
 
-_:node17viq79jqx13 vann:preferredNamespacePrefix "ov" ;
+_:node17vmod88px13 vann:preferredNamespacePrefix "ov" ;
 	vann:preferredNamespaceUri "http://open.vocab.org/terms/" .
 
-_:node17viq79jqx14 vann:preferredNamespacePrefix "dcterms" ;
+_:node17vmod88px14 vann:preferredNamespacePrefix "dcterms" ;
 	vann:preferredNamespaceUri "http://purl.org/dc/terms/" .
 
-_:node17viq79jqx15 vann:preferredNamespacePrefix "foaf" ;
+_:node17vmod88px15 vann:preferredNamespacePrefix "foaf" ;
 	vann:preferredNamespaceUri "http://xmlns.com/foaf/0.1/" .
 
-_:node17viq79jqx16 vann:preferredNamespacePrefix "void" ;
+_:node17vmod88px16 vann:preferredNamespacePrefix "void" ;
 	vann:preferredNamespaceUri "http://rdfs.org/ns/void#" .
 
-_:node17viq79jqx17 vann:preferredNamespacePrefix "doap" ;
+_:node17vmod88px17 vann:preferredNamespacePrefix "doap" ;
 	vann:preferredNamespaceUri "http://usefulinc.com/ns/doap#" .
 
-_:node17viq79jqx18 vann:preferredNamespacePrefix "scovo" ;
+_:node17vmod88px18 vann:preferredNamespacePrefix "scovo" ;
 	vann:preferredNamespaceUri "http://purl.org/NET/scovo#" .
 
-_:node17viq79jqx19 vann:preferredNamespacePrefix "qb" ;
+_:node17vmod88px19 vann:preferredNamespacePrefix "qb" ;
 	vann:preferredNamespaceUri "http://purl.org/linked-data/cube#" .
 
-_:node17viq79jqx20 vann:preferredNamespacePrefix "vann" ;
+_:node17vmod88px20 vann:preferredNamespacePrefix "vann" ;
 	vann:preferredNamespaceUri "http://purl.org/vocab/vann/" .
 
-_:node17viq79jqx21 vann:preferredNamespacePrefix "frbrcore" ;
+_:node17vmod88px21 vann:preferredNamespacePrefix "frbrcore" ;
 	vann:preferredNamespaceUri "http://purl.org/vocab/frbr/core#" .
 
-_:node17viq79jqx22 vann:preferredNamespacePrefix "coin" ;
+_:node17vmod88px22 vann:preferredNamespacePrefix "coin" ;
 	vann:preferredNamespaceUri "http://purl.org/court/def/2009/coin#" .
 
-_:node17viq79jqx23 vann:preferredNamespacePrefix "flo-certification" ;
+_:node17vmod88px23 vann:preferredNamespacePrefix "flo-certification" ;
 	vann:preferredNamespaceUri "http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/" .
 
-_:node17viq79jqx24 vann:preferredNamespacePrefix "ctg-albany-edu_vocab" ;
+_:node17vmod88px24 vann:preferredNamespacePrefix "ctg-albany-edu_vocab" ;
 	vann:preferredNamespaceUri "http://ichoose.tw.rpi.edu/source/ctg-albany-edu/vocab/" .
 
-_:node17viq79jqx25 vann:preferredNamespacePrefix "base_vocab" ;
+_:node17vmod88px25 vann:preferredNamespacePrefix "base_vocab" ;
 	vann:preferredNamespaceUri "http://ichoose.tw.rpi.edu/vocab/" .
 
-_:node17viq79jqx26 vann:preferredNamespacePrefix "flo-certification_vocab" ;
+_:node17vmod88px26 vann:preferredNamespacePrefix "flo-certification_vocab" ;
 	vann:preferredNamespaceUri "http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/" .
 
-_:node17viq79jqx27 vann:preferredNamespacePrefix "raw" ;
+_:node17vmod88px27 vann:preferredNamespacePrefix "raw" ;
 	vann:preferredNamespaceUri "http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/raw/" .
 
-_:node17viq79jqx28 vann:preferredNamespacePrefix "e1" ;
+_:node17vmod88px28 vann:preferredNamespacePrefix "e1" ;
 	vann:preferredNamespaceUri "http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/enhancement/1/" .
 
-_:node17viq79jqx29 vann:preferredNamespacePrefix "flo-certification_global_value" ;
+_:node17vmod88px29 vann:preferredNamespacePrefix "flo-certification_global_value" ;
 	vann:preferredNamespaceUri "http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/" .
 
-_:node17viq79jqx30 vann:preferredNamespacePrefix "dcat" ;
-	vann:preferredNamespaceUri "http://www.w3.org/ns/dcat#" .
-
-_:node17viq79jqx31 vann:preferredNamespacePrefix "skos" ;
-	vann:preferredNamespaceUri "http://www.w3.org/2004/02/skos/core#" .
-
-_:node17viq79jqx32 vann:preferredNamespacePrefix "todo" ;
-	vann:preferredNamespaceUri "http://www.w3.org/2000/01/rdf-schema#" .
-
-_:node17viq79jqx33 vann:preferredNamespacePrefix "prov" ;
-	vann:preferredNamespaceUri "http://www.w3.org/ns/prov#" .
-
-_:node17viq79jqx34 vann:preferredNamespacePrefix "dgtwc" ;
-	vann:preferredNamespaceUri "http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#" .
-
-_:node17viq79jqx35 vann:preferredNamespacePrefix "muo" ;
-	vann:preferredNamespaceUri "http://purl.oclc.org/NET/muo/muo#" .
-
-_:node17viq79jqx36 vann:preferredNamespacePrefix "govtrackusgov" ;
-	vann:preferredNamespaceUri "http://www.rdfabout.com/rdf/usgov/geo/us/" .
-
-_:node17viq79jqx37 vann:preferredNamespacePrefix "dbpediaprop" ;
-	vann:preferredNamespaceUri "http://dbpedia.org/property/" .
-
-_:node17viq79jqx38 vann:preferredNamespacePrefix "con" ;
-	vann:preferredNamespaceUri "http://www.w3.org/2000/10/swap/pim/contact#" .
-
-_:node17viq79jqx39 vann:preferredNamespacePrefix "geonamesid" ;
-	vann:preferredNamespaceUri "http://sws.geonames.org/" .
-
-_:node17viq79jqx40 vann:preferredNamespacePrefix "bibo" ;
-	vann:preferredNamespaceUri "http://purl.org/ontology/bibo/" .
-
-_:node17viq79jqx41 vann:preferredNamespacePrefix "dbpedia" ;
-	vann:preferredNamespaceUri "http://dbpedia.org/resource/" .
-
-_:node17viq79jqx42 vann:preferredNamespacePrefix "frbr" ;
-	vann:preferredNamespaceUri "http://purl.org/vocab/frbr/core#" .
-
-_:node17viq79jqx43 vann:preferredNamespacePrefix "nfo" ;
+_:node17vmod88px30 vann:preferredNamespacePrefix "nfo" ;
 	vann:preferredNamespaceUri "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#" .
 
-_:node17viq79jqx44 vann:preferredNamespacePrefix "org" ;
-	vann:preferredNamespaceUri "http://www.w3.org/ns/org#" .
-
-_:node17viq79jqx45 vann:preferredNamespacePrefix "sioc" ;
-	vann:preferredNamespaceUri "http://rdfs.org/sioc/ns#" .
-
-_:node17viq79jqx46 vann:preferredNamespacePrefix "time" ;
+_:node17vmod88px31 vann:preferredNamespacePrefix "time" ;
 	vann:preferredNamespaceUri "http://www.w3.org/2006/time#" .
 
-_:node17viq79jqx47 vann:preferredNamespacePrefix "sio" ;
-	vann:preferredNamespaceUri "http://semanticscience.org/resource/" .
+_:node17vmod88px32 vann:preferredNamespacePrefix "skos" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2004/02/skos/core#" .
 
-_:node17viq79jqx48 vann:preferredNamespacePrefix "geonames" ;
-	vann:preferredNamespaceUri "http://www.geonames.org/ontology#" .
-
-_:node17viq79jqx49 vann:preferredNamespacePrefix "pml" ;
-	vann:preferredNamespaceUri "http://provenanceweb.org/ns/pml#" .
-
-_:node17viq79jqx50 vann:preferredNamespacePrefix "dbpediaowl" ;
-	vann:preferredNamespaceUri "http://dbpedia.org/ontology/" .
-
-_:node17viq79jqx51 vann:preferredNamespacePrefix "vsr" ;
-	vann:preferredNamespaceUri "http://purl.org/twc/vocab/vsr#" .
-
-_:node17viq79jqx52 vann:preferredNamespacePrefix "vs" ;
+_:node17vmod88px33 vann:preferredNamespacePrefix "vs" ;
 	vann:preferredNamespaceUri "http://www.w3.org/2003/06/sw-vocab-status/ns#" .
 
-_:node17viq79jqx53 vann:preferredNamespacePrefix "wgs" ;
+_:node17vmod88px34 vann:preferredNamespacePrefix "bibo" ;
+	vann:preferredNamespaceUri "http://purl.org/ontology/bibo/" .
+
+_:node17vmod88px35 vann:preferredNamespacePrefix "dgtwc" ;
+	vann:preferredNamespaceUri "http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#" .
+
+_:node17vmod88px36 vann:preferredNamespacePrefix "geonamesid" ;
+	vann:preferredNamespaceUri "http://sws.geonames.org/" .
+
+_:node17vmod88px37 vann:preferredNamespacePrefix "dbpediaprop" ;
+	vann:preferredNamespaceUri "http://dbpedia.org/property/" .
+
+_:node17vmod88px38 vann:preferredNamespacePrefix "sio" ;
+	vann:preferredNamespaceUri "http://semanticscience.org/resource/" .
+
+_:node17vmod88px39 vann:preferredNamespacePrefix "con" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2000/10/swap/pim/contact#" .
+
+_:node17vmod88px40 vann:preferredNamespacePrefix "muo" ;
+	vann:preferredNamespaceUri "http://purl.oclc.org/NET/muo/muo#" .
+
+_:node17vmod88px41 vann:preferredNamespacePrefix "dcat" ;
+	vann:preferredNamespaceUri "http://www.w3.org/ns/dcat#" .
+
+_:node17vmod88px42 vann:preferredNamespacePrefix "frbr" ;
+	vann:preferredNamespaceUri "http://purl.org/vocab/frbr/core#" .
+
+_:node17vmod88px43 vann:preferredNamespacePrefix "dbpediaowl" ;
+	vann:preferredNamespaceUri "http://dbpedia.org/ontology/" .
+
+_:node17vmod88px44 vann:preferredNamespacePrefix "prov" ;
+	vann:preferredNamespaceUri "http://www.w3.org/ns/prov#" .
+
+_:node17vmod88px45 vann:preferredNamespacePrefix "pml" ;
+	vann:preferredNamespaceUri "http://provenanceweb.org/ns/pml#" .
+
+_:node17vmod88px46 vann:preferredNamespacePrefix "wgs" ;
 	vann:preferredNamespaceUri "http://www.w3.org/2003/01/geo/wgs84_pos#" .
 
-_:node17viq79jqx1 rdfs:seeAlso _:node17viq79jqx2 , _:node17viq79jqx3 , _:node17viq79jqx4 , _:node17viq79jqx5 , _:node17viq79jqx6 , _:node17viq79jqx7 , _:node17viq79jqx8 , _:node17viq79jqx9 , _:node17viq79jqx10 , _:node17viq79jqx11 , _:node17viq79jqx12 , _:node17viq79jqx13 , _:node17viq79jqx14 , _:node17viq79jqx15 , _:node17viq79jqx16 , _:node17viq79jqx17 , _:node17viq79jqx18 , _:node17viq79jqx19 , _:node17viq79jqx20 , _:node17viq79jqx21 , _:node17viq79jqx22 , _:node17viq79jqx23 , _:node17viq79jqx24 , _:node17viq79jqx25 , _:node17viq79jqx26 , _:node17viq79jqx27 , _:node17viq79jqx28 , _:node17viq79jqx29 , _:node17viq79jqx30 , _:node17viq79jqx31 , _:node17viq79jqx32 , _:node17viq79jqx33 , _:node17viq79jqx34 , _:node17viq79jqx35 , _:node17viq79jqx36 , _:node17viq79jqx37 , _:node17viq79jqx38 , _:node17viq79jqx39 , _:node17viq79jqx40 , _:node17viq79jqx41 , _:node17viq79jqx42 , _:node17viq79jqx43 , _:node17viq79jqx44 , _:node17viq79jqx45 , _:node17viq79jqx46 , _:node17viq79jqx47 , _:node17viq79jqx48 , _:node17viq79jqx49 , _:node17viq79jqx50 , _:node17viq79jqx51 , _:node17viq79jqx52 , _:node17viq79jqx53 .
+_:node17vmod88px47 vann:preferredNamespacePrefix "org" ;
+	vann:preferredNamespaceUri "http://www.w3.org/ns/org#" .
+
+_:node17vmod88px48 vann:preferredNamespacePrefix "todo" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2000/01/rdf-schema#" .
+
+_:node17vmod88px49 vann:preferredNamespacePrefix "govtrackusgov" ;
+	vann:preferredNamespaceUri "http://www.rdfabout.com/rdf/usgov/geo/us/" .
+
+_:node17vmod88px50 vann:preferredNamespacePrefix "sioc" ;
+	vann:preferredNamespaceUri "http://rdfs.org/sioc/ns#" .
+
+_:node17vmod88px51 vann:preferredNamespacePrefix "vsr" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/vocab/vsr#" .
+
+_:node17vmod88px52 vann:preferredNamespacePrefix "geonames" ;
+	vann:preferredNamespaceUri "http://www.geonames.org/ontology#" .
+
+_:node17vmod88px53 vann:preferredNamespacePrefix "dbpedia" ;
+	vann:preferredNamespaceUri "http://dbpedia.org/resource/" .
+
+_:node17vmod88px1 rdfs:seeAlso _:node17vmod88px2 , _:node17vmod88px3 , _:node17vmod88px4 , _:node17vmod88px5 , _:node17vmod88px6 , _:node17vmod88px7 , _:node17vmod88px8 , _:node17vmod88px9 , _:node17vmod88px10 , _:node17vmod88px11 , _:node17vmod88px12 , _:node17vmod88px13 , _:node17vmod88px14 , _:node17vmod88px15 , _:node17vmod88px16 , _:node17vmod88px17 , _:node17vmod88px18 , _:node17vmod88px19 , _:node17vmod88px20 , _:node17vmod88px21 , _:node17vmod88px22 , _:node17vmod88px23 , _:node17vmod88px24 , _:node17vmod88px25 , _:node17vmod88px26 , _:node17vmod88px27 , _:node17vmod88px28 , _:node17vmod88px29 , _:node17vmod88px30 , _:node17vmod88px31 , _:node17vmod88px32 , _:node17vmod88px33 , _:node17vmod88px34 , _:node17vmod88px35 , _:node17vmod88px36 , _:node17vmod88px37 , _:node17vmod88px38 , _:node17vmod88px39 , _:node17vmod88px40 , _:node17vmod88px41 , _:node17vmod88px42 , _:node17vmod88px43 , _:node17vmod88px44 , _:node17vmod88px45 , _:node17vmod88px46 , _:node17vmod88px47 , _:node17vmod88px48 , _:node17vmod88px49 , _:node17vmod88px50 , _:node17vmod88px51 , _:node17vmod88px52 , _:node17vmod88px53 .
 
 provenance_1:nodeset_1 a pmlj:NodeSet ;
 	pmlj:hasConclusion <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/file/flo-certification/version/2013-Jul-11/conversion/ctg-albany-edu-flo-certification-2013-Jul-11.ttl.gz> ;
@@ -651,8 +651,8 @@ provenance_1:nodeset_3 a pmlj:NodeSet ;
 
 provenance_1:infstep_1 a pmlj:InferenceStep ;
 	pmlj:hasInferenceEngine tw_converter:csv2rdf4lod_19679c739db58bdf2e79b73984aaeacc ;
-	pmlj:hasAntecedentList _:node17viq79jqx54 ;
-	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> _:node17viq79jqx55 , _:node17viq79jqx56 .
+	pmlj:hasAntecedentList _:node17vmod88px54 ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> _:node17vmod88px55 , _:node17vmod88px56 .
 
 <http://purl.org/twc/id/software/csv2rdf4lod> con:preferredURI tw_converter:csv2rdf4lod_19679c739db58bdf2e79b73984aaeacc .
 
@@ -681,7 +681,7 @@ tw_converter:csv2rdf4lod_19679c739db58bdf2e79b73984aaeacc a pmlp:InferenceEngine
 	doap:shortdesc "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/" ;
 	doap:description "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/. Organizes datasets using 'source', 'dataset', and 'version' identifiers to allow for third-party aggregation, refinement, and integration of third-party data. Uses predicate 'layers' to allow backward-compatible refinements of Resources' descriptions. Minimizes human error and increases transparancy of conversion by using RDF-encoded interpretation parameters to control all processing." .
 
-_:node17viq79jqx57 a doap:GitRepository ;
+_:node17vmod88px57 a doap:GitRepository ;
 	foaf:isPrimaryTopicOf <https://github.com/timrdf/csv2rdf4lod-automation> ;
 	doap:browse <https://github.com/timrdf/csv2rdf4lod-automation> .
 
@@ -697,27 +697,27 @@ _:node17viq79jqx57 a doap:GitRepository ;
 
 <http://purl.org/twc/id/person/Maryam_Fazel-Zarandi> con:preferredURI <http://tw.rpi.edu/instances/MaryamFazel-Zarandi> .
 
-_:node17viq79jqx54 a rdf:List ;
+_:node17vmod88px54 a rdf:List ;
 	rdf:first provenance_1:nodeset_4 .
 
 provenance_1:nodeset_4 a pmlj:NodeSet ;
 	pmlj:hasConclusion <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/fileflo-certification/version/2013-Jul-11/manual/flo-certification.xls_Contact.csv> .
 
-_:node17viq79jqx54 rdf:rest _:node17viq79jqx58 .
+_:node17vmod88px54 rdf:rest _:node17vmod88px58 .
 
-_:node17viq79jqx58 a rdf:List ;
+_:node17vmod88px58 a rdf:List ;
 	rdf:first provenance_1:nodeset_5 .
 
 provenance_1:nodeset_5 a pmlj:NodeSet ;
 	pmlj:hasConclusion <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/fileflo-certification/version/2013-Jul-11/manual/flo-certification.xls_Contact.csv.e1.params.ttl> .
 
-_:node17viq79jqx58 rdf:rest rdf:nil .
+_:node17vmod88px58 rdf:rest rdf:nil .
 
-_:node17viq79jqx55 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+_:node17vmod88px55 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
 	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/fileflo-certification/version/2013-Jul-11/manual/flo-certification.xls_Contact.csv> ;
 	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Input.owl#Input> .
 
-_:node17viq79jqx56 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+_:node17vmod88px56 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
 	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/fileflo-certification/version/2013-Jul-11/manual/flo-certification.xls_Contact.csv.e1.params.ttl> ;
 	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Parameters.owl#Parameters> .
 
@@ -773,77 +773,77 @@ conversion:version_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conver
 
 <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/enhancement/1> conversion:base_uri "http://ichoose.tw.rpi.edu"^^xsd:anyURI .
 
-_:node17viq79l7x1 a conversion:EnhancementConversionProcess ;
+_:node17vmod8aux1 a conversion:EnhancementConversionProcess ;
 	conversion:enhancement_identifier "1" .
 
-_:node17viq79l7x2 a foaf:OnlineAccount ;
+_:node17vmod8aux2 a foaf:OnlineAccount ;
 	foaf:accountName "ndepaula" .
 
-_:node17viq79l7x1 dcterms:creator _:node17viq79l7x2 ;
+_:node17vmod8aux1 dcterms:creator _:node17vmod8aux2 ;
 	dcterms:created "2013-07-16T03:24:45+00:00"^^xsd:dateTime ;
 	conversion:delimits_cell "," .
 
-_:node17viq79l7x3 conversion:domain_template "[#1]" .
+_:node17vmod8aux3 conversion:domain_template "[#1]" .
 
-_:node17viq79l7x1 conversion:enhance _:node17viq79l7x3 .
+_:node17vmod8aux1 conversion:enhance _:node17vmod8aux3 .
 
-_:node17viq79l7x4 ov:csvCol "1"^^xsd:integer ;
+_:node17vmod8aux4 ov:csvCol "1"^^xsd:integer ;
 	ov:csvHeader "ID" ;
-	conversion:label "ID" ;
+	conversion:label "Applicant" ;
 	conversion:comment "" ;
 	conversion:range rdfs:Literal .
 
-_:node17viq79l7x1 conversion:enhance _:node17viq79l7x4 .
+_:node17vmod8aux1 conversion:enhance _:node17vmod8aux4 .
 
-_:node17viq79l7x5 ov:csvCol "2"^^xsd:integer ;
+_:node17vmod8aux5 ov:csvCol "2"^^xsd:integer ;
 	ov:csvHeader "Phone" ;
 	conversion:label "Phone" ;
 	conversion:comment "" ;
 	conversion:range rdfs:Literal .
 
-_:node17viq79l7x1 conversion:enhance _:node17viq79l7x5 .
+_:node17vmod8aux1 conversion:enhance _:node17vmod8aux5 .
 
-_:node17viq79l7x6 ov:csvCol "3"^^xsd:integer ;
+_:node17vmod8aux6 ov:csvCol "3"^^xsd:integer ;
 	ov:csvHeader "Fax" ;
 	conversion:label "Fax" ;
 	conversion:comment "" ;
 	conversion:range rdfs:Literal .
 
-_:node17viq79l7x1 conversion:enhance _:node17viq79l7x6 .
+_:node17vmod8aux1 conversion:enhance _:node17vmod8aux6 .
 
-_:node17viq79l7x7 ov:csvCol "4"^^xsd:integer ;
+_:node17vmod8aux7 ov:csvCol "4"^^xsd:integer ;
 	ov:csvHeader "Email" ;
 	conversion:label "Email" ;
 	conversion:comment "" ;
 	conversion:range rdfs:Literal .
 
-_:node17viq79l7x1 conversion:enhance _:node17viq79l7x7 .
+_:node17vmod8aux1 conversion:enhance _:node17vmod8aux7 .
 
-_:node17viq79l7x8 ov:csvCol "5"^^xsd:integer ;
+_:node17vmod8aux8 ov:csvCol "5"^^xsd:integer ;
 	ov:csvHeader "Homepage" ;
 	conversion:label "Homepage" ;
 	conversion:comment "" ;
 	conversion:range rdfs:Literal .
 
-_:node17viq79l7x1 conversion:enhance _:node17viq79l7x8 .
+_:node17vmod8aux1 conversion:enhance _:node17vmod8aux8 .
 
-<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/enhancement/1> conversion:conversion_process _:node17viq79l7x1 .
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/enhancement/1> conversion:conversion_process _:node17vmod8aux1 .
 
 <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/subset/meta> a ctg-albany-edu_vocab:Dataset , conversion:Dataset , conversion:MetaDataset , void:Dataset ;
 	conversion:base_uri "http://ichoose.tw.rpi.edu" ;
 	conversion:source_identifier "ctg-albany-edu" ;
 	conversion:dataset_identifier "flo-certification" ;
-	dcterms:modified "2013-07-16T04:01:15.427-05:00"^^xsd:dateTime ;
+	dcterms:modified "2013-07-17T16:46:31.350-05:00"^^xsd:dateTime ;
 	foaf:isPrimaryTopicOf <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset_page/flo-certification/subset/meta> ;
 	void:dataDump <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/file/flo-certification/version/2013-Jul-11/conversion/ctg-albany-edu-flo-certification-2013-Jul-11.void.ttl.gz> .
 
-<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/enhancement/1> conversion:num_triples "122"^^xsd:integer ;
-	void:triples "122"^^xsd:integer ;
-	prov:wasGeneratedBy provenance_1:translationActivity_278284f2-22a6-463c-9f91-af3273441f4c .
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/enhancement/1> conversion:num_triples "123"^^xsd:integer ;
+	void:triples "123"^^xsd:integer ;
+	prov:wasGeneratedBy provenance_1:translationActivity_2fe0a4e5-759b-42ed-a995-db33f8581345 .
 
-provenance_1:translationActivity_278284f2-22a6-463c-9f91-af3273441f4c a prov:Activity , pml:TranslationActivity ;
-	conversion:triples_per_minute "55037.593984962405"^^xsd:double ;
-	prov:used e1:email , void:inDataset , ov:csvRow , e1:phone , e1:fax , con:preferredURI , dcterms:isReferencedBy , e1:id , e1:homepage ;
+provenance_1:translationActivity_2fe0a4e5-759b-42ed-a995-db33f8581345 a prov:Activity , pml:TranslationActivity ;
+	conversion:triples_per_minute "56335.87786259542"^^xsd:double ;
+	prov:used e1:email , void:inDataset , ov:csvRow , e1:phone , e1:applicant , e1:fax , con:preferredURI , dcterms:isReferencedBy , e1:homepage ;
 	void:vocabulary <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/enhancement/1/> , <http://rdfs.org/ns/void#> , <http://open.vocab.org/terms/> , <http://www.w3.org/2000/10/swap/pim/contact#> , <http://purl.org/dc/terms/> .
 
 <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/subset/meta> conversion:uses_predicate ov:csvRow , <http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> , void:dataDump , conversion:VersionedDataset , rdfs:label , foaf:topic , foaf:isPrimaryTopicOf , dcterms:author , doap:implements , pmlj:hasInferenceEngine , dcterms:identifier , doap:revision , dcterms:modified , conversion:enhancement_layer , vann:preferredNamespaceUri , rdfs:isDefinedBy , doap:helper , conversion:uses_predicate , ov:csvCol , doap:audience , doap:description , dcterms:format , doap:documenter , conversion:conversion_identifier , rdfs:range , conversion:version_identifier , pmlp:hasFormat , doap:homepage , conversion:num_triples , doap:shortdesc , pmlj:hasConclusion , dcterms:isReferencedBy , pmlj:hasAntecedentList , foaf:primaryTopic , conversion:base_uri , <http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> , void:exampleResource , conversion:dataset_identifier , conversion:enhancement_identifier , rdf:type , void:subset , con:preferredURI , void:triples , doap:browse , doap:developer , ov:csvHeader , rdfs:seeAlso , doap:maintainer , conversion:enhances , conversion:source_identifier , conversion:LayerDataset , dcterms:contributor , doap:platform , vann:preferredNamespacePrefix , pmlj:isConsequentOf , <http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> , void:vocabulary , dcterms:version ;
@@ -1026,4 +1026,4 @@ void:DatasetDescription rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
 
 conversion:Dataset prov:wasAttributedTo <http://purl.org/twc> .
 
-<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/enhancement/1> rdfs:comment "hash: 3be82ce249192c1309e9eee757005c07ee8b1ed912" .
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/enhancement/1> rdfs:comment "hash: 3a84f793e741feec103415555a0dcd65e32abd288a" .

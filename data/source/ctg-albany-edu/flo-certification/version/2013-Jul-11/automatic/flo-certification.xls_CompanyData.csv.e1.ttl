@@ -49,16 +49,16 @@
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix time: <http://www.w3.org/2006/time#> .
 
-e1:id a rdf:Property ;
+e1:applicant a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "1"^^xsd:integer ;
 	ov:csvHeader "ID" ;
 	conversion:enhancement_layer "1" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/enhancement/1> ;
-	rdfs:label "ID" ;
+	rdfs:label "Applicant" ;
 	rdfs:range rdfs:Literal ;
 	rdfs:comment "Individual identification number for entity being certified; particular to the standard body" ;
-	conversion:enhances raw:id .
+	conversion:enhances raw:id , raw:applicant .
 
 e1:vatnumber a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
@@ -96,7 +96,7 @@ flo-certification:FLO_1341 rdfs:label "FLO 1341" ;
 	coin:slug "FLO_1341" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 1341" ;
+	e1:applicant "FLO 1341" ;
 	e1:vatnumber "n/a" ;
 	e1:legalstatus "Trading Limited Incorporation" ;
 	e1:companyname "Cooperative Coffees Inc." ;
@@ -107,7 +107,7 @@ flo-certification:FLO_2178 rdfs:label "FLO 2178" ;
 	coin:slug "FLO_2178" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 2178" ;
+	e1:applicant "FLO 2178" ;
 	e1:vatnumber "n/a" ;
 	e1:legalstatus "Trading Limited Incorporation" ;
 	e1:companyname "Importadores y Distribuidores de la Materia Para America Latina" ;
@@ -118,7 +118,7 @@ flo-certification:FLO_3341 rdfs:label "FLO 3341" ;
 	coin:slug "FLO_3341" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 3341" ;
+	e1:applicant "FLO 3341" ;
 	e1:vatnumber "n/a" ;
 	e1:legalstatus "Trading Limited Incorporation" ;
 	e1:companyname "Importadores de la Café Justo de la Paz" ;
@@ -129,7 +129,7 @@ flo-certification:FLO_7855 rdfs:label "FLO 7855" ;
 	coin:slug "FLO_7855" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 7855" ;
+	e1:applicant "FLO 7855" ;
 	e1:vatnumber "n/a" ;
 	e1:legalstatus "Cooperative" ;
 	e1:companyname "Union de Cooperativas Tosepan Titataniske" ;
@@ -140,7 +140,7 @@ flo-certification:FLO_2215 rdfs:label "FLO 2215" ;
 	coin:slug "FLO_2215" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 2215" ;
+	e1:applicant "FLO 2215" ;
 	e1:vatnumber "n/a" ;
 	e1:legalstatus "Cooperative" ;
 	e1:companyname "Union de Productores Maya Vinic" ;
@@ -151,7 +151,7 @@ flo-certification:FLO_3992 rdfs:label "FLO 3992" ;
 	coin:slug "FLO_3992" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 3992" ;
+	e1:applicant "FLO 3992" ;
 	e1:vatnumber "n/a" ;
 	e1:legalstatus "Cooperative" ;
 	e1:companyname "Comité Campesino del Altiplano Campesino del Altiplano (CCDA) Café Justifia" ;

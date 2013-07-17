@@ -26,39 +26,39 @@
 @prefix raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/raw/> .
 @prefix e1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/enhancement/1/> .
 @prefix flo-certification_global_value: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/> .
-@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix pml: <http://provenanceweb.org/ns/pml#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix dbpediaprop: <http://dbpedia.org/property/> .
-@prefix dbpedia: <http://dbpedia.org/resource/> .
-@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
-@prefix org: <http://www.w3.org/ns/org#> .
-@prefix sioc: <http://rdfs.org/sioc/ns#> .
-@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
-@prefix time: <http://www.w3.org/2006/time#> .
-@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
-@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
-@prefix bibo: <http://purl.org/ontology/bibo/> .
-@prefix vsr: <http://purl.org/twc/vocab/vsr#> .
-@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix sio: <http://semanticscience.org/resource/> .
-@prefix geonamesid: <http://sws.geonames.org/> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
 @prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
+@prefix vsr: <http://purl.org/twc/vocab/vsr#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
+@prefix pml: <http://provenanceweb.org/ns/pml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geonamesid: <http://sws.geonames.org/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
 @prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dbpediaprop: <http://dbpedia.org/property/> .
 
-e1:id a rdf:Property ;
+e1:applicant a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "1"^^xsd:integer ;
 	ov:csvHeader "ID" ;
 	conversion:enhancement_layer "1" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/enhancement/1> ;
-	rdfs:label "ID" ;
+	rdfs:label "Applicant" ;
 	rdfs:range rdfs:Literal ;
 	rdfs:comment "This is the individual identification for each entity being certified; particular to the standard body" ;
-	conversion:enhances raw:id .
+	conversion:enhances raw:id , raw:applicant .
 
 e1:certificationdate a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
@@ -125,7 +125,7 @@ flo-certification:FLO_1341 rdfs:label "FLO 1341" ;
 	coin:slug "FLO_1341" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 1341" ;
+	e1:applicant "FLO 1341" ;
 	e1:certificationdate "26/03/2007" ;
 	e1:service "Trade-Payer" ;
 	e1:informationonservice "Licensee" ;
@@ -139,7 +139,7 @@ flo-certification:FLO_2178 rdfs:label "FLO 2178" ;
 	coin:slug "FLO_2178" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 2178" ;
+	e1:applicant "FLO 2178" ;
 	e1:certificationdate "06/06/2008" ;
 	e1:service "Trade-Payer" ;
 	e1:informationonservice "Licensee" ;
@@ -153,7 +153,7 @@ flo-certification:FLO_3341 rdfs:label "FLO 3341" ;
 	coin:slug "FLO_3341" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 3341" ;
+	e1:applicant "FLO 3341" ;
 	e1:certificationdate "18/08/2008" ;
 	e1:service "Trade-Payer" ;
 	e1:informationonservice "Licensee" ;
@@ -167,7 +167,7 @@ flo-certification:FLO_7855 rdfs:label "FLO 7855" ;
 	coin:slug "FLO_7855" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 7855" ;
+	e1:applicant "FLO 7855" ;
 	e1:certificationdate "21/05/2010" ;
 	e1:service "Small Producers Organization" ;
 	e1:informationonservice "Generic FAIRTRADE Trade" ;
@@ -181,7 +181,7 @@ flo-certification:FLO_2215 rdfs:label "FLO 2215" ;
 	coin:slug "FLO_2215" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 2215" ;
+	e1:applicant "FLO 2215" ;
 	e1:certificationdate "14/11/2011" ;
 	e1:service "Small Producers Organization" ;
 	e1:informationonservice "Generic FAIRTRADE Trade" ;
@@ -195,7 +195,7 @@ flo-certification:FLO_3990 rdfs:label "FLO 3990" ;
 	coin:slug "FLO_3990" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 3990" ;
+	e1:applicant "FLO 3990" ;
 	e1:certificationdate "15/09/2011" ;
 	e1:service "Small Producers Organization" ;
 	e1:informationonservice "Generic FAIRTRADE Trade" ;
@@ -231,28 +231,28 @@ flo-certification:FLO_3990 rdfs:label "FLO 3990" ;
 @prefix raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/raw/> .
 @prefix e1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/enhancement/1/> .
 @prefix flo-certification_global_value: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/> .
-@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix pml: <http://provenanceweb.org/ns/pml#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix dbpediaprop: <http://dbpedia.org/property/> .
-@prefix dbpedia: <http://dbpedia.org/resource/> .
-@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
-@prefix org: <http://www.w3.org/ns/org#> .
-@prefix sioc: <http://rdfs.org/sioc/ns#> .
-@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
-@prefix time: <http://www.w3.org/2006/time#> .
-@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
-@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
-@prefix bibo: <http://purl.org/ontology/bibo/> .
-@prefix vsr: <http://purl.org/twc/vocab/vsr#> .
-@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix sio: <http://semanticscience.org/resource/> .
-@prefix geonamesid: <http://sws.geonames.org/> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
 @prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
+@prefix vsr: <http://purl.org/twc/vocab/vsr#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
+@prefix pml: <http://provenanceweb.org/ns/pml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geonamesid: <http://sws.geonames.org/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
 @prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dbpediaprop: <http://dbpedia.org/property/> .
 
 flo-certification:thing_2 con:preferredURI flo-certification:FLO_1341 .
 

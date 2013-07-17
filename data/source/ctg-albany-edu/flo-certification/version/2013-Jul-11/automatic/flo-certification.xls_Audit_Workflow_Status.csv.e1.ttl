@@ -119,15 +119,15 @@ e1:status_nc a rdf:Property ;
 	rdfs:range rdfs:Literal ;
 	conversion:enhances raw:status_nc .
 
-e1:auditno a rdf:Property ;
+e1:audit a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "8"^^xsd:integer ;
 	ov:csvHeader "AuditNo" ;
 	conversion:enhancement_layer "1" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/enhancement/1> ;
-	rdfs:label "AuditNo" ;
+	rdfs:label "Audit" ;
 	rdfs:range rdfs:Literal ;
-	conversion:enhances raw:auditno .
+	conversion:enhances raw:auditno , raw:audit .
 
 flo-certification:AO-00023 rdfs:label "AO-00023" ;
 	dcterms:identifier "AO-00023" ;
@@ -141,7 +141,7 @@ flo-certification:AO-00023 rdfs:label "AO-00023" ;
 	e1:nonconformity_analyst "n/a" ;
 	e1:reasonforchange_nc "n/a" ;
 	e1:status_nc "Fulfilled" ;
-	e1:auditno "AO-00023" ;
+	e1:audit "AO-00023" ;
 	ov:csvRow "2"^^xsd:integer .
 
 flo-certification:AO-00245 rdfs:label "AO-00245" ;
@@ -156,7 +156,7 @@ flo-certification:AO-00245 rdfs:label "AO-00245" ;
 	e1:nonconformity_analyst "evidence of children perform work during non-suitable time more frequently" ;
 	e1:reasonforchange_nc "mismatch between salary log and time log indicate children perform work during non suitable time more hours than previously noted" ;
 	e1:status_nc "additional explanation required" ;
-	e1:auditno "AO-00245" ;
+	e1:audit "AO-00245" ;
 	ov:csvRow "3"^^xsd:integer ;
 	e1:cc_no "3.3.3.04" ;
 	e1:compliancecriteria "if in the past you or your members employed children under 15 for any type of work, or children under 18 for dangerous and exploitative work, you have ensured that those children do not enter or are at risk of entering into even worse forms of labour" ;

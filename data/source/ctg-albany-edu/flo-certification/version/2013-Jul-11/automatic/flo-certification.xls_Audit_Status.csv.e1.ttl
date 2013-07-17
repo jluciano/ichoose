@@ -49,16 +49,16 @@
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix time: <http://www.w3.org/2006/time#> .
 
-e1:id a rdf:Property ;
+e1:applicant a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "1"^^xsd:integer ;
 	ov:csvHeader "ID" ;
 	conversion:enhancement_layer "1" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/enhancement/1> ;
-	rdfs:label "ID" ;
+	rdfs:label "Applicant" ;
 	rdfs:range rdfs:Literal ;
 	rdfs:comment "This is the individual identification for each entity being certified; particular to the standard body" ;
-	conversion:enhances raw:id .
+	conversion:enhances raw:id , raw:applicant .
 
 e1:audityear a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
@@ -70,15 +70,15 @@ e1:audityear a rdf:Property ;
 	rdfs:range rdfs:Literal ;
 	conversion:enhances raw:audityear .
 
-e1:auditno a rdf:Property ;
+e1:audit a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "3"^^xsd:integer ;
 	ov:csvHeader "AuditNo" ;
 	conversion:enhancement_layer "1" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/conversion/enhancement/1> ;
-	rdfs:label "AuditNo" ;
+	rdfs:label "Audit" ;
 	rdfs:range rdfs:Literal ;
-	conversion:enhances raw:auditno .
+	conversion:enhances raw:auditno , raw:audit .
 
 e1:auditdate a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
@@ -165,9 +165,9 @@ flo-certification:FLO_1341 rdfs:label "FLO 1341" ;
 	coin:slug "FLO_1341" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 1341" ;
+	e1:applicant "FLO 1341" ;
 	e1:audityear "2010" ;
-	e1:auditno "AO-00158" ;
+	e1:audit "AO-00158" ;
 	e1:auditdate "20/03/2010" ;
 	e1:audittype "Surveillance" ;
 	e1:cycle "6th year" ;
@@ -183,9 +183,9 @@ flo-certification:FLO_2178 rdfs:label "FLO 2178" ;
 	coin:slug "FLO_2178" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 2178" ;
+	e1:applicant "FLO 2178" ;
 	e1:audityear "2011" ;
-	e1:auditno "AO-00078" ;
+	e1:audit "AO-00078" ;
 	e1:auditdate "06/06/2011" ;
 	e1:audittype "Surveillance" ;
 	e1:cycle "6th year" ;
@@ -201,9 +201,9 @@ flo-certification:FLO_3341 rdfs:label "FLO 3341" ;
 	coin:slug "FLO_3341" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 3341" ;
+	e1:applicant "FLO 3341" ;
 	e1:audityear "2011" ;
-	e1:auditno "AO-00145" ;
+	e1:audit "AO-00145" ;
 	e1:auditdate "20/08/2011" ;
 	e1:audittype "Surveillance" ;
 	e1:cycle "6th year" ;
@@ -219,9 +219,9 @@ flo-certification:FLO_7855 rdfs:label "FLO 7855" ;
 	coin:slug "FLO_7855" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 7855" ;
+	e1:applicant "FLO 7855" ;
 	e1:audityear "2011" ;
-	e1:auditno "AO-00023" ;
+	e1:audit "AO-00023" ;
 	e1:auditdate "20/05/2011" ;
 	e1:audittype "Surveillance" ;
 	e1:cycle "1st year" ;
@@ -237,9 +237,9 @@ flo-certification:FLO_2215 rdfs:label "FLO 2215" ;
 	coin:slug "FLO_2215" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 2215" ;
+	e1:applicant "FLO 2215" ;
 	e1:audityear "2012" ;
-	e1:auditno "AO-00245" ;
+	e1:audit "AO-00245" ;
 	e1:auditdate "14/11/2012" ;
 	e1:audittype "Surveillance" ;
 	e1:cycle "1st year" ;
@@ -255,9 +255,9 @@ flo-certification:FLO_3992 rdfs:label "FLO 3992" ;
 	coin:slug "FLO_3992" ;
 	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
 	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11> ;
-	e1:id "FLO 3992" ;
+	e1:applicant "FLO 3992" ;
 	e1:audityear "2012" ;
-	e1:auditno "AO-00220" ;
+	e1:audit "AO-00220" ;
 	e1:auditdate "15/09/2012" ;
 	e1:audittype "Surveillance" ;
 	e1:cycle "1st year" ;
