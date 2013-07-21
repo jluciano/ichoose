@@ -6,7 +6,7 @@
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-	<!ENTITY cert "http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification# >
+<!ENTITY cert "http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#" >
     <!ENTITY CTG-Guidelines "http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/CTG-Guidelines#" >
 ]>
 
