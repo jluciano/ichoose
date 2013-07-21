@@ -36,7 +36,7 @@
 @prefix ov:            <http://open.vocab.org/terms/> .
 @prefix conversion:    <http://purl.org/twc/vocab/conversion/> .
 @prefix :              <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/params/enhancement/1/> .
-@prefix cert:          <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/trust_ontology#> .
+@prefix cert:          <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> .
 
 
 #:a_bundle
@@ -80,7 +80,7 @@
       #];
       conversion:enhance [
          conversion:domain_template "[#8]";
-      #   conversion:domain_name     "Thing";
+         conversion:domain_name     cert:Audit;
       ];
       #conversion:enhance [
       #   conversion:class_name "Thing";
@@ -102,8 +102,8 @@
          ov:csvCol          2;
          ov:csvHeader       "CC_No";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "CC_No";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:label   "NonConformity_CC_No";
+         #conversion:equivalent_property ;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -114,7 +114,7 @@
          ov:csvCol          3;
          ov:csvHeader       "ComplianceCriteria";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "ComplianceCriteria";
+         conversion:label   "NonConformity_CC";
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
@@ -127,7 +127,7 @@
          ov:csvHeader       "Non-Conformity_Audit";
          #conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "Non-Conformity_Audit";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property cert:hasNonConformity;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -139,7 +139,7 @@
          ov:csvHeader       "NonConformity_Analyst";
          #conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "NonConformity_Analyst";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";

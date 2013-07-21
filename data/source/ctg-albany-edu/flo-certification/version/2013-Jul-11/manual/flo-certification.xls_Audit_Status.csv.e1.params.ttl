@@ -36,7 +36,7 @@
 @prefix ov:            <http://open.vocab.org/terms/> .
 @prefix conversion:    <http://purl.org/twc/vocab/conversion/> .
 @prefix :              <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/2013-Jul-11/params/enhancement/1/> .
-@prefix cert:	       <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/trust_ontology#> .
+@prefix cert:	       <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> .
 
 #:a_bundle
 #   a conversion:ImplicitBundle;
@@ -114,7 +114,7 @@
          ov:csvHeader       "AuditNo";
          #conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "Audit";
-         #conversion:equivalent_property rdf:type;
+         conversion:equivalent_property cert:hasAudit;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -126,7 +126,7 @@
          ov:csvHeader       "AuditDate";
          #conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "AuditDate";
-         #conversion:equivalent_property dcterms:identifier;
+         #conversion:equivalent_property  cert:hasDate;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -174,7 +174,7 @@
          ov:csvHeader       "Auditor";
          #conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "Auditor";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property cert:hasAuditor;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -186,7 +186,7 @@
          ov:csvHeader       "CertificationOfficer";
          #conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "CertificationOfficer";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property cert:hasCertificationOfficer;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -210,7 +210,7 @@
          ov:csvHeader       "CertificationBody";
          #conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "CertificationBody";
-         #conversion:equivalent_property rdf:type;
+         conversion:equivalent_property  cert:hasCertificationBody;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
