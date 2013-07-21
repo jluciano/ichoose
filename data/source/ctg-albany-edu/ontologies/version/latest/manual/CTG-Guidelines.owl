@@ -59,7 +59,7 @@
 
     <!-- http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/CTG-Guidelines#hasAuditor -->
 
-    <owl:ObjectProperty rdf:about="&CTG-cert;hasAuditor">
+    <owl:ObjectProperty rdf:about="&cert;hasAuditor">
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -150,7 +150,7 @@
     <owl:Class rdf:about="&CTG-Guidelines;DateOfInspection">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource=""http://purl.org/dc/terms/date"/>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/date"/>
                 <owl:someValuesFrom rdf:resource="&xsd;dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
