@@ -89,7 +89,7 @@
          ov:csvHeader       "StandardBody";
          #conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "StandardBody";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property cert:hasStandardSettingBody;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "Body in charge of setting  standard which will be used for certification";
          #conversion:range_template  "[/sd]thing[.]";
