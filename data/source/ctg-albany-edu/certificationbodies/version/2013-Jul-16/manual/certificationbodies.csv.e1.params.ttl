@@ -36,7 +36,7 @@
 @prefix ov:            <http://open.vocab.org/terms/> .
 @prefix conversion:    <http://purl.org/twc/vocab/conversion/> .
 @prefix :              <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16/params/enhancement/1/> .
-
+@prefix cert: 
 
 #:a_bundle
 #   a conversion:ImplicitBundle;
@@ -78,7 +78,7 @@
       #];
       conversion:enhance [
          conversion:domain_template "[#2]";
-      #   conversion:domain_name     "Thing";
+        conversion:domain_name     "CertificationBody";
       ];
       #conversion:enhance [
       #   conversion:class_name "Thing";
@@ -91,7 +91,7 @@
          conversion:label   "StandardBody";
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
-         conversion:comment "Body in charge of standard which will be used for certification";
+         conversion:comment "Body in charge of setting  standard which will be used for certification";
          #conversion:range_template  "[/sd]thing[.]";
          conversion:range   todo:Literal;
          #conversion:range_name  "Thing";
@@ -103,7 +103,7 @@
          conversion:label   "CertificationBody";
          conversion:equivalent_property rdf:type;
          #conversion:subproperty_of      dcterms:identifier;
-         conversion:comment "Body in charge of undertaking the certification process";
+         conversion:comment "Body in charge of managing the certification process";
          #conversion:range_template  "[/sd]thing[.]";
          conversion:range   todo:Literal;
          #conversion:range_name  "Thing";
@@ -124,7 +124,7 @@
          ov:csvCol          4;
          ov:csvHeader       "Accreditation";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Accreditation";
+         conversion:label   "hasAccreditationBody";
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
