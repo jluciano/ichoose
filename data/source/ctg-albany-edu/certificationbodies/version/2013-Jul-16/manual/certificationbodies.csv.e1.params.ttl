@@ -36,7 +36,7 @@
 @prefix ov:            <http://open.vocab.org/terms/> .
 @prefix conversion:    <http://purl.org/twc/vocab/conversion/> .
 @prefix :              <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/certificationbodies/version/2013-Jul-16/params/enhancement/1/> .
-@prefix cert: 
+@prefix cert:          <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> 
 
 #:a_bundle
 #   a conversion:ImplicitBundle;
@@ -78,7 +78,7 @@
       #];
       conversion:enhance [
          conversion:domain_template "[#2]";
-        conversion:domain_name     "CertificationBody";
+        conversion:domain_name     cert:CertificationBody;
       ];
       #conversion:enhance [
       #   conversion:class_name "Thing";
@@ -101,7 +101,7 @@
          ov:csvHeader       "CertificationBody";
          #conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "CertificationBody";
-         conversion:equivalent_property rdf:type;
+         #conversion:equivalent_property rdf:type;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "Body in charge of managing the certification process";
          #conversion:range_template  "[/sd]thing[.]";
@@ -125,7 +125,7 @@
          ov:csvHeader       "Accreditation";
          #conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "hasAccreditationBody";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property cert:hasAccreditationBody;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
