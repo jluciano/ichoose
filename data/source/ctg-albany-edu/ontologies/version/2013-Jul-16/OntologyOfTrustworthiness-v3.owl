@@ -1,0 +1,1624 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-64 "http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#"
+     xml:base="http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-64="http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#dateTime -->
+
+    <rdf:Description rdf:about="&xsd;dateTime">
+        <owl:equivalentClass rdf:resource="&xsd;dateTime"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#hasAccreditationBody -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;hasAccreditationBody"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#hasAuditAuditor -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;hasAuditAuditor">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#hasAuditDate -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;hasAuditDate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#hasCertificationBody -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;hasCertificationBody"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#hasCertificationCriteria -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;hasCertificationCriteria"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#hasCertificationResult -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;hasCertificationResult">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#hasCertifyingAgent -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;hasCertifyingAgent">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#hasCharacteristic -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;hasCharacteristic"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#hasLegalStatus -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;hasLegalStatus"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#hasLevelOfTrustworthiness -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;hasLevelOfTrustworthiness"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#hasNonConformityTo -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;hasNonConformityTo">
+        <owl:inverseOf rdf:resource="&untitled-ontology-64;isNonConformityOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#hasStandardBody -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;hasStandardBody"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#isNonConformityOf -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;isNonConformityOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#isSignedBy -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;isSignedBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#Date -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-64;Date"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#hasAccreditationFrom -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-64;hasAccreditationFrom"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#hasAuditNo -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-64;hasAuditNo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#hasCertificationCriteriaNo -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-64;hasCertificationCriteriaNo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#hasCertifier -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-64;hasCertifier"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#hasStandardNo -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-64;hasStandardNo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#hasStandardSetter -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-64;hasStandardSetter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#isMemberOf -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-64;isMemberOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#AccreditationBody -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;AccreditationBody">
+        <owl:disjointWith rdf:resource="&untitled-ontology-64;CertificationBody"/>
+        <owl:disjointWith rdf:resource="&untitled-ontology-64;StandardBody"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#Audit -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Audit">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasAuditNo"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasAuditAuditor"/>
+                <owl:someValuesFrom rdf:resource="&untitled-ontology-64;Auditor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;Date"/>
+                <owl:someValuesFrom rdf:resource="&xsd;dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#Auditor -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Auditor">
+        <owl:disjointWith rdf:resource="&untitled-ontology-64;CertificationOfficer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#Certification -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Certification"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#CertificationBody -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;CertificationBody"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#CertificationCriteria -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;CertificationCriteria">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;Certification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#CertificationCriteriaChildLaborCriteria -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;CertificationCriteriaChildLaborCriteria">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;CertificationCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#CertificationCriteriaEnsuringHealthyAndSafetyWorkingCondition -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;CertificationCriteriaEnsuringHealthyAndSafetyWorkingCondition">
+        <owl:equivalentClass rdf:resource="&untitled-ontology-64;CertificationStandardChildLaborStandard"/>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;CertificationCriteriaChildLaborCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#CertificationCriteriaExistenceOfControlMeasureForChildLaborAbuse -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;CertificationCriteriaExistenceOfControlMeasureForChildLaborAbuse">
+        <owl:equivalentClass rdf:resource="&untitled-ontology-64;CertificationStandardChildLaborStandard"/>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;CertificationCriteriaChildLaborCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#CertificationCriteriaNoEmploymentOfChildrenUnderAge15 -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;CertificationCriteriaNoEmploymentOfChildrenUnderAge15">
+        <owl:equivalentClass rdf:resource="&untitled-ontology-64;CertificationStandardChildLaborStandard"/>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;CertificationCriteriaChildLaborCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#CertificationCriteriaNoWorseFormOfLabor -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;CertificationCriteriaNoWorseFormOfLabor">
+        <owl:equivalentClass rdf:resource="&untitled-ontology-64;CertificationStandardChildLaborStandard"/>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;CertificationCriteriaChildLaborCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#CertificationCriteriaSuitableWorkConditionAndHour -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;CertificationCriteriaSuitableWorkConditionAndHour">
+        <owl:equivalentClass rdf:resource="&untitled-ontology-64;CertificationStandardChildLaborStandard"/>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;CertificationCriteriaChildLaborCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#CertificationNo -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;CertificationNo">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-64;3.3.3.02"/>
+                    <rdf:Description rdf:about="&untitled-ontology-64;3.3.3.01"/>
+                    <rdf:Description rdf:about="&untitled-ontology-64;3.3.3.05"/>
+                    <rdf:Description rdf:about="&untitled-ontology-64;3.3.3.04"/>
+                    <rdf:Description rdf:about="&untitled-ontology-64;3.3.3.03"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;Certification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#CertificationOfficer -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;CertificationOfficer">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;Certification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#CertificationResult -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;CertificationResult">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;Certification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;isSignedBy"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;CertificationOfficer"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;Date"/>
+                <owl:someValuesFrom rdf:resource="&xsd;dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#CertificationStandard -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;CertificationStandard">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;Standard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#CertificationStandardChildLaborStandard -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;CertificationStandardChildLaborStandard">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;CertificationStandard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#InternalCertificationBody -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;InternalCertificationBody">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;CertificationBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasAuditAuditor"/>
+                <owl:someValuesFrom rdf:resource="&untitled-ontology-64;Auditor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasAccreditationBody"/>
+                <owl:someValuesFrom rdf:resource="&untitled-ontology-64;AccreditationBody"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#LevelOfTrustworthiness -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;LevelOfTrustworthiness"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#NonConformityToCertificationCriteria -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;NonConformityToCertificationCriteria">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;Certification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasNonConformityTo"/>
+                <owl:someValuesFrom rdf:resource="&untitled-ontology-64;NonConformityToCertificationCriteria"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#NonConformityToCertificationStandard -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;NonConformityToCertificationStandard">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;Standard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#NonConformityToChildLaborCriteria -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;NonConformityToChildLaborCriteria">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;NonConformityToCertificationCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#NonConformityToChildLaborStandard -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;NonConformityToChildLaborStandard">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;NonConformityToCertificationStandard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#NonConformityToEnsuringHealthyAndSafetyWorkingCondition -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;NonConformityToEnsuringHealthyAndSafetyWorkingCondition">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;NonConformityToChildLaborCriteria"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&untitled-ontology-64;hasCertificationCriteriaNo"/>
+                        <owl:hasValue>3.3.3.03</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&untitled-ontology-64;hasStandardNo"/>
+                        <owl:hasValue>3.3.9</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#NonConformityToExistenceOfControlMeasureForChildLaborAbuse -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;NonConformityToExistenceOfControlMeasureForChildLaborAbuse">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-64;NonConformityToChildLaborStandard"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&untitled-ontology-64;hasNonConformityTo"/>
+                        <owl:hasValue rdf:resource="&untitled-ontology-64;EnsureControlMeasureForChildLaborAbuseExist"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;NonConformityToChildLaborCriteria"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&untitled-ontology-64;hasCertificationCriteriaNo"/>
+                        <owl:hasValue>3.3.3.05</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&untitled-ontology-64;hasStandardNo"/>
+                        <owl:hasValue>3.3.11</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#NonConformityToNoEmploymentOfChildrenUnderAge15 -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;NonConformityToNoEmploymentOfChildrenUnderAge15">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;NonConformityToChildLaborCriteria"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&untitled-ontology-64;hasCertificationCriteriaNo"/>
+                        <owl:hasValue>3.3.3.01</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&untitled-ontology-64;hasStandardNo"/>
+                        <owl:hasValue>3.3.7</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#NonConformityToNoWorseFormOfLabor -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;NonConformityToNoWorseFormOfLabor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-64;NonConformityToChildLaborStandard"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&untitled-ontology-64;hasNonConformityTo"/>
+                        <owl:hasValue rdf:resource="&untitled-ontology-64;EnsureNoWorseFormOfLabor"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;NonConformityToChildLaborCriteria"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&untitled-ontology-64;hasCertificationCriteriaNo"/>
+                        <owl:hasValue>3.3.3.04</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&untitled-ontology-64;hasStandardNo"/>
+                        <owl:hasValue>3.3.10</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#NonConformityToSuitableWorkConditionAndHour -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;NonConformityToSuitableWorkConditionAndHour">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;NonConformityToChildLaborCriteria"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&untitled-ontology-64;hasCertificationCriteriaNo"/>
+                        <owl:hasValue>3.3.3.02</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&untitled-ontology-64;hasStandardNo"/>
+                        <owl:hasValue>3.3.8</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#Standard -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Standard"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#StandardBody -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;StandardBody"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#StandardNo -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;StandardNo">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-64;3.3.9"/>
+                    <rdf:Description rdf:about="&untitled-ontology-64;3.3.8"/>
+                    <rdf:Description rdf:about="&untitled-ontology-64;3.3.7"/>
+                    <rdf:Description rdf:about="&untitled-ontology-64;3.3.11"/>
+                    <rdf:Description rdf:about="&untitled-ontology-64;3.3.10"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;Standard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#ThirdPartyCertificationBody -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;ThirdPartyCertificationBody">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;CertificationBody"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasAccreditationBody"/>
+                <owl:someValuesFrom rdf:resource="&untitled-ontology-64;AccreditationBody"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasAuditAuditor"/>
+                <owl:someValuesFrom rdf:resource="&untitled-ontology-64;Auditor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasStandardBody"/>
+                <owl:someValuesFrom rdf:resource="&untitled-ontology-64;StandardBody"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#TrustworthinessGradeA -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;TrustworthinessGradeA">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;LevelOfTrustworthiness"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasAuditAuditor"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;Auditor"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasCertificationResult"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;CertificationResult"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasCertifyingAgent"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;CertificationOfficer"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasCertificationBody"/>
+                <owl:allValuesFrom rdf:resource="&untitled-ontology-64;ThirdPartyCertificationBody"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasCertificationCriteria"/>
+                <owl:someValuesFrom rdf:resource="&untitled-ontology-64;CertificationCriteria"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasAccreditationBody"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;AccreditationBody"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasStandardBody"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;StandardBody"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&untitled-ontology-64;TrustworthinessGradeB"/>
+        <owl:disjointWith rdf:resource="&untitled-ontology-64;TrustworthinessGradeC"/>
+        <owl:disjointWith rdf:resource="&untitled-ontology-64;TrustworthinessGradeD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#TrustworthinessGradeB -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;TrustworthinessGradeB">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;LevelOfTrustworthiness"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasCertifyingAgent"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;CertificationOfficer"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasStandardBody"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;StandardBody"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasCertificationResult"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;CertificationResult"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasAccreditationBody"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;AccreditationBody"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasCertificationBody"/>
+                <owl:allValuesFrom rdf:resource="&untitled-ontology-64;InternalCertificationBody"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasAuditAuditor"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;Auditor"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasCertificationCriteria"/>
+                <owl:someValuesFrom rdf:resource="&untitled-ontology-64;CertificationCriteria"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&untitled-ontology-64;TrustworthinessGradeC"/>
+        <owl:disjointWith rdf:resource="&untitled-ontology-64;TrustworthinessGradeD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#TrustworthinessGradeC -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;TrustworthinessGradeC">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;LevelOfTrustworthiness"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasStandardBody"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;StandardBody"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasCertifyingAgent"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;CertificationOfficer"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasCertificationBody"/>
+                <owl:allValuesFrom rdf:resource="&untitled-ontology-64;StandardBody"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasAuditAuditor"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;Auditor"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasCertificationResult"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;CertificationResult"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasCertificationCriteria"/>
+                <owl:someValuesFrom rdf:resource="&untitled-ontology-64;CertificationCriteria"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasAccreditationBody"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;AccreditationBody"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#TrustworthinessGradeD -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;TrustworthinessGradeD">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;LevelOfTrustworthiness"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasAuditAuditor"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;Auditor"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasStandardBody"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;StandardBody"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasCertificationResult"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;CertificationResult"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasCertificationBody"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;CertificationBody"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasCertificationCriteria"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;CertificationCriteria"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasAccreditationBody"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;AccreditationBody"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&untitled-ontology-64;hasCertifyingAgent"/>
+                <owl:onClass rdf:resource="&untitled-ontology-64;CertificationOfficer"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#0 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;0"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#29717 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;29717"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#29870 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;29870"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#3.3.10 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;3.3.10"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#3.3.11 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;3.3.11"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#3.3.3.01 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;3.3.3.01"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#3.3.3.02 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;3.3.3.02"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#3.3.3.03 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;3.3.3.03"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#3.3.3.04 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;3.3.3.04"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#3.3.3.05 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;3.3.3.05"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#3.3.7 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;3.3.7"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#3.3.8 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;3.3.8"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#3.3.9 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;3.3.9"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#52200889002 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;52200889002"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#52200889004 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;52200889004"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#52919223442 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;52919223442"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#52919223447 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;52919223447"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#52919554738 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;52919554738"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#52919554788 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;52919554788"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#653286 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;653286"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#73565 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;73565"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#770100 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;770100"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#770201 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;770201"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#770202 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;770202"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#770203 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;770203"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#770204 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;770204"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#770301 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;770301"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#770302 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;770302"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#770303 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;770303"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#770304 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;770304"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#770401 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;770401"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#770402 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;770402"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#770403 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;770403"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#770404 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;770404"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#Bio_Schaftung -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;Bio_Schaftung"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#BuysProductOfOriginCountry -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;BuysProductOfOriginCountry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#ChildLaborAbuse -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;ChildLaborAbuse"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#Commercio_Justo -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;Commercio_Justo">
+        <rdf:type rdf:resource="&untitled-ontology-64;ThirdPartyCertificationBody"/>
+        <hasStandardSetter rdf:datatype="&xsd;string">FLO Labeling International</hasStandardSetter>
+        <hasAccreditationFrom rdf:datatype="&xsd;string">International Standard Organization ISO</hasAccreditationFrom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#Control_Union -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;Control_Union">
+        <rdf:type rdf:resource="&untitled-ontology-64;ThirdPartyCertificationBody"/>
+        <hasStandardSetter rdf:datatype="&xsd;integer">0</hasStandardSetter>
+        <hasAccreditationFrom rdf:datatype="&xsd;string">International Standard Organization ISO</hasAccreditationFrom>
+        <owl:sameAs rdf:resource="&untitled-ontology-64;Scientific_Certification_System_Global_Service"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#CultivatesProduct -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;CultivatesProduct"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#Dave_and_Nic_Certification -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;Dave_and_Nic_Certification">
+        <rdf:type rdf:resource="&untitled-ontology-64;StandardBody"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;TrustworthinessGradeC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#EnsureControlMeasureForChildLaborAbuseExist -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;EnsureControlMeasureForChildLaborAbuseExist"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#EnsureNoWorseFormOfLabor -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;EnsureNoWorseFormOfLabor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#EnsureSchoolAttendance -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;EnsureSchoolAttendance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#EnsuringHealthSafetyMoralsAndSchoolAttendance -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;EnsuringHealthSafetyMoralsAndSchoolAttendance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#FLO_Labeling_International -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;FLO_Labeling_International">
+        <rdf:type rdf:resource="&untitled-ontology-64;StandardBody"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;TrustworthinessGradeA"/>
+        <isMemberOf rdf:datatype="&xsd;string">ISEAL</isMemberOf>
+        <hasCertificationBody rdf:resource="&untitled-ontology-64;Commercio_Justo"/>
+        <hasCertificationBody rdf:resource="&untitled-ontology-64;Flo-Cert"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#Fair_For_Life -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;Fair_For_Life">
+        <rdf:type rdf:resource="&untitled-ontology-64;ThirdPartyCertificationBody"/>
+        <hasStandardSetter rdf:datatype="&xsd;string">Bio Schaftung</hasStandardSetter>
+        <hasStandardSetter rdf:datatype="&xsd;string">International Marketology Organization</hasStandardSetter>
+        <hasAccreditationFrom rdf:datatype="&xsd;string">International Standard Organization ISO</hasAccreditationFrom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#Fairtrade_USA -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;Fairtrade_USA">
+        <rdf:type rdf:resource="&untitled-ontology-64;ThirdPartyCertificationBody"/>
+        <hasStandardSetter rdf:datatype="&xsd;string">FLO Labeling International</hasStandardSetter>
+        <hasAccreditationFrom rdf:datatype="&xsd;string">International Standard Organization ISO</hasAccreditationFrom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#Flo-Cert -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;Flo-Cert">
+        <rdf:type rdf:resource="&untitled-ontology-64;ThirdPartyCertificationBody"/>
+        <hasStandardSetter rdf:datatype="&xsd;string">FLO Labeling International</hasStandardSetter>
+        <hasAccreditationFrom rdf:datatype="&xsd;string">International Standard Organization ISO</hasAccreditationFrom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#ISEAL -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;ISEAL">
+        <rdf:type rdf:resource="&untitled-ontology-64;AccreditationBody"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#International_Standard_Organization_ISO -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;International_Standard_Organization_ISO">
+        <rdf:type rdf:resource="&untitled-ontology-64;AccreditationBody"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#Natural -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;Natural"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#NoChildLaborAge15 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;NoChildLaborAge15">
+        <rdfs:isDefinedBy rdf:datatype="&xsd;integer">&lt;= 15</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#Non-Violent_Dove_Certification -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;Non-Violent_Dove_Certification">
+        <rdf:type rdf:resource="&untitled-ontology-64;StandardBody"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;TrustworthinessGradeD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#OrganizationNotTookActionOnChildLaborAge15Issue -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;OrganizationNotTookActionOnChildLaborAge15Issue">
+        <rdfs:comment>Organization does not take action or resolved issues related to the non-conformity to the standard requirements</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#OrganizationNotTookActionOnNonSuitableWorkAndTimeForChildren -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;OrganizationNotTookActionOnNonSuitableWorkAndTimeForChildren"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#OrganizationNotTookActionToEnsureHSMA -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;OrganizationNotTookActionToEnsureHSMA"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#PackagesAndOrSellsUnderOwnBrand -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;PackagesAndOrSellsUnderOwnBrand"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#Rainforest_Alliance_Network -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;Rainforest_Alliance_Network">
+        <rdf:type rdf:resource="&untitled-ontology-64;InternalCertificationBody"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;StandardBody"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;TrustworthinessGradeB"/>
+        <hasCertificationBody rdf:resource="&untitled-ontology-64;Rainforest_Alliance_Network"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#Scientific_Certification_System_Global_Service -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;Scientific_Certification_System_Global_Service">
+        <rdf:type rdf:resource="&untitled-ontology-64;ThirdPartyCertificationBody"/>
+        <hasStandardSetter rdf:datatype="&xsd;integer">0</hasStandardSetter>
+        <hasAccreditationFrom rdf:datatype="&xsd;string">International Standard Organization ISO</hasAccreditationFrom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#SellsOutOfOriginCountry -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;SellsOutOfOriginCountry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#Starbuck_and_Conservation_International -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;Starbuck_and_Conservation_International">
+        <rdf:type rdf:resource="&untitled-ontology-64;StandardBody"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;TrustworthinessGradeA"/>
+        <hasCertificationBody rdf:resource="&untitled-ontology-64;Control_Union"/>
+        <hasCertificationBody rdf:resource="&untitled-ontology-64;Scientific_Certification_System_Global_Service"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#SuitableWorkOrTimeForChildrenUnderAge15 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;SuitableWorkOrTimeForChildrenUnderAge15">
+        <rdfs:isDefinedBy rdf:datatype="&rdfs;Literal">Children Work After School or Holidays
+Work Is Appropriate for Their Age
+Work Is Supervise
+Work For Appropriate Hours
+Work Under Safe Condition
+Work Under Non-Exploitative Condition</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#UTZ_Good_Inside -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;UTZ_Good_Inside">
+        <rdf:type rdf:resource="&untitled-ontology-64;StandardBody"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;TrustworthinessGradeA"/>
+        <isMemberOf rdf:datatype="&xsd;string">ISEAL</isMemberOf>
+        <hasCertificationBody rdf:resource="&untitled-ontology-64;Control_Union"/>
+        <hasCertificationBody rdf:resource="&untitled-ontology-64;Scientific_Certification_System_Global_Service"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#UniondeCooperativasTosepanTitataniske -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;UniondeCooperativasTosepanTitataniske">
+        <rdf:type rdf:resource="&untitled-ontology-64;NonConformityToNoEmploymentOfChildrenUnderAge15"/>
+        <hasNonConformityTo rdf:resource="&untitled-ontology-64;NoChildLaborAge15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#UniondeProductoresMayaVinic -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;UniondeProductoresMayaVinic">
+        <rdf:type rdf:resource="&untitled-ontology-64;NonConformityToNoWorseFormOfLabor"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;NonConformityToSuitableWorkConditionAndHour"/>
+        <hasNonConformityTo rdf:resource="&untitled-ontology-64;EnsureNoWorseFormOfLabor"/>
+        <hasNonConformityTo rdf:resource="&untitled-ontology-64;SuitableWorkOrTimeForChildrenUnderAge15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#Washed -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;Washed"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dsayogo/ontologies/2013/5/untitled-ontology-64#WovenSack -->
+
+    <owl:Thing rdf:about="&untitled-ontology-64;WovenSack">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Non-Violent_Dove_Certification"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Rainforest_Alliance_Network"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Rainforest_Alliance_Network"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Starbuck_and_Conservation_International"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Starbuck_and_Conservation_International"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;UTZ_Good_Inside"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Commercio_Justo"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Fairtrade_USA"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Dave_and_Nic_Certification"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Non-Violent_Dove_Certification"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Control_Union"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Fair_For_Life"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Commercio_Justo"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Flo-Cert"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Rainforest_Alliance_Network"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;UTZ_Good_Inside"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Fairtrade_USA"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Scientific_Certification_System_Global_Service"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Dave_and_Nic_Certification"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;UTZ_Good_Inside"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Fair_For_Life"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Fairtrade_USA"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Dave_and_Nic_Certification"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Starbuck_and_Conservation_International"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;770201"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;770202"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Commercio_Justo"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Scientific_Certification_System_Global_Service"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Dave_and_Nic_Certification"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;FLO_Labeling_International"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Fair_For_Life"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Flo-Cert"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;770301"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;770302"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;FLO_Labeling_International"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Non-Violent_Dove_Certification"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;29717"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;73565"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;FLO_Labeling_International"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;UTZ_Good_Inside"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;FLO_Labeling_International"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Rainforest_Alliance_Network"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Control_Union"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Flo-Cert"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Control_Union"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Fairtrade_USA"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Dave_and_Nic_Certification"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Rainforest_Alliance_Network"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;FLO_Labeling_International"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Starbuck_and_Conservation_International"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Non-Violent_Dove_Certification"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;UTZ_Good_Inside"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Flo-Cert"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Scientific_Certification_System_Global_Service"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Fairtrade_USA"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Flo-Cert"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;29870"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;73565"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Non-Violent_Dove_Certification"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Starbuck_and_Conservation_International"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Commercio_Justo"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Fair_For_Life"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;29717"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;29870"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Commercio_Justo"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Control_Union"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-64;Fair_For_Life"/>
+            <rdf:Description rdf:about="&untitled-ontology-64;Scientific_Certification_System_Global_Service"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
