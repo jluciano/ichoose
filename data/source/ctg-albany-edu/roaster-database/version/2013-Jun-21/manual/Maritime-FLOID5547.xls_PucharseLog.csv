@@ -1,7 +1,0 @@
-VoucherID,InvID,,PurPeriod,SuppID,ProdID,Prod-CertID,Qty/bags,No of Bags,QtyTotal,P/kg,FTPU/kg,PTot,FTPUTot,TotVal
-001/VC/I/2013,004/COO/US/2013,,01/01/2013,COOP--US,AWFO-PB,FLO 7855,50 kg,40.0,"2,000 kg",9.25,0.44,18500.0,880.0,19380.0
-014/VC/II/2013,011/IDM-US/2013,,12/02/2013,IDMPAL-US,AWFO-CP,FLO 2215,50 kg,30.0,"1,500 kg",5.05,0.22,7575.0,330.0,7905.0
-"",,,,,,,,,,,,,,
-""
-""
-"",,,,,,,,,
