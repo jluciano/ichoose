@@ -50,7 +50,7 @@
 
    conversion:base_uri           "http://ichoose.tw.rpi.edu"^^xsd:anyURI;
    conversion:source_identifier  "ctg-albany-edu";
-   conversion:dataset_identifier "certificationbodies";
+   conversion:dataset_identifier "certifier";
    conversion:version_identifier "latest";
    conversion:enhancement_identifier "1";
 
@@ -88,7 +88,7 @@
       conversion:enhance [
          ov:csvCol          1;
          ov:csvHeader       "CertificationBody";
-         conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "Certifier";
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
@@ -100,7 +100,7 @@
       conversion:enhance [
          ov:csvCol          2;
          ov:csvHeader       "YearEst";
-         conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "YearEst";
          conversion:equivalent_property time:year;
          #conversion:subproperty_of      dcterms:identifier;
@@ -112,7 +112,7 @@
       conversion:enhance [
          ov:csvCol          3;
          ov:csvHeader       "CertificationBodyURI";
-         conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "CertifierURI";
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
@@ -124,7 +124,7 @@
       conversion:enhance [
          ov:csvCol          4;
          ov:csvHeader       "CertificationCriteriaURI";
-         conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "ComplianceCriteriaURI";
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
@@ -136,7 +136,7 @@
       conversion:enhance [
          ov:csvCol          5;
          ov:csvHeader       "CertificationIndependency";
-         conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "CertificationIndependency";
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
@@ -148,7 +148,7 @@
       conversion:enhance [
          ov:csvCol          6;
          ov:csvHeader       "AccreditationBody";
-         conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "AccreditationBody";
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
