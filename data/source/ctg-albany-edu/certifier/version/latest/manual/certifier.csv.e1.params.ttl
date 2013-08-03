@@ -94,7 +94,7 @@
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
-         conversion:range   rdfs:Resource;
+         conversion:range   rdfs:Class;
          #conversion:range_name  "Thing";
       ];
       conversion:enhance [
@@ -113,32 +113,20 @@
          ov:csvCol          3;
          ov:csvHeader       "CertifierURI";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "CertifierURI";
-         conversion:equivalent_property foaf:workplaceHomePage;
+         conversion:label   "certifierURI";
+         conversion:equivalent_property certin:certifierURI;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
-         conversion:range  foaf:Document;
+         conversion:range  todo:Literal;
          #conversion:range_name  "Thing";
       ];
       conversion:enhance [
          ov:csvCol          4;
          ov:csvHeader       "ComplianceCriteriaURI";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "ComplianceCriteriaURI";
-         conversion:equivalent_property foaf:workplaceHomePage;
-         #conversion:subproperty_of      dcterms:identifier;
-         conversion:comment "";
-         #conversion:range_template  "[/sd]thing[.]";
-         conversion:range   foaf:Document;
-         #conversion:range_name  "Thing";
-      ];
-      conversion:enhance [
-         ov:csvCol          5;
-         ov:csvHeader       "CertificationIndependency";
-         #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "CertificationIndependency";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:label   "complianceCriteriaURI";
+         conversion:equivalent_property complianceCriteriaURI;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -146,15 +134,27 @@
          #conversion:range_name  "Thing";
       ];
       conversion:enhance [
-         ov:csvCol          6;
-         ov:csvHeader       "AccreditationBody";
+         ov:csvCol          5;
+         ov:csvHeader       "CertificationIndependency";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "AccreditationBody";
-         conversion:equivalent_property certin:AccreditationBody;
+         conversion:label   "independency";
+         conversion:equivalent_property certin:independency;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
-         conversion:range   rdfs:Resource;
+         conversion:range   rdfs:Class;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          6;
+         ov:csvHeader       "AccreditationBody";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:label   "conformsTo";
+         conversion:equivalent_property  dcterms:conformsTo;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   certin:Standard_Setter;
          #conversion:range_name  "Thing";
       ];
       #conversion:enhance [            
