@@ -1,0 +1,316 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-June-22/> .
+@prefix provenance_1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/provenance/flo-certification/version/latest/conversion/enhancement/1/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix flo-certification: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/> .
+@prefix ctg-albany-edu_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/vocab/> .
+@prefix base_vocab: <http://ichoose.tw.rpi.edu/vocab/> .
+@prefix flo-certification_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/> .
+@prefix raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/raw/> .
+@prefix e1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/enhancement/1/> .
+@prefix flo-certification_global_value: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/> .
+@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dbpediaprop: <http://dbpedia.org/property/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> .
+@prefix vsr: <http://purl.org/twc/vocab/vsr#> .
+@prefix geonamesid: <http://sws.geonames.org/> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
+@prefix pml: <http://provenanceweb.org/ns/pml#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix value_of_applicant: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/value-of/applicant/> .
+
+e1:applicant a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "FLO-ID" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/conversion/enhancement/1> ;
+	rdfs:label "Applicant" ;
+	rdfs:range rdfs:Resource ;
+	conversion:enhances raw:flo_id , raw:applicant .
+
+e1:certification_date a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "CERT-DATE" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/conversion/enhancement/1> ;
+	rdfs:label "Certification Date" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:cert_date , raw:certification_date .
+
+e1:service a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "SERVICE" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/conversion/enhancement/1> ;
+	rdfs:label "service" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:service .
+
+e1:certification_status a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "STATUS" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/conversion/enhancement/1> ;
+	rdfs:label "Certification Status" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:status , raw:certification_status .
+
+e1:last_certification_date a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "LAST-CERT-DEC" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/conversion/enhancement/1> ;
+	rdfs:label "Last Certification Date" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:last_cert_dec , raw:last_certification_date .
+
+e1:certification_valid_until a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "VALID UNTIL" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/conversion/enhancement/1> ;
+	rdfs:label "Certification Valid Until" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:valid_until , raw:certification_valid_until .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/1341> rdfs:label "1341" ;
+	dcterms:identifier "1341" ;
+	coin:slug "1341" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	a certin:Applicant ;
+	e1:applicant <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/value-of/applicant/1341> ;
+	certin:certDate "26/03/2007" ;
+	certin:service "Trade-Payer" ;
+	certin:certStatus "Certified-Certified" ;
+	certin:lastCertDate "20/03/2010" ;
+	certin:certValidUntil "06/03/2013" ;
+	ov:csvRow "2"^^xsd:integer .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/2178> rdfs:label "2178" ;
+	dcterms:identifier "2178" ;
+	coin:slug "2178" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	a certin:Applicant ;
+	e1:applicant <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/value-of/applicant/2178> ;
+	certin:certDate "06/06/2008" ;
+	certin:service "Trade-Payer" ;
+	certin:certStatus "Certified-Certified" ;
+	certin:lastCertDate "06/06/2011" ;
+	certin:certValidUntil "06/06/2014" ;
+	ov:csvRow "3"^^xsd:integer .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/3341> rdfs:label "3341" ;
+	dcterms:identifier "3341" ;
+	coin:slug "3341" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	a certin:Applicant ;
+	e1:applicant <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/value-of/applicant/3341> ;
+	certin:certDate "18/08/2008" ;
+	certin:service "Trade-Payer" ;
+	certin:certStatus "Certified-Certified" ;
+	certin:lastCertDate "20/08/2011" ;
+	certin:certValidUntil "18/08/2014" ;
+	ov:csvRow "4"^^xsd:integer .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/7855> rdfs:label "7855" ;
+	dcterms:identifier "7855" ;
+	coin:slug "7855" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	a certin:Applicant ;
+	e1:applicant <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/value-of/applicant/7855> ;
+	certin:certDate "21/05/2010" ;
+	certin:service "Small Producers Organization" ;
+	certin:certStatus "Certified-Certified" ;
+	certin:lastCertDate "20/05/2011" ;
+	certin:certValidUntil "21/05/2016" ;
+	ov:csvRow "5"^^xsd:integer .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/2215> rdfs:label "2215" ;
+	dcterms:identifier "2215" ;
+	coin:slug "2215" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	a certin:Applicant ;
+	e1:applicant <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/value-of/applicant/2215> ;
+	certin:certDate "14/11/2011" ;
+	certin:service "Small Producers Organization" ;
+	certin:certStatus "Certified-Certified" ;
+	certin:lastCertDate "14/11/2012" ;
+	certin:certValidUntil "14/11/2016" ;
+	ov:csvRow "6"^^xsd:integer .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/3992> rdfs:label "3992" ;
+	dcterms:identifier "3992" ;
+	coin:slug "3992" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	a certin:Applicant ;
+	e1:applicant <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/value-of/applicant/3992> ;
+	certin:certDate "15/09/2011" ;
+	certin:service "Small Producers Organization" ;
+	certin:certStatus "Certified-Certified" ;
+	certin:lastCertDate "15/09/2012" ;
+	certin:certValidUntil "15/09/2011" ;
+	ov:csvRow "7"^^xsd:integer .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/4457> rdfs:label "4457" ;
+	dcterms:identifier "4457" ;
+	coin:slug "4457" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	a certin:Applicant ;
+	e1:applicant <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/value-of/applicant/4457> ;
+	certin:certDate "09/04/2009" ;
+	certin:service "Trade-Payer" ;
+	certin:certStatus "Certified-Certified" ;
+	certin:lastCertDate "09/04/2012" ;
+	certin:certValidUntil "09/04/2015" ;
+	ov:csvRow "8"^^xsd:integer .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/6230> rdfs:label "6230" ;
+	dcterms:identifier "6230" ;
+	coin:slug "6230" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	a certin:Applicant ;
+	e1:applicant <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/value-of/applicant/6230> ;
+	certin:certDate "23/07/2010" ;
+	certin:service "Trade-Payer" ;
+	certin:certStatus "Certified-Certified" ;
+	certin:lastCertDate "25/07/2011" ;
+	certin:certValidUntil "23/07/2016" ;
+	ov:csvRow "9"^^xsd:integer .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-June-22/> .
+@prefix provenance_1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/provenance/flo-certification/version/latest/conversion/enhancement/1/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix flo-certification: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/> .
+@prefix ctg-albany-edu_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/vocab/> .
+@prefix base_vocab: <http://ichoose.tw.rpi.edu/vocab/> .
+@prefix flo-certification_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/> .
+@prefix raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/raw/> .
+@prefix e1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/enhancement/1/> .
+@prefix flo-certification_global_value: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/> .
+@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dbpediaprop: <http://dbpedia.org/property/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> .
+@prefix vsr: <http://purl.org/twc/vocab/vsr#> .
+@prefix geonamesid: <http://sws.geonames.org/> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
+@prefix pml: <http://provenanceweb.org/ns/pml#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix value_of_applicant: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/value-of/applicant/> .
+
+flo-certification:thing_2 con:preferredURI <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/1341> .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/value-of/applicant/1341> dcterms:identifier "1341" ;
+	rdfs:label "1341" .
+
+flo-certification:thing_3 con:preferredURI <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/2178> .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/value-of/applicant/2178> dcterms:identifier "2178" ;
+	rdfs:label "2178" .
+
+flo-certification:thing_4 con:preferredURI <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/3341> .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/value-of/applicant/3341> dcterms:identifier "3341" ;
+	rdfs:label "3341" .
+
+flo-certification:thing_5 con:preferredURI <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/7855> .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/value-of/applicant/7855> dcterms:identifier "7855" ;
+	rdfs:label "7855" .
+
+flo-certification:thing_6 con:preferredURI <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/2215> .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/value-of/applicant/2215> dcterms:identifier "2215" ;
+	rdfs:label "2215" .
+
+flo-certification:thing_7 con:preferredURI <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/3992> .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/value-of/applicant/3992> dcterms:identifier "3992" ;
+	rdfs:label "3992" .
+
+flo-certification:thing_8 con:preferredURI <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/4457> .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/value-of/applicant/4457> dcterms:identifier "4457" ;
+	rdfs:label "4457" .
+
+flo-certification:thing_9 con:preferredURI <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/6230> .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/value-of/applicant/6230> dcterms:identifier "6230" ;
+	rdfs:label "6230" .

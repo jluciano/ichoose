@@ -1,0 +1,274 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-June-22/> .
+@prefix provenance_1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/provenance/flo-certification/ao-00023/version/latest/conversion/enhancement/1/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix flo-certification: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/> .
+@prefix ctg-albany-edu_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/vocab/> .
+@prefix base_vocab: <http://ichoose.tw.rpi.edu/vocab/> .
+@prefix flo-certification_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/> .
+@prefix raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/raw/> .
+@prefix e1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/enhancement/1/> .
+@prefix : <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/version/latest/> .
+@prefix ns1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix geonamesid: <http://sws.geonames.org/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix dbpediaprop: <http://dbpedia.org/property/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
+@prefix pml: <http://provenanceweb.org/ns/pml#> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
+@prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
+@prefix vsr: <http://purl.org/twc/vocab/vsr#> .
+@prefix value_of_compliance_criteria: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/value-of/compliance_criteria/> .
+
+flo-certification:ao-00023 rdfs:label "ao-00023" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> .
+
+e1:compliance_criteria a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "ComplianceCriterion" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/conversion/enhancement/1> ;
+	rdfs:label "Compliance Criteria" ;
+	rdfs:range rdfs:Resource ;
+	conversion:enhances raw:compliancecriterion , raw:compliance_criteria .
+
+e1:description a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "ComplianceCriterion_Description" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/conversion/enhancement/1> ;
+	rdfs:label "Description" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:compliancecriterion_description , raw:description .
+
+e1:nonconformity a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "NON-CONFORMITY_AUDIT" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/conversion/enhancement/1> ;
+	rdfs:label "nonConformity" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:non_conformity_audit , raw:nonconformity .
+
+e1:correctivemeasure a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "CORRECTIVE MEASURE" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/conversion/enhancement/1> ;
+	rdfs:label "correctiveMeasure" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:corrective_measure , raw:correctivemeasure .
+
+e1:objectiveevidence a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "OBJECTIVE EVIDENCE" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/conversion/enhancement/1> ;
+	rdfs:label "objectiveEvidence" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:objective_evidence , raw:objectiveevidence .
+
+e1:dateobjectiveevidence a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "DATE OF OE" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/conversion/enhancement/1> ;
+	rdfs:label "dateObjectiveEvidence" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:date_of_oe , raw:dateobjectiveevidence .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/version/latest/3_3_3_01> rdfs:label "3.3.3.01" ;
+	dcterms:identifier "3.3.3.01" ;
+	coin:slug "3_3_3_01" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	a certin:ComplianceCriteria ;
+	certin:ComplianceCriteria <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/value-of/compliance_criteria/3_3_3_01> ;
+	dcterms:description "You and the members of your organization have not employed children below the age of 15" ;
+	certin:nonConformity "on rare occasion children was hired and work under parent's supervision" ;
+	certin:correctiveMeasure "writen policy for not hiring children under 15" ;
+	certin:objectiveEvidence "written policy" ;
+	certin:dateObjectiveEvidence "30/04/2011" ;
+	ov:subjectDiscriminator flo-certification:ao-00023 ;
+	dcterms:isReferencedBy flo-certification:ao-00023 ;
+	ov:csvRow "2"^^xsd:integer .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/version/latest/3_3_3_02> rdfs:label "3.3.3.02" ;
+	dcterms:identifier "3.3.3.02" ;
+	coin:slug "3_3_3_02" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	a certin:ComplianceCriteria ;
+	certin:ComplianceCriteria <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/value-of/compliance_criteria/3_3_3_02> ;
+	dcterms:description "Your members' children below 15 years only help on your members’ farms after school or during holidays, the work they do is appropriate for their age, they are supervised and guided by their parent or legal guardian and they do not work for long hours or under dangerous or exploitative conditions" ;
+	certin:nonConformity "none" ;
+	certin:correctiveMeasure "n/a" ;
+	certin:objectiveEvidence "n/a" ;
+	certin:dateObjectiveEvidence "n/a" ;
+	ov:subjectDiscriminator flo-certification:ao-00023 ;
+	dcterms:isReferencedBy flo-certification:ao-00023 ;
+	ov:csvRow "3"^^xsd:integer .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/version/latest/3_3_3_03> rdfs:label "3.3.3.03" ;
+	dcterms:identifier "3.3.3.03" ;
+	coin:slug "3_3_3_03" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	a certin:ComplianceCriteria ;
+	certin:ComplianceCriteria <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/value-of/compliance_criteria/3_3_3_03> ;
+	dcterms:description "You and the members of your organization have not submitted workers less than 18 years of age to any type of work which, by its nature or the circumstances under which it is carried out, is likely to jeopardize their health, safety or morals and their school attendance" ;
+	certin:nonConformity "none" ;
+	certin:correctiveMeasure "n/a" ;
+	certin:objectiveEvidence "n/a" ;
+	certin:dateObjectiveEvidence "n/a" ;
+	ov:subjectDiscriminator flo-certification:ao-00023 ;
+	dcterms:isReferencedBy flo-certification:ao-00023 ;
+	ov:csvRow "4"^^xsd:integer .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/version/latest/3_3_3_04> rdfs:label "3.3.3.04" ;
+	dcterms:identifier "3.3.3.04" ;
+	coin:slug "3_3_3_04" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	a certin:ComplianceCriteria ;
+	certin:ComplianceCriteria <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/value-of/compliance_criteria/3_3_3_04> ;
+	dcterms:description "If in the past you or your members employed children under 15 for any type of work, or children under 18 for dangerous and exploitative work, you have ensured that those children do not enter or are at risk of entering into even worse forms of labour" ;
+	certin:nonConformity "none" ;
+	certin:correctiveMeasure "n/a" ;
+	certin:objectiveEvidence "n/a" ;
+	certin:dateObjectiveEvidence "n/a" ;
+	ov:subjectDiscriminator flo-certification:ao-00023 ;
+	dcterms:isReferencedBy flo-certification:ao-00023 ;
+	ov:csvRow "5"^^xsd:integer .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/version/latest/3_3_3_05> rdfs:label "3.3.3.05" ;
+	dcterms:identifier "3.3.3.05" ;
+	coin:slug "3_3_3_05" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest> ;
+	a certin:ComplianceCriteria ;
+	certin:ComplianceCriteria <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/value-of/compliance_criteria/3_3_3_05> ;
+	dcterms:description "You and the members of your organization have implemented procedures to prevent children below the age of 15 from being employed for any work and children below the age of 18 from being employed in dangerous and exploitative work. (Only applies if you have identified child labor as a risk in your organization.)" ;
+	certin:nonConformity "none" ;
+	certin:correctiveMeasure "n/a" ;
+	certin:objectiveEvidence "n/a" ;
+	certin:dateObjectiveEvidence "n/a" ;
+	ov:subjectDiscriminator flo-certification:ao-00023 ;
+	dcterms:isReferencedBy flo-certification:ao-00023 ;
+	ov:csvRow "6"^^xsd:integer .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-June-22/> .
+@prefix provenance_1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/provenance/flo-certification/ao-00023/version/latest/conversion/enhancement/1/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix flo-certification: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/> .
+@prefix ctg-albany-edu_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/vocab/> .
+@prefix base_vocab: <http://ichoose.tw.rpi.edu/vocab/> .
+@prefix flo-certification_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/> .
+@prefix raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/raw/> .
+@prefix e1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/vocab/enhancement/1/> .
+@prefix : <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/version/latest/> .
+@prefix ns1: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix geonamesid: <http://sws.geonames.org/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix dbpediaprop: <http://dbpedia.org/property/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
+@prefix pml: <http://provenanceweb.org/ns/pml#> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
+@prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
+@prefix vsr: <http://purl.org/twc/vocab/vsr#> .
+@prefix value_of_compliance_criteria: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/value-of/compliance_criteria/> .
+
+:thing_2 con:preferredURI <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/version/latest/3_3_3_01> .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/value-of/compliance_criteria/3_3_3_01> dcterms:identifier "3.3.3.01" ;
+	rdfs:label "3.3.3.01" .
+
+:thing_3 con:preferredURI <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/version/latest/3_3_3_02> .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/value-of/compliance_criteria/3_3_3_02> dcterms:identifier "3.3.3.02" ;
+	rdfs:label "3.3.3.02" .
+
+:thing_4 con:preferredURI <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/version/latest/3_3_3_03> .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/value-of/compliance_criteria/3_3_3_03> dcterms:identifier "3.3.3.03" ;
+	rdfs:label "3.3.3.03" .
+
+:thing_5 con:preferredURI <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/version/latest/3_3_3_04> .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/value-of/compliance_criteria/3_3_3_04> dcterms:identifier "3.3.3.04" ;
+	rdfs:label "3.3.3.04" .
+
+:thing_6 con:preferredURI <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/version/latest/3_3_3_05> .
+
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/ao-00023/value-of/compliance_criteria/3_3_3_05> dcterms:identifier "3.3.3.05" ;
+	rdfs:label "3.3.3.05" .
