@@ -102,7 +102,7 @@
          ov:csvCol          2;
          ov:csvHeader       "CERT-DATE";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "certDate";
+         conversion:label   "Certification Date";
          conversion:equivalent_property certin:certDate;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
@@ -115,7 +115,7 @@
          ov:csvHeader       "SERVICE";
          #conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "service";
-         conversion:equivalent_property certin:service
+         conversion:equivalent_property certin:service;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -126,7 +126,7 @@
          ov:csvCol          4;
          ov:csvHeader       "STATUS";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "certStatus";
+         conversion:label   "Certification Status";
          conversion:equivalent_property certin:certStatus;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
@@ -138,7 +138,7 @@
          ov:csvCol          5;
          ov:csvHeader       "LAST-CERT-DEC";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "lastCertDate";
+         conversion:label   "Last Certification Date";
          conversion:equivalent_property certin:lastCertDate;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
@@ -150,7 +150,7 @@
          ov:csvCol          6;
          ov:csvHeader       "VALID UNTIL";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "certValidUntil";
+         conversion:label   "Certification Valid Until";
          conversion:equivalent_property certin:certValidUntil;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";

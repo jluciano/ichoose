@@ -115,7 +115,7 @@
          ov:csvCol          3;
          ov:csvHeader       "AUDIT_DATE";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "date;
+         conversion:label   "Inspection Date";
          conversion:equivalent_property  dcterms:date;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
@@ -127,7 +127,7 @@
          ov:csvCol          4;
          ov:csvHeader       "AUDIT_TYPE";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "type";
+         conversion:label   "Audit Type";
          conversion:equivalent_property dcterms:type;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
@@ -139,7 +139,7 @@
          ov:csvCol          5;
          ov:csvHeader       "auditReportURI";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "inspectionReportURI";
+         conversion:label   "Inspection Report URI";
          conversion:equivalent_property  certin:inspectionReportURI;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";

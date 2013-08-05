@@ -57,7 +57,7 @@
    conversion:conversion_process [
       a conversion:EnhancementConversionProcess;
       conversion:enhancement_identifier "1";
-      conversion:subject_discriminator  "flo-certification.xls-contact";
+     # conversion:subject_discriminator  "flo-certification.xls-contact";
 
       dcterms:creator [ a foaf:OnlineAccount; foaf:accountName "ndepaula" ];
       dcterms:created "2013-08-04T21:51:07+00:00"^^xsd:dateTime;
