@@ -162,7 +162,7 @@ certin:Inspection_Report
          ov:csvHeader       "ADDITIONAL EVIDENCE";
          #conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "objectiveEvidence";
-         conversion:equivalent_property certin:objectiveMeasure;
+         conversion:equivalent_property certin:objectiveEvidence;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
