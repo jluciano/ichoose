@@ -79,7 +79,7 @@
       #];
       conversion:enhance [
          conversion:domain_template "[#4]";
-         conversion:domain_name     certin:Inspection_Report;
+         conversion:domain_name     certin:InspectionReport;
       ];
       #conversion:enhance [
       #   conversion:class_name "Thing";
@@ -112,7 +112,7 @@
       conversion:enhance [
          ov:csvCol          3;
          ov:csvHeader       "CONFORMITY";
-         #conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "CONFORMITY";
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
@@ -125,20 +125,20 @@
          ov:csvCol          4;
          ov:csvHeader       "VERIFY-NO";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Inspection_Report";
-         conversion:equivalent_property  certin:hasInspectionReport;
+         conversion:label   "Inspection Report";
+         conversion:equivalent_property  certin:hasURI;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
-         conversion:range_template  "[/sd]version/latest[.]";
+         conversion:range_template  "[/sd]version/latest/[.]";
          conversion:range   rdfs:Resource;
          #conversion:range_name  "Thing";
       ];
       conversion:enhance [
          ov:csvCol          5;
          ov:csvHeader       "EVIDENCE";
-         #conversion:bundled_by [ ov:csvCol 1 ];
-         #conversion:label   "EVIDENCE";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:label   "Objective Evidence";
+         conversion:equivalent_property certin:hasObjectiveEvidence;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -160,9 +160,9 @@
       conversion:enhance [
          ov:csvCol          7;
          ov:csvHeader       "ADDITIONAL EVIDENCE";
-         #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Additional Evidence";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:label  "objectiveEvidence";
+         conversion:equivalent_property certin:objectiveEvidence;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";

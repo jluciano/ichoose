@@ -38,12 +38,12 @@
 @prefix :              <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/daveandnic-certification/version/latest/params/enhancement/1/> .
 @prefix certin:         <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> .
 
-certin:Inspection_Report
-   a conversion:ImplicitBundle;
+#certin:Inspection_Report
+ #  a conversion:ImplicitBundle;
    #conversion:property_name "a_property"; # Can also be a URI, e.g. dcterms:title.
-    conversion:name_template "[/sd][#4]";
-   conversion:type_name     certin:Inspection_Report;   # Can also be a URI, e.g. foaf:Person.
-.
+  #  conversion:name_template "[/sd][#4]";
+  # conversion:type_name     certin:Inspection_Report;   # Can also be a URI, e.g. foaf:Person.
+#.
 
 <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/daveandnic-certification/version/latest/conversion/enhancement/1>
    a conversion:LayerDataset, void:Dataset;
@@ -78,8 +78,8 @@ certin:Inspection_Report
       #   conversion:interpretation conversion:null; 
       #];
       conversion:enhance [
-         conversion:domain_template "[#1]";
-         conversion:domain_name     certin:ComplianceCriteria;
+         conversion:domain_template "[#4]";
+         conversion:domain_name     certin:Inspection_Report;
       ];
       #conversion:enhance [
       #   conversion:class_name "Thing";
@@ -89,18 +89,18 @@ certin:Inspection_Report
          ov:csvCol          1;
          ov:csvHeader       "CC NO.";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "ComplianceCriteria";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:label   "Compliance Criteria";
+         conversion:equivalent_property certin:hasComplianceCriteria;
          #conversion:subproperty_of      dcterms:identifier;
          #conversion:comment "";
-         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range_template  "[/sd]version/latest/[.]";
          conversion:range   rdfs:Resource;
-         #conversion:range_name  "Thing";
+         conversion:range_name  certin:ComplianceCriteria;
       ];
       conversion:enhance [
          ov:csvCol          2;
          ov:csvHeader       "CERTIFICATION CRITERIA";
-         #conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "Description";
          conversion:equivalent_property dcterms:description;
          #conversion:subproperty_of      dcterms:identifier;
@@ -112,20 +112,20 @@ certin:Inspection_Report
       conversion:enhance [
          ov:csvCol          3;
          ov:csvHeader       "CONFORMITY";
-         #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "nonConformity";
-         conversion:equivalent_property certin:nonConformity;
+         conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:label   "Conformity";
+         conversion:equivalent_property dcterms:conformsTo;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
          conversion:range   todo:Literal;
          #conversion:range_name  "Thing";
       ];
-      conversion:enhance [
+     conversion:enhance [
          ov:csvCol          4;
          ov:csvHeader       "VERIFY-NO";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "hasInspection_Report";
+         conversion:label   "InspectionReport";
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
@@ -136,7 +136,7 @@ certin:Inspection_Report
       conversion:enhance [
          ov:csvCol          5;
          ov:csvHeader       "EVIDENCE";
-         #conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "objectiveEvidence";
          conversion:equivalent_property certin:objectiveEvidence;
          #conversion:subproperty_of      dcterms:identifier;
@@ -148,7 +148,7 @@ certin:Inspection_Report
       conversion:enhance [
          ov:csvCol          6;
          ov:csvHeader       "AGREE ON EVIDENCE";
-         #conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "correctiveMeasure";
          conversion:equivalent_property certin:correctiveMeasure;
          #conversion:subproperty_of      dcterms:identifier;
@@ -160,7 +160,7 @@ certin:Inspection_Report
       conversion:enhance [
          ov:csvCol          7;
          ov:csvHeader       "ADDITIONAL EVIDENCE";
-         #conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "objectiveEvidence";
          conversion:equivalent_property certin:objectiveEvidence;
          #conversion:subproperty_of      dcterms:identifier;
