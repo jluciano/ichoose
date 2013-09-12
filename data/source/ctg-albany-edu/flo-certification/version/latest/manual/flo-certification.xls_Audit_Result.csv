@@ -1,14 +1,4 @@
 YEAR,AUDIT NO,AUDIT WORKFLOW STATUS,AUDIT DATE,AUDITOR,CERTIF. OFFICER,RISK CATEGORY,ANNOTATION TO OPERATOR
-2011.0,AO-00023,CM Requested,02/01/2012,Radamel Falcao,Martin Siebel,Minimum,none
-2012.0,AO-00245,CM Requested,14/07/2012,Radamel Falcao,Martin Siebel,Moderate,Corrective Measured Required
-2012.0,AO-00220,No NC,15/06/2012,Radamel Falcao,Marijn Janssen,Minimum,none
-"",,,,,,,
-"",,,,,,,
-"",,,,,,,
-"",,,,,,,
-"",,,,,,,
-"",,,,,,,
-"",,,,,,,
-"",,,,,,,
-"",,,,,,,
-"",,,,,,,
+2011,AO-00023,CM Requested,02/01/2012,Radamel Falcao,Martin Siebel,Minimum,none
+2012,AO-00245,CM Requested,14/07/2012,Radamel Falcao,Martin Siebel,Moderate,Corrective Measured Required
+2012,AO-00220,No NC,15/06/2012,Radamel Falcao,Marijn Janssen,Minimum,none

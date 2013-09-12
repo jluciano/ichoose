@@ -1,10 +1,9 @@
 ID,VAT Number,Product Code,Legal Status,Company Name
-FLO 1341,n/a,770000.0,Trading Limited Incorporation,"Cooperative Coffees Inc. "
-FLO 2178,n/a,770000.0,Trading Limited Incorporation,Importadores y Distribuidores de la Materia Para America Latina
-FLO 3341,n/a,770000.0,Trading Limited Incorporation,Importadores de la Cafe Justo de la Paz
-FLO 7855,n/a,770202.0,Cooperative,Union de Cooperativas Tosepan Titataniske
-FLO 2215,n/a,770201.0,Cooperative,Union de Productores Maya Vinic
-FLO 3992,n/a,770201.0,Cooperative,Comite Campesino del Altiplano Campesino del Altiplano (CCDA) Cafe Justifia
-FLO 4457,n/a,770000.0,Trading Limited Incorporation,Maritime le Torrefacteur
-FLO 6230,n/a,770000.0,Trading Limited Incorporation,"Centro de Distribucion del Cafe Agromercado Exportador "
-"",,,,
+FLO 1341,n/a,770000,Trading Limited Incorporation,"Cooperative Coffees Inc. "
+FLO 2178,n/a,770000,Trading Limited Incorporation,Importadores y Distribuidores de la Materia Para America Latina
+FLO 3341,n/a,770000,Trading Limited Incorporation,Importadores de la Cafe Justo de la Paz
+FLO 7855,n/a,770202,Cooperative,Union de Cooperativas Tosepan Titataniske
+FLO 2215,n/a,770201,Cooperative,Union de Productores Maya Vinic
+FLO 3992,n/a,770201,Cooperative,Comite Campesino del Altiplano Campesino del Altiplano (CCDA) Cafe Justifia
+FLO 4457,n/a,770000,Trading Limited Incorporation,Maritime le Torrefacteur
+FLO 6230,n/a,770000,Trading Limited Incorporation,"Centro de Distribucion del Cafe Agromercado Exportador "
