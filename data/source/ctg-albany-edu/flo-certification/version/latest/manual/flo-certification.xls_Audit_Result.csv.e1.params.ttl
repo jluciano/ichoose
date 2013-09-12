@@ -36,7 +36,7 @@
 @prefix ov:            <http://open.vocab.org/terms/> .
 @prefix conversion:    <http://purl.org/twc/vocab/conversion/> .
 @prefix :              <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/params/enhancement/1/> .
-
+@prefix certin:         <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#>.
 
 #:a_bundle
 #   a conversion:ImplicitBundle;
@@ -57,7 +57,7 @@
    conversion:conversion_process [
       a conversion:EnhancementConversionProcess;
       conversion:enhancement_identifier "1";
-      conversion:subject_discriminator  "flo-certification.xls-audit-result";
+   #   conversion:subject_discriminator  "flo-certification.xls-audit-result";
 
       dcterms:creator [ a foaf:OnlineAccount; foaf:accountName "ndepaula" ];
       dcterms:created "2013-09-12T02:30:57+00:00"^^xsd:dateTime;
@@ -77,10 +77,10 @@
       #   conversion:symbol        "";
       #   conversion:interpretation conversion:null; 
       #];
-      #conversion:enhance [
-      #   conversion:domain_template "thing_[r]";
-      #   conversion:domain_name     "Thing";
-      #];
+      conversion:enhance [
+         conversion:domain_template "[#2]";
+         conversion:domain_name     certin:InspectionReport;
+      ];
       #conversion:enhance [
       #   conversion:class_name "Thing";
       #   conversion:subclass_of <http://purl.org/...>;
@@ -102,7 +102,7 @@
          ov:csvHeader       "AUDIT NO";
          #conversion:bundled_by [ ov:csvCol 1 ];
          #conversion:label   "AUDIT NO";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -113,7 +113,7 @@
          ov:csvCol          3;
          ov:csvHeader       "AUDIT WORKFLOW STATUS";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         #conversion:label   "AUDIT WORKFLOW STATUS";
+         conversion:label   "WORKFLOW STATUS";
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
@@ -125,7 +125,7 @@
          ov:csvCol          4;
          ov:csvHeader       "AUDIT DATE";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         #conversion:label   "AUDIT DATE";
+         conversion:label   "AUDIT DATE";
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";

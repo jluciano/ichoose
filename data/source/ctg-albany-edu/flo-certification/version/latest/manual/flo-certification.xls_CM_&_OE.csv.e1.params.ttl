@@ -36,6 +36,7 @@
 @prefix ov:            <http://open.vocab.org/terms/> .
 @prefix conversion:    <http://purl.org/twc/vocab/conversion/> .
 @prefix :              <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/params/enhancement/1/> .
+@prefix certin:         <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> .
 
 
 #:a_bundle
@@ -57,7 +58,7 @@
    conversion:conversion_process [
       a conversion:EnhancementConversionProcess;
       conversion:enhancement_identifier "1";
-      conversion:subject_discriminator  "flo-certification.xls-cm-&-oe";
+   #   conversion:subject_discriminator  "flo-certification.xls-cm-&-oe";
 
       dcterms:creator [ a foaf:OnlineAccount; foaf:accountName "ndepaula" ];
       dcterms:created "2013-09-12T02:31:04+00:00"^^xsd:dateTime;
@@ -77,10 +78,10 @@
       #   conversion:symbol        "";
       #   conversion:interpretation conversion:null; 
       #];
-      #conversion:enhance [
-      #   conversion:domain_template "thing_[r]";
-      #   conversion:domain_name     "Thing";
-      #];
+      conversion:enhance [
+         conversion:domain_template "[#1]";
+         conversion:domain_name     certin:CorrectiveMeasure;
+      ];
       #conversion:enhance [
       #   conversion:class_name "Thing";
       #   conversion:subclass_of <http://purl.org/...>;
@@ -89,7 +90,7 @@
          ov:csvCol          1;
          ov:csvHeader       "CorrectiveMeasureID";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         #conversion:label   "CorrectiveMeasureID";
+         conversion:label   "CorrectiveMeasureID";
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
@@ -101,7 +102,7 @@
          ov:csvCol          2;
          ov:csvHeader       "CMDescription_Audit";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         #conversion:label   "CMDescription_Audit";
+         conversion:label   "Description"
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
@@ -172,8 +173,8 @@
       conversion:enhance [
          ov:csvCol          8;
          ov:csvHeader       "DATE OE  DUE";
-         #conversion:bundled_by [ ov:csvCol 1 ];
-         #conversion:label   "DATE OE  DUE";
+         conversion:bundled_by [ ov:csvCol 9 ];
+         conversion:label   "DATE OE  DUE";
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
@@ -185,8 +186,8 @@
          ov:csvCol          9;
          ov:csvHeader       "OBJECTIVE EVIDENCE (OE)";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         #conversion:label   "OBJECTIVE EVIDENCE (OE)";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:label   "OBJECTIVE EVIDENCE (OE)";
+         conversion:equivalent_property certin:hasObjectiveEvidence;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -196,8 +197,8 @@
       conversion:enhance [
          ov:csvCol          10;
          ov:csvHeader       "DATE OE RECEIVED";
-         #conversion:bundled_by [ ov:csvCol 1 ];
-         #conversion:label   "DATE OE RECEIVED";
+         conversion:bundled_by [ ov:csvCol 9 ];
+         conversion:label   "DATE OE RECEIVED";
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
