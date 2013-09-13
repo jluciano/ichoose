@@ -78,7 +78,7 @@
       #   conversion:interpretation conversion:null; 
       #];
       conversion:enhance [
-         conversion:domain_template "[1]";
+         conversion:domain_template "[#1]";
          conversion:domain_name     certin:ComplianceCriteria;
       ];
       #conversion:enhance [
