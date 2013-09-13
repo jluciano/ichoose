@@ -57,7 +57,7 @@
    conversion:conversion_process [
       a conversion:EnhancementConversionProcess;
       conversion:enhancement_identifier "1";
-    #  conversion:subject_discriminator  "flo-certification.xls-audit-status";
+ #   conversion:subject_discriminator  "inspectionreport";
 
       dcterms:creator [ a foaf:OnlineAccount; foaf:accountName "ndepaula" ];
       dcterms:created "2013-09-12T02:30:59+00:00"^^xsd:dateTime;
@@ -105,7 +105,7 @@
          conversion:equivalent_property certin:hasInspectionReport;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
-         conversion:range_template  "[/sd]version/latest/[.]";
+         conversion:range_template  "[/sd]inspectionreport/version/latest/[.]";
          conversion:range   rdfs:Resource;
          #conversion:range_name  "Thing";
       ];
@@ -114,7 +114,7 @@
          ov:csvHeader       "AUDIT_DATE";
          conversion:bundled_by [ ov:csvCol 2 ];
          #conversion:label   "AUDIT_DATE";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property  certin:hasAuditDate;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -138,7 +138,7 @@
          ov:csvHeader       "CYCLE";
          conversion:bundled_by [ ov:csvCol 2 ];
          conversion:label   "CYCLE";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property  certin:hasCycle;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -150,7 +150,7 @@
          ov:csvHeader       "SERVICE";
          conversion:bundled_by [ ov:csvCol 2 ];
          conversion:label   "SERVICE";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property certin:hasService;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -162,7 +162,7 @@
          ov:csvHeader       "AUDITOR-LICENSE";
          conversion:bundled_by [ ov:csvCol 2 ];
          conversion:label   "AUDITOR-LICENSE";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property certin:hasAuditorLicense;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -172,9 +172,9 @@
       conversion:enhance [
          ov:csvCol          8;
          ov:csvHeader       "AUDITOR";
-         #conversion:bundled_by [ ov:csvCol 1 ];
-         #conversion:label   "AUDITOR";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:bundled_by [ ov:csvCol 2 ];
+         conversion:label   "AUDITOR";
+         conversion:equivalent_property certin:hasAuditor;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -184,7 +184,7 @@
       conversion:enhance [
          ov:csvCol          9;
          ov:csvHeader       "CERT_OFFICER";
-         #conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:bundled_by [ ov:csvCol 2 ];
          #conversion:label   "CERT_OFFICER";
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
@@ -196,9 +196,9 @@
       conversion:enhance [
          ov:csvCol          10;
          ov:csvHeader       "CERT_RESULT";
-         #conversion:bundled_by [ ov:csvCol 1 ];
-         #conversion:label   "CERT_RESULT";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:bundled_by [ ov:csvCol 2 ];
+         conversion:label   "CERT_RESULT";
+         conversion:equivalent_property certin:Results;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -208,7 +208,7 @@
       conversion:enhance [
          ov:csvCol          11;
          ov:csvHeader       "CERT_BODY";
-         #conversion:bundled_by [ ov:csvCol 2 ];
+         conversion:bundled_by [ ov:csvCol 2 ];
          conversion:label   "Certification Body";
          conversion:equivalent_property certin:hasCertificationBody;
          #conversion:subproperty_of      dcterms:identifier;
