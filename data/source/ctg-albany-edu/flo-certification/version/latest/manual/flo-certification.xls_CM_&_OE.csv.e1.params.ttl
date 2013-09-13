@@ -102,7 +102,7 @@
          ov:csvCol          2;
          ov:csvHeader       "CMDescription_Audit";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Description"
+         conversion:label   "Description"; 
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
