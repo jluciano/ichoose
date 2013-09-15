@@ -186,7 +186,7 @@
          ov:csvHeader       "CERT_RESULT";
          #conversion:bundled_by [ ov:csvCol 1 ];
          #conversion:label   "CERT_RESULT";
-         conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property  certin:hasCertificationResult;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -198,7 +198,7 @@
          ov:csvHeader       "CERT_BODY";
          #conversion:bundled_by [ ov:csvCol 1 ];
          #conversion:label   "CERT_BODY";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property certin:hasCertificationBody;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
