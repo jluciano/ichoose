@@ -36,6 +36,7 @@
 @prefix ov:            <http://open.vocab.org/terms/> .
 @prefix conversion:    <http://purl.org/twc/vocab/conversion/> .
 @prefix :              <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/params/enhancement/1/> .
+@prefix certin:          <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> .
 
 
 #:a_bundle
@@ -57,7 +58,7 @@
    conversion:conversion_process [
       a conversion:EnhancementConversionProcess;
       conversion:enhancement_identifier "1";
-      conversion:subject_discriminator  "flo-certification.xls-product-code";
+      conversion:subject_discriminator  "product";
 
       dcterms:creator [ a foaf:OnlineAccount; foaf:accountName "ndepaula" ];
       dcterms:created "2013-09-14T02:11:27+00:00"^^xsd:dateTime;
@@ -77,10 +78,10 @@
       #   conversion:symbol        "";
       #   conversion:interpretation conversion:null; 
       #];
-      #conversion:enhance [
-      #   conversion:domain_template "thing_[r]";
-      #   conversion:domain_name     "Thing";
-      #];
+     conversion:enhance [
+        conversion:domain_template "[#4]";
+         conversion:domain_name     certin:Product;
+      ];
       #conversion:enhance [
       #   conversion:class_name "Thing";
       #   conversion:subclass_of <http://purl.org/...>;
@@ -90,7 +91,7 @@
          ov:csvHeader       "Class";
          #conversion:bundled_by [ ov:csvCol 1 ];
          #conversion:label   "Class";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property  certin:hasClass;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -102,7 +103,7 @@
          ov:csvHeader       "Product";
          #conversion:bundled_by [ ov:csvCol 1 ];
          #conversion:label   "Product";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property  certin:hasName;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -114,7 +115,7 @@
          ov:csvHeader       "Attribute Value";
          #conversion:bundled_by [ ov:csvCol 1 ];
          #conversion:label   "Attribute Value";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property  certin:hasAttribute;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -126,7 +127,7 @@
          ov:csvHeader       "Product Code";
          #conversion:bundled_by [ ov:csvCol 1 ];
          #conversion:label   "Product Code";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";

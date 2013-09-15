@@ -36,7 +36,7 @@
 @prefix ov:            <http://open.vocab.org/terms/> .
 @prefix conversion:    <http://purl.org/twc/vocab/conversion/> .
 @prefix :              <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/params/enhancement/1/> .
-
+@prefix certin:          <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> .
 
 #:a_bundle
 #   a conversion:ImplicitBundle;
@@ -57,7 +57,7 @@
    conversion:conversion_process [
       a conversion:EnhancementConversionProcess;
       conversion:enhancement_identifier "1";
-      conversion:subject_discriminator  "flo-certification.xls-contact";
+     # conversion:subject_discriminator  "flo-certification.xls-contact";
 
       dcterms:creator [ a foaf:OnlineAccount; foaf:accountName "ndepaula" ];
       dcterms:created "2013-09-14T02:11:22+00:00"^^xsd:dateTime;
@@ -77,10 +77,10 @@
       #   conversion:symbol        "";
       #   conversion:interpretation conversion:null; 
       #];
-      #conversion:enhance [
-      #   conversion:domain_template "thing_[r]";
-      #   conversion:domain_name     "Thing";
-      #];
+      conversion:enhance [
+         conversion:domain_template "[#1]";
+         conversion:domain_name     certin:Applicant;
+      ];
       #conversion:enhance [
       #   conversion:class_name "Thing";
       #   conversion:subclass_of <http://purl.org/...>;
@@ -90,7 +90,7 @@
          ov:csvHeader       "ID";
          #conversion:bundled_by [ ov:csvCol 1 ];
          #conversion:label   "ID";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property  dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -102,7 +102,7 @@
          ov:csvHeader       "Phone";
          #conversion:bundled_by [ ov:csvCol 1 ];
          #conversion:label   "Phone";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property  con:phone;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -114,7 +114,7 @@
          ov:csvHeader       "Fax";
          #conversion:bundled_by [ ov:csvCol 1 ];
          #conversion:label   "Fax";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property  con:fax;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -126,7 +126,7 @@
          ov:csvHeader       "Email";
          #conversion:bundled_by [ ov:csvCol 1 ];
          #conversion:label   "Email";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property  con:emailAddress;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -138,7 +138,7 @@
          ov:csvHeader       "Homepage";
          #conversion:bundled_by [ ov:csvCol 1 ];
          #conversion:label   "Homepage";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property  con:homePage;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
