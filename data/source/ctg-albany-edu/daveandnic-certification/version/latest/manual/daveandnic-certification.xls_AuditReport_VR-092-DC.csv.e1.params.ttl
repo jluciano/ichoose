@@ -57,7 +57,7 @@
    conversion:conversion_process [
       a conversion:EnhancementConversionProcess;
       conversion:enhancement_identifier "1";
-     # conversion:subject_discriminator  "daveandnic-certification.xls-auditreport-vr-092-dc";
+     conversion:subject_discriminator  "inspectionreport";
 
       dcterms:creator [ a foaf:OnlineAccount; foaf:accountName "ndepaula" ];
       dcterms:created "2013-08-06T01:48:38+00:00"^^xsd:dateTime;
@@ -89,11 +89,11 @@
          ov:csvCol          1;
          ov:csvHeader       "CC NO.";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Compliance Criteria";
+         #conversion:label   "Compliance Criteria";
          conversion:equivalent_property certin:hasComplianceCriteria;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
-         conversion:range_template  "[/sd]version/latest/[.]";
+         conversion:range_template  "[/sd]inspectionreport/version/latest/[.]";
          conversion:range   rdfs:Resource;
          #conversion:range_name  "Thing";
       ];
@@ -113,8 +113,8 @@
          ov:csvCol          3;
          ov:csvHeader       "CONFORMITY";
          conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "CONFORMITY";
-         #conversion:equivalent_property dcterms:identifier;
+         #conversion:label   "CONFORMITY";
+         conversion:equivalent_property  certin:conformity;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -125,11 +125,11 @@
          ov:csvCol          4;
          ov:csvHeader       "VERIFY-NO";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Inspection Report";
-         conversion:equivalent_property  certin:hasURI;
+         #conversion:label   "Inspection Report";
+         conversion:equivalent_property  dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
-         conversion:range_template  "[/sd]version/latest/[.]";
+         conversion:range_template  "[/sd]inspectionreport/version/latest/[.]";
          conversion:range   rdfs:Resource;
          #conversion:range_name  "Thing";
       ];
@@ -137,8 +137,8 @@
          ov:csvCol          5;
          ov:csvHeader       "EVIDENCE";
          conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Objective Evidence";
-         conversion:equivalent_property certin:hasObjectiveEvidence;
+         #conversion:label   "Objective Evidence";
+         conversion:equivalent_property certin:objectiveEvidence;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -149,8 +149,8 @@
          ov:csvCol          6;
          ov:csvHeader       "AGREE ON EVIDENCE";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Agree on Evidence";
-         #conversion:equivalent_property dcterms:identifier;
+         #conversion:label   "Agree on Evidence";
+         conversion:equivalent_property dcterms:agreeEvidence;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -161,8 +161,8 @@
          ov:csvCol          7;
          ov:csvHeader       "ADDITIONAL EVIDENCE";
          conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label  "objectiveEvidence";
-         conversion:equivalent_property certin:objectiveEvidence;
+         #conversion:label  "objectiveEvidence";
+         conversion:equivalent_property certin:additionalEvidence;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";

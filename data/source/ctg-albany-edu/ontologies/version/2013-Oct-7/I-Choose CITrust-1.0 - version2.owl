@@ -1,0 +1,2887 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dcam "http://purl.org/dc/dcam/" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ont "http://www.co-ode.org/ontologies/ont.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ont="http://www.co-ode.org/ontologies/ont.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dcam="http://purl.org/dc/dcam/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <AnnotationProperty rdf:about="&dc;contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/coverage -->
+
+    <AnnotationProperty rdf:about="&dc;coverage"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <AnnotationProperty rdf:about="&dc;date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <AnnotationProperty rdf:about="&dc;description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/format -->
+
+    <AnnotationProperty rdf:about="&dc;format"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <AnnotationProperty rdf:about="&dc;identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/language -->
+
+    <AnnotationProperty rdf:about="&dc;language"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <AnnotationProperty rdf:about="&dc;publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/relation -->
+
+    <AnnotationProperty rdf:about="&dc;relation"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <AnnotationProperty rdf:about="&dc;rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <AnnotationProperty rdf:about="&dc;source"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+    <AnnotationProperty rdf:about="&dc;subject"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <AnnotationProperty rdf:about="&dc;title"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+    <AnnotationProperty rdf:about="&dc;type"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+    <AnnotationProperty rdf:about="&dcterms;abstract">
+        <rdfs:label xml:lang="en">Abstract</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A summary of the resource.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#abstract-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;description"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;description"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/accessRights -->
+
+    <AnnotationProperty rdf:about="&dcterms;accessRights">
+        <rdfs:label xml:lang="en">Access Rights</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2003-02-15</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <dcterms:description xml:lang="en">Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.</dcterms:description>
+        <rdfs:comment xml:lang="en">Information about who can access the resource or an indication of its security status.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#accessRights-002"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;rights"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;rights"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/accrualMethod -->
+
+    <AnnotationProperty rdf:about="&dcterms;accrualMethod">
+        <rdfs:label xml:lang="en">Accrual Method</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2005-06-13</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2010-10-11</dcterms:modified>
+        <rdfs:comment xml:lang="en">The method by which items are added to a collection.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#accrualMethod-003"/>
+        <rdfs:domain rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/accrualPeriodicity -->
+
+    <AnnotationProperty rdf:about="&dcterms;accrualPeriodicity">
+        <rdfs:label xml:lang="en">Accrual Periodicity</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2005-06-13</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2010-10-11</dcterms:modified>
+        <rdfs:comment xml:lang="en">The frequency with which items are added to a collection.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#accrualPeriodicity-003"/>
+        <rdfs:domain rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/accrualPolicy -->
+
+    <AnnotationProperty rdf:about="&dcterms;accrualPolicy">
+        <rdfs:label xml:lang="en">Accrual Policy</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2005-06-13</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2010-10-11</dcterms:modified>
+        <rdfs:comment xml:lang="en">The policy governing the addition of items to a collection.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#accrualPolicy-003"/>
+        <rdfs:domain rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/alternative -->
+
+    <AnnotationProperty rdf:about="&dcterms;alternative">
+        <rdfs:subPropertyOf rdf:resource="&dc;title"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;title"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/audience -->
+
+    <rdf:Description rdf:about="&dcterms;audience">
+        <rdfs:label xml:lang="en">Audience</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2001-05-21</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A class of entity for whom the resource is intended or useful.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#audience-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/dc/terms/available -->
+
+    <AnnotationProperty rdf:about="&dcterms;available">
+        <rdfs:label xml:lang="en">Date Available</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">Date (often a range) that the resource became or will become available.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#available-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;date"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <AnnotationProperty rdf:about="&dcterms;bibliographicCitation">
+        <rdfs:subPropertyOf rdf:resource="&dc;identifier"/>
+        <rdfs:domain rdf:resource="&dcterms;BibliographicResource"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;identifier"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/conformsTo -->
+
+    <AnnotationProperty rdf:about="&dcterms;conformsTo">
+        <rdfs:label xml:lang="en">Conforms To</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2001-05-21</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">An established standard to which the described resource conforms.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#conformsTo-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;relation"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <AnnotationProperty rdf:about="&dcterms;contributor">
+        <rdfs:label xml:lang="en">Contributor</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2010-10-11</dcterms:modified>
+        <rdfs:comment xml:lang="en">An entity responsible for making contributions to the resource.</rdfs:comment>
+        <dcterms:description xml:lang="en">Examples of a Contributor include a person, an organization, or a service.</dcterms:description>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#contributorT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;contributor"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/coverage -->
+
+    <AnnotationProperty rdf:about="&dcterms;coverage">
+        <rdfs:label xml:lang="en">Coverage</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <dcterms:description xml:lang="en">Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges.</dcterms:description>
+        <rdfs:comment xml:lang="en">The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#coverageT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;coverage"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <AnnotationProperty rdf:about="&dcterms;created">
+        <rdfs:label xml:lang="en">Date Created</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">Date of creation of the resource.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#created-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;date"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <AnnotationProperty rdf:about="&dcterms;creator">
+        <rdfs:label xml:lang="en">Creator</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2010-10-11</dcterms:modified>
+        <rdfs:comment xml:lang="en">An entity primarily responsible for making the resource.</rdfs:comment>
+        <dcterms:description xml:lang="en">Examples of a Creator include a person, an organization, or a service.</dcterms:description>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#creatorT-002"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;creator"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+    <AnnotationProperty rdf:about="&dcterms;date">
+        <rdfs:label xml:lang="en">Date</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A point or period of time associated with an event in the lifecycle of the resource.</rdfs:comment>
+        <dcterms:description xml:lang="en">Date may be used to express temporal information at any level of granularity.  Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF].</dcterms:description>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#dateT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;date"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateAccepted -->
+
+    <AnnotationProperty rdf:about="&dcterms;dateAccepted">
+        <rdfs:label xml:lang="en">Date Accepted</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2002-07-13</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">Date of acceptance of the resource.</rdfs:comment>
+        <dcterms:description xml:lang="en">Examples of resources to which a Date Accepted may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal).</dcterms:description>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#dateAccepted-002"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;date"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateCopyrighted -->
+
+    <AnnotationProperty rdf:about="&dcterms;dateCopyrighted">
+        <rdfs:label xml:lang="en">Date Copyrighted</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2002-07-13</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">Date of copyright.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#dateCopyrighted-002"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;date"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateSubmitted -->
+
+    <AnnotationProperty rdf:about="&dcterms;dateSubmitted">
+        <rdfs:label xml:lang="en">Date Submitted</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2002-07-13</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">Date of submission of the resource.</rdfs:comment>
+        <dcterms:description xml:lang="en">Examples of resources to which a Date Submitted may be relevant are a thesis (submitted to a university department) or an article (submitted to a journal).</dcterms:description>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#dateSubmitted-002"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;date"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <AnnotationProperty rdf:about="&dcterms;description">
+        <rdfs:label xml:lang="en">Description</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>
+        <dcterms:description xml:lang="en">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</dcterms:description>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#descriptionT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;description"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/educationLevel -->
+
+    <AnnotationProperty rdf:about="&dcterms;educationLevel">
+        <rdfs:label xml:lang="en">Audience Education Level</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2002-07-13</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#educationLevel-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;audience"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/extent -->
+
+    <AnnotationProperty rdf:about="&dcterms;extent">
+        <rdfs:label xml:lang="en">Extent</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">The size or duration of the resource.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#extent-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;format"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;format"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/format -->
+
+    <AnnotationProperty rdf:about="&dcterms;format">
+        <rdfs:label xml:lang="en">Format</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <dcterms:description xml:lang="en">Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME].</dcterms:description>
+        <rdfs:comment xml:lang="en">The file format, physical medium, or dimensions of the resource.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#formatT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;format"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasFormat -->
+
+    <AnnotationProperty rdf:about="&dcterms;hasFormat">
+        <rdfs:label xml:lang="en">Has Format</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A related resource that is substantially the same as the pre-existing described resource, but in another format.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#hasFormat-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;relation"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasPart -->
+
+    <AnnotationProperty rdf:about="&dcterms;hasPart">
+        <rdfs:label xml:lang="en">Has Part</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A related resource that is included either physically or logically in the described resource.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#hasPart-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;relation"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+    <AnnotationProperty rdf:about="&dcterms;hasVersion">
+        <rdfs:label xml:lang="en">Has Version</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A related resource that is a version, edition, or adaptation of the described resource.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#hasVersion-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;relation"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <AnnotationProperty rdf:about="&dcterms;identifier">
+        <rdfs:label xml:lang="en">Identifier</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>
+        <dcterms:description xml:lang="en">Recommended best practice is to identify the resource by means of a string conforming to a formal identification system. </dcterms:description>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#identifierT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;identifier"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isFormatOf -->
+
+    <AnnotationProperty rdf:about="&dcterms;isFormatOf">
+        <rdfs:label xml:lang="en">Is Format Of</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A related resource that is substantially the same as the described resource, but in another format.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#isFormatOf-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;relation"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isPartOf -->
+
+    <AnnotationProperty rdf:about="&dcterms;isPartOf">
+        <rdfs:label xml:lang="en">Is Part Of</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A related resource in which the described resource is physically or logically included.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#isPartOf-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;relation"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isReferencedBy -->
+
+    <AnnotationProperty rdf:about="&dcterms;isReferencedBy">
+        <rdfs:label xml:lang="en">Is Referenced By</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A related resource that references, cites, or otherwise points to the described resource.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#isReferencedBy-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;relation"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isReplacedBy -->
+
+    <AnnotationProperty rdf:about="&dcterms;isReplacedBy">
+        <rdfs:label xml:lang="en">Is Replaced By</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A related resource that supplants, displaces, or supersedes the described resource.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#isReplacedBy-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;relation"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isRequiredBy -->
+
+    <AnnotationProperty rdf:about="&dcterms;isRequiredBy">
+        <rdfs:label xml:lang="en">Is Required By</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A related resource that requires the described resource to support its function, delivery, or coherence.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#isRequiredBy-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;relation"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isVersionOf -->
+
+    <AnnotationProperty rdf:about="&dcterms;isVersionOf">
+        <rdfs:label xml:lang="en">Is Version Of</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A related resource of which the described resource is a version, edition, or adaptation.</rdfs:comment>
+        <dcterms:description xml:lang="en">Changes in version imply substantive changes in content rather than differences in format.</dcterms:description>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#isVersionOf-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;relation"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <AnnotationProperty rdf:about="&dcterms;issued">
+        <rdfs:label xml:lang="en">Date Issued</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">Date of formal issuance (e.g., publication) of the resource.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#issued-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;date"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+    <AnnotationProperty rdf:about="&dcterms;language">
+        <rdfs:label xml:lang="en">Language</rdfs:label>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>
+        <dcterms:description xml:lang="en">Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646].</dcterms:description>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#languageT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;language"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <AnnotationProperty rdf:about="&dcterms;license">
+        <rdfs:label xml:lang="en">License</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2004-06-14</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A legal document giving official permission to do something with the resource.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#license-002"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;rights"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;rights"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/mediator -->
+
+    <AnnotationProperty rdf:about="&dcterms;mediator">
+        <rdfs:label xml:lang="en">Mediator</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2001-05-21</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">An entity that mediates access to the resource and for whom the resource is intended or useful.</rdfs:comment>
+        <dcterms:description xml:lang="en">In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver.</dcterms:description>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#mediator-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;audience"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/medium -->
+
+    <AnnotationProperty rdf:about="&dcterms;medium">
+        <rdfs:label xml:lang="en">Medium</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">The material or physical carrier of the resource.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#medium-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;format"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:domain rdf:resource="&dcterms;PhysicalResource"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;format"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <AnnotationProperty rdf:about="&dcterms;modified">
+        <rdfs:label xml:lang="en">Date Modified</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#modified-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;date"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <AnnotationProperty rdf:about="&dcterms;publisher">
+        <rdfs:label xml:lang="en">Publisher</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2010-10-11</dcterms:modified>
+        <rdfs:comment xml:lang="en">An entity responsible for making the resource available.</rdfs:comment>
+        <dcterms:description xml:lang="en">Examples of a Publisher include a person, an organization, or a service.</dcterms:description>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#publisherT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;publisher"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/references -->
+
+    <AnnotationProperty rdf:about="&dcterms;references">
+        <rdfs:label xml:lang="en">References</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A related resource that is referenced, cited, or otherwise pointed to by the described resource.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#references-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;relation"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/relation -->
+
+    <AnnotationProperty rdf:about="&dcterms;relation">
+        <rdfs:label xml:lang="en">Relation</rdfs:label>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <rdfs:comment xml:lang="en">A related resource.</rdfs:comment>
+        <dcterms:description xml:lang="en">Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system. </dcterms:description>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#relationT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/replaces -->
+
+    <AnnotationProperty rdf:about="&dcterms;replaces">
+        <rdfs:label xml:lang="en">Replaces</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A related resource that is supplanted, displaced, or superseded by the described resource.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#replaces-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;relation"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/requires -->
+
+    <AnnotationProperty rdf:about="&dcterms;requires">
+        <rdfs:label xml:lang="en">Requires</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A related resource that is required by the described resource to support its function, delivery, or coherence.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#requires-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;relation"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <AnnotationProperty rdf:about="&dcterms;rights">
+        <rdfs:label xml:lang="en">Rights</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">Information about rights held in and over the resource.</rdfs:comment>
+        <dcterms:description xml:lang="en">Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.</dcterms:description>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#rightsT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;rights"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <AnnotationProperty rdf:about="&dcterms;source">
+        <rdfs:label xml:lang="en">Source</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A related resource from which the described resource is derived.</rdfs:comment>
+        <dcterms:description xml:lang="en">The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.</dcterms:description>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#sourceT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;source"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;relation"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/spatial -->
+
+    <AnnotationProperty rdf:about="&dcterms;spatial">
+        <rdfs:label xml:lang="en">Spatial Coverage</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">Spatial characteristics of the resource.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#spatial-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;coverage"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;coverage"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <AnnotationProperty rdf:about="&dcterms;subject">
+        <rdfs:label xml:lang="en">Subject</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2012-06-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">The topic of the resource.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dcterms:description xml:lang="en">Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary.</dcterms:description>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#subjectT-002"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;subject"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/tableOfContents -->
+
+    <AnnotationProperty rdf:about="&dcterms;tableOfContents">
+        <rdfs:label xml:lang="en">Table Of Contents</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A list of subunits of the resource.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#tableOfContents-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;description"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;description"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/temporal -->
+
+    <AnnotationProperty rdf:about="&dcterms;temporal">
+        <rdfs:label xml:lang="en">Temporal Coverage</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">Temporal characteristics of the resource.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#temporal-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;coverage"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;coverage"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <AnnotationProperty rdf:about="&dcterms;title">
+        <rdfs:subPropertyOf rdf:resource="&dc;title"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/type -->
+
+    <AnnotationProperty rdf:about="&dcterms;type">
+        <rdfs:label xml:lang="en">Type</rdfs:label>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <dcterms:description xml:lang="en">Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element.</dcterms:description>
+        <rdfs:comment xml:lang="en">The nature or genre of the resource.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#typeT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;type"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/valid -->
+
+    <AnnotationProperty rdf:about="&dcterms;valid">
+        <rdfs:label xml:lang="en">Date Valid</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">Date (often a range) of validity of a resource.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#valid-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;date"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+    <AnnotationProperty rdf:about="&skos;note"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/Box -->
+
+    <rdfs:Datatype rdf:about="&dcterms;Box">
+        <rdfs:label xml:lang="en">DCMI Box</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">The set of regions in space defined by their geographic coordinates according to the DCMI Box Encoding Scheme.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-box/"/>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#Box-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/ISO3166 -->
+
+    <rdfs:Datatype rdf:about="&dcterms;ISO3166">
+        <rdfs:label xml:lang="en">ISO 3166</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">The set of codes listed in ISO 3166-1 for the representation of names of countries.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#ISO3166-004"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.iso.org/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/list-en1.html"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/ISO639-2 -->
+
+    <rdfs:Datatype rdf:about="&dcterms;ISO639-2">
+        <rdfs:label xml:lang="en">ISO 639-2</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">The three-letter alphabetic codes listed in ISO639-2 for the representation of names of languages.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#ISO639-2-003"/>
+        <rdfs:seeAlso rdf:resource="http://lcweb.loc.gov/standards/iso639-2/langhome.html"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/ISO639-3 -->
+
+    <rdfs:Datatype rdf:about="&dcterms;ISO639-3">
+        <rdfs:label xml:lang="en">ISO 639-3</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <rdfs:comment xml:lang="en">The set of three-letter codes listed in ISO 639-3 for the representation of names of languages.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#ISO639-3-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.sil.org/iso639-3/"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/Period -->
+
+    <rdfs:Datatype rdf:about="&dcterms;Period">
+        <rdfs:label xml:lang="en">DCMI Period</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">The set of time intervals defined by their limits according to the DCMI Period Encoding Scheme.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-period/"/>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#Period-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/Point -->
+
+    <rdfs:Datatype rdf:about="&dcterms;Point">
+        <rdfs:label xml:lang="en">DCMI Point</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">The set of points in space defined by their geographic coordinates according to the DCMI Point Encoding Scheme.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-point/"/>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#Point-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/RFC1766 -->
+
+    <rdfs:Datatype rdf:about="&dcterms;RFC1766">
+        <rdfs:label xml:lang="en">RFC 1766</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">The set of tags, constructed according to RFC 1766, for the identification of languages.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#RFC1766-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.ietf.org/rfc/rfc1766.txt"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/RFC3066 -->
+
+    <rdfs:Datatype rdf:about="&dcterms;RFC3066">
+        <rdfs:label xml:lang="en">RFC 3066</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2002-07-13</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <dcterms:description xml:lang="en">RFC 3066 has been obsoleted by RFC 4646.</dcterms:description>
+        <rdfs:comment xml:lang="en">The set of tags constructed according to RFC 3066 for the identification of languages.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#RFC3066-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.ietf.org/rfc/rfc3066.txt"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/RFC4646 -->
+
+    <rdfs:Datatype rdf:about="&dcterms;RFC4646">
+        <rdfs:label xml:lang="en">RFC 4646</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <dcterms:description xml:lang="en">RFC 4646 obsoletes RFC 3066.</dcterms:description>
+        <rdfs:comment xml:lang="en">The set of tags constructed according to RFC 4646 for the identification of languages.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#RFC4646-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.ietf.org/rfc/rfc4646.txt"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/RFC5646 -->
+
+    <rdfs:Datatype rdf:about="&dcterms;RFC5646">
+        <rdfs:label xml:lang="en">RFC 5646</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2010-10-11</dcterms:issued>
+        <dcterms:description xml:lang="en">RFC 5646 obsoletes RFC 4646.</dcterms:description>
+        <rdfs:comment xml:lang="en">The set of tags constructed according to RFC 5646 for the identification of languages.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#RFC5646-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.ietf.org/rfc/rfc5646.txt"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/URI -->
+
+    <rdfs:Datatype rdf:about="&dcterms;URI">
+        <rdfs:label xml:lang="en">URI</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">The set of identifiers constructed according to the generic syntax for Uniform Resource Identifiers as specified by the Internet Engineering Task Force.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#URI-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.ietf.org/rfc/rfc3986.txt"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/W3CDTF -->
+
+    <rdfs:Datatype rdf:about="&dcterms;W3CDTF">
+        <rdfs:label xml:lang="en">W3C-DTF</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">The set of dates and times constructed according to the W3C Date and Time Formats Specification.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#W3CDTF-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/NOTE-datetime"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="&xsd;date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/conformsTo -->
+
+    <ObjectProperty rdf:about="&dcterms;conformsTo">
+        <rdfs:label xml:lang="en">Conforms To</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2001-05-21</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">An established standard to which the described resource conforms.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#conformsTo-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dcterms;Standard"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <ObjectProperty rdf:about="&dcterms;contributor">
+        <rdfs:label xml:lang="en">Contributor</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2010-10-11</dcterms:modified>
+        <rdfs:comment xml:lang="en">An entity responsible for making contributions to the resource.</rdfs:comment>
+        <dcterms:description xml:lang="en">Examples of a Contributor include a person, an organization, or a service.</dcterms:description>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#contributorT-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dcterms;Agent"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <ObjectProperty rdf:about="&dcterms;creator">
+        <rdfs:label xml:lang="en">Creator</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2010-10-11</dcterms:modified>
+        <rdfs:comment xml:lang="en">An entity primarily responsible for making the resource.</rdfs:comment>
+        <dcterms:description xml:lang="en">Examples of a Creator include a person, an organization, or a service.</dcterms:description>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#creatorT-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dcterms;Agent"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;contributor"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <ObjectProperty rdf:about="&dcterms;publisher">
+        <rdfs:label xml:lang="en">Publisher</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2010-10-11</dcterms:modified>
+        <rdfs:comment xml:lang="en">An entity responsible for making the resource available.</rdfs:comment>
+        <dcterms:description xml:lang="en">Examples of a Publisher include a person, an organization, or a service.</dcterms:description>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#publisherT-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dcterms;Agent"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/rightsHolder -->
+
+    <ObjectProperty rdf:about="&dcterms;rightsHolder">
+        <rdfs:label xml:lang="en">Rights Holder</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2004-06-14</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A person or organization owning or managing rights over the resource.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#rightsHolder-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dcterms;Agent"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#&apos;Applicable_To&apos; -->
+
+    <ObjectProperty rdf:about="&ont;&apos;Applicable_To&apos;">
+        <rdfs:label>Applicable to</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#&apos;Recipient_Of&apos; -->
+
+    <ObjectProperty rdf:about="&ont;&apos;Recipient_Of&apos;">
+        <rdfs:label>Recipient of</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#&apos;Report_To&apos; -->
+
+    <ObjectProperty rdf:about="&ont;&apos;Report_To&apos;">
+        <rdfs:label>Report to</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Accredited_by -->
+
+    <ObjectProperty rdf:about="&ont;Accredited_by">
+        <rdfs:label>Accredited by</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Acknowledge -->
+
+    <ObjectProperty rdf:about="&ont;Acknowledge"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Authorize -->
+
+    <ObjectProperty rdf:about="&ont;Authorize"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Authorized_by -->
+
+    <ObjectProperty rdf:about="&ont;Authorized_by">
+        <rdfs:label>Authorized by</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Certified_by -->
+
+    <ObjectProperty rdf:about="&ont;Certified_by">
+        <rdfs:label>Certified by</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Certifying -->
+
+    <ObjectProperty rdf:about="&ont;Certifying"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Inspected_by -->
+
+    <ObjectProperty rdf:about="&ont;Inspected_by">
+        <rdfs:label>Inspected by</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Inspecting -->
+
+    <ObjectProperty rdf:about="&ont;Inspecting"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#has_Certifying_Officer -->
+
+    <ObjectProperty rdf:about="&ont;has_Certifying_Officer">
+        <rdfs:label>has Certifying Officer</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#has_Completed -->
+
+    <ObjectProperty rdf:about="&ont;has_Completed">
+        <rdfs:label>has Completed</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#has_Evaluation_Decision -->
+
+    <ObjectProperty rdf:about="&ont;has_Evaluation_Decision">
+        <rdfs:label>has Evaluation Decision</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#has_Evidence -->
+
+    <ObjectProperty rdf:about="&ont;has_Evidence">
+        <rdfs:label>has Evidence</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#has_Standard_Setter -->
+
+    <ObjectProperty rdf:about="&ont;has_Standard_Setter">
+        <rdfs:label>has Standard Setter</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/available -->
+
+    <DatatypeProperty rdf:about="&dcterms;available">
+        <rdfs:label xml:lang="en">Date Available</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">Date (often a range) that the resource became or will become available.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#available-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <DatatypeProperty rdf:about="&dcterms;created">
+        <rdfs:label xml:lang="en">Date Created</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">Date of creation of the resource.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#created-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+    <DatatypeProperty rdf:about="&dcterms;date">
+        <rdfs:label xml:lang="en">Date</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A point or period of time associated with an event in the lifecycle of the resource.</rdfs:comment>
+        <dcterms:description xml:lang="en">Date may be used to express temporal information at any level of granularity.  Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF].</dcterms:description>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#dateT-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateAccepted -->
+
+    <DatatypeProperty rdf:about="&dcterms;dateAccepted">
+        <rdfs:label xml:lang="en">Date Accepted</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2002-07-13</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">Date of acceptance of the resource.</rdfs:comment>
+        <dcterms:description xml:lang="en">Examples of resources to which a Date Accepted may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal).</dcterms:description>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#dateAccepted-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateCopyrighted -->
+
+    <DatatypeProperty rdf:about="&dcterms;dateCopyrighted">
+        <rdfs:label xml:lang="en">Date Copyrighted</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2002-07-13</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">Date of copyright.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#dateCopyrighted-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateSubmitted -->
+
+    <DatatypeProperty rdf:about="&dcterms;dateSubmitted">
+        <rdfs:label xml:lang="en">Date Submitted</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2002-07-13</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">Date of submission of the resource.</rdfs:comment>
+        <dcterms:description xml:lang="en">Examples of resources to which a Date Submitted may be relevant are a thesis (submitted to a university department) or an article (submitted to a journal).</dcterms:description>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#dateSubmitted-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <DatatypeProperty rdf:about="&dcterms;identifier">
+        <rdfs:label xml:lang="en">Identifier</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>
+        <dcterms:description xml:lang="en">Recommended best practice is to identify the resource by means of a string conforming to a formal identification system. </dcterms:description>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#identifierT-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <DatatypeProperty rdf:about="&dcterms;issued">
+        <rdfs:label xml:lang="en">Date Issued</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">Date of formal issuance (e.g., publication) of the resource.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#issued-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <DatatypeProperty rdf:about="&dcterms;modified">
+        <rdfs:label xml:lang="en">Date Modified</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#modified-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/valid -->
+
+    <DatatypeProperty rdf:about="&dcterms;valid">
+        <rdfs:label xml:lang="en">Date Valid</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">Date (often a range) of validity of a resource.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#valid-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Accredited_by -->
+
+    <DatatypeProperty rdf:about="&ont;Accredited_by">
+        <rdfs:label>Accredited by</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Certification_by -->
+
+    <DatatypeProperty rdf:about="&ont;Certification_by">
+        <rdfs:label>Certification by</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Certifying_Officer_is -->
+
+    <DatatypeProperty rdf:about="&ont;Certifying_Officer_is">
+        <rdfs:label>Certifying Officer is</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Date_Certified -->
+
+    <DatatypeProperty rdf:about="&ont;Date_Certified">
+        <rdfs:label>Date Certified</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Date_Inspected -->
+
+    <DatatypeProperty rdf:about="&ont;Date_Inspected">
+        <rdfs:label>Date Inspected</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Focus -->
+
+    <DatatypeProperty rdf:about="&ont;Focus"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Independency_Status -->
+
+    <DatatypeProperty rdf:about="&ont;Independency_Status">
+        <rdfs:label>Independency Status</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Inspection_by -->
+
+    <DatatypeProperty rdf:about="&ont;Inspection_by">
+        <rdfs:label>Inspection by</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#LegalStatus -->
+
+    <DatatypeProperty rdf:about="&ont;LegalStatus">
+        <rdfs:label>Legal Status</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#License -->
+
+    <DatatypeProperty rdf:about="&ont;License"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Standard_Type -->
+
+    <DatatypeProperty rdf:about="&ont;Standard_Type">
+        <rdfs:label>Standard Type</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#has_Certificate -->
+
+    <DatatypeProperty rdf:about="&ont;has_Certificate">
+        <rdfs:label>has Certificate</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#has_Certifier -->
+
+    <DatatypeProperty rdf:about="&ont;has_Certifier">
+        <rdfs:label>has Certifier</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#has_URI -->
+
+    <DatatypeProperty rdf:about="&ont;has_URI">
+        <rdfs:label>has URI</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/Agent -->
+
+    <Class rdf:about="&dcterms;Agent">
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ont;Object_of_Trustworthiness"/>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <rdfs:comment xml:lang="en">A resource that acts or has the power to act.</rdfs:comment>
+        <dcterms:description xml:lang="en">Examples of Agent include person, organization, and software agent.</dcterms:description>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#Agent-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/Standard -->
+
+    <Class rdf:about="&dcterms;Standard">
+        <rdfs:label xml:lang="en">Standard</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ont;Document"/>
+        <disjointWith rdf:resource="&ont;&apos;Inspection_Report&apos;"/>
+        <disjointWith rdf:resource="&ont;Certificate"/>
+        <dcterms:issued rdf:datatype="&xsd;date">2008-01-14</dcterms:issued>
+        <rdfs:comment xml:lang="en">A basis for comparison; a reference point against which other things can be evaluated.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#Standard-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#&apos;Accreditation_Body&apos; -->
+
+    <Class rdf:about="&ont;&apos;Accreditation_Body&apos;">
+        <rdfs:label>Accreditation Body</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&dcterms;Agent"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&dcterms;created"/>
+                <someValuesFrom rdf:resource="&xsd;date"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="&ont;&apos;Standard_Setter&apos;"/>
+        <disjointWith rdf:resource="&ont;Applicant"/>
+        <disjointWith rdf:resource="&ont;Certifier"/>
+        <disjointWith rdf:resource="&ont;Inspector"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#&apos;Compliance_Criteria&apos; -->
+
+    <Class rdf:about="&ont;&apos;Compliance_Criteria&apos;">
+        <rdfs:label>Compliance Criteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&dcterms;Standard"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#&apos;Inspection_Report&apos; -->
+
+    <Class rdf:about="&ont;&apos;Inspection_Report&apos;">
+        <rdfs:label>Inspection Report</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ont;Document"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&dcterms;identifier"/>
+                <someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&dcterms;dateAccepted"/>
+                <someValuesFrom rdf:resource="&xsd;date"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&dcterms;dateSubmitted"/>
+                <someValuesFrom rdf:resource="&xsd;date"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="&ont;Certificate"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#&apos;Level_B_of_Trustworthiness&apos; -->
+
+    <Class rdf:about="&ont;&apos;Level_B_of_Trustworthiness&apos;">
+        <rdfs:label>Level B of Trustworthiness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ont;Level_Of_Trustworthiness_of_Certification"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Completed"/>
+                <someValuesFrom rdf:resource="&ont;Field_Inspection"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Certifying_Officer"/>
+                <onClass rdf:resource="&ont;Certifying_Officer"/>
+                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minQualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;Inspected_by"/>
+                <onClass rdf:resource="&ont;Inspector"/>
+                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minQualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;Certified_by"/>
+                <allValuesFrom rdf:resource="&ont;Internal_Certifer"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&dcterms;conformsTo"/>
+                <someValuesFrom rdf:resource="&dcterms;Standard"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;Accredited_by"/>
+                <onClass rdf:resource="&ont;&apos;Accreditation_Body&apos;"/>
+                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minQualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Standard_Setter"/>
+                <onClass rdf:resource="&ont;&apos;Standard_Setter&apos;"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Evaluation_Decision"/>
+                <someValuesFrom rdf:resource="&ont;Objective_Evidence"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Evaluation_Decision"/>
+                <someValuesFrom rdf:resource="&ont;Non_Conformity"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;Authorize"/>
+                <onClass rdf:resource="&ont;Certificate"/>
+                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minQualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Evaluation_Decision"/>
+                <someValuesFrom rdf:resource="&ont;Corrective_Measure"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Completed"/>
+                <someValuesFrom rdf:resource="&ont;Document_Inspection"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#&apos;Level_C_of_Trustworthiness&apos; -->
+
+    <Class rdf:about="&ont;&apos;Level_C_of_Trustworthiness&apos;">
+        <rdfs:label>Level C of Trustworthiness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ont;Level_Of_Trustworthiness_of_Certification"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;Certified_by"/>
+                <onClass rdf:resource="&ont;Certifier"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Evaluation_Decision"/>
+                <someValuesFrom rdf:resource="&ont;Non_Conformity"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Standard_Setter"/>
+                <onClass rdf:resource="&ont;&apos;Standard_Setter&apos;"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;Inspected_by"/>
+                <onClass rdf:resource="&ont;Inspector"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Evaluation_Decision"/>
+                <onClass rdf:resource="&ont;Objective_Evidence"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Completed"/>
+                <onClass rdf:resource="&ont;Field_Inspection"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;Accredited_by"/>
+                <onClass rdf:resource="&ont;&apos;Accreditation_Body&apos;"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Evaluation_Decision"/>
+                <onClass rdf:resource="&ont;Corrective_Measure"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Completed"/>
+                <allValuesFrom rdf:resource="&ont;Document_Inspection"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;Authorize"/>
+                <onClass rdf:resource="&ont;Certificate"/>
+                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minQualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Certifying_Officer"/>
+                <onClass rdf:resource="&ont;Certifying_Officer"/>
+                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minQualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&dcterms;conformsTo"/>
+                <someValuesFrom rdf:resource="&dcterms;Standard"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#&apos;Level_D_of_Trustworthiness&apos; -->
+
+    <Class rdf:about="&ont;&apos;Level_D_of_Trustworthiness&apos;">
+        <rdfs:label>Level D of Trustworthiness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ont;Level_Of_Trustworthiness_of_Certification"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Standard_Setter"/>
+                <onClass rdf:resource="&ont;&apos;Standard_Setter&apos;"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Completed"/>
+                <onClass rdf:resource="&ont;Inspection_Process_in_Certification"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;Inspected_by"/>
+                <onClass rdf:resource="&ont;Inspector"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Certifying_Officer"/>
+                <onClass rdf:resource="&ont;Certifying_Officer"/>
+                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minQualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&dcterms;conformsTo"/>
+                <onClass rdf:resource="&dcterms;Standard"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;Authorize"/>
+                <onClass rdf:resource="&ont;Certificate"/>
+                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minQualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;Accredited_by"/>
+                <onClass rdf:resource="&ont;&apos;Accreditation_Body&apos;"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;Certified_by"/>
+                <onClass rdf:resource="&ont;Certifier"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#&apos;Standard_Setter&apos; -->
+
+    <Class rdf:about="&ont;&apos;Standard_Setter&apos;">
+        <rdfs:label>Standard Setter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&dcterms;Agent"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&dcterms;creator"/>
+                <someValuesFrom rdf:resource="&dcterms;Standard"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&dcterms;created"/>
+                <someValuesFrom rdf:resource="&xsd;date"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;Authorize"/>
+                <someValuesFrom rdf:resource="&ont;Certifier"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="&ont;Applicant"/>
+        <disjointWith rdf:resource="&ont;Inspector"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Applicant -->
+
+    <Class rdf:about="&ont;Applicant">
+        <rdfs:subClassOf rdf:resource="&dcterms;Agent"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;&apos;Recipient_Of&apos;"/>
+                <someValuesFrom rdf:resource="&ont;Certificate"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&dcterms;rightsHolder"/>
+                <someValuesFrom rdf:resource="&ont;&apos;Inspection_Report&apos;"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&dcterms;identifier"/>
+                <someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;Inspected_by"/>
+                <someValuesFrom rdf:resource="&ont;Inspector"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="&ont;Certifier"/>
+        <disjointWith rdf:resource="&ont;Inspector"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Certificate -->
+
+    <Class rdf:about="&ont;Certificate">
+        <rdfs:subClassOf rdf:resource="&ont;Document"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&dcterms;issued"/>
+                <someValuesFrom rdf:resource="&xsd;date"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&dcterms;identifier"/>
+                <someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&dcterms;valid"/>
+                <someValuesFrom rdf:resource="&xsd;date"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Certifier -->
+
+    <Class rdf:about="&ont;Certifier">
+        <rdfs:subClassOf rdf:resource="&dcterms;Agent"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&dcterms;created"/>
+                <someValuesFrom rdf:resource="&xsd;date"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&dcterms;creator"/>
+                <someValuesFrom rdf:resource="&ont;Certificate"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;&apos;Report_To&apos;"/>
+                <someValuesFrom rdf:resource="&ont;&apos;Standard_Setter&apos;"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;Certifying"/>
+                <someValuesFrom rdf:resource="&ont;Applicant"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;Authorize"/>
+                <someValuesFrom rdf:resource="&ont;Inspector"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="&ont;Inspector"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Certifying_Officer -->
+
+    <Class rdf:about="&ont;Certifying_Officer">
+        <rdfs:label>Certifying Officer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&dcterms;Agent"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;&apos;Report_To&apos;"/>
+                <someValuesFrom rdf:resource="&ont;Certifier"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;Authorized_by"/>
+                <someValuesFrom rdf:resource="&ont;Certifier"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Conformity -->
+
+    <Class rdf:about="&ont;Conformity">
+        <rdfs:subClassOf rdf:resource="&ont;Evaluation_Decision"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Evidence"/>
+                <someValuesFrom rdf:resource="&ont;Objective_Evidence"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Corrective_Measure -->
+
+    <Class rdf:about="&ont;Corrective_Measure">
+        <rdfs:label>Corrective Measure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ont;Non_Conformity"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Evidence"/>
+                <someValuesFrom rdf:resource="&ont;Objective_Evidence"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Document -->
+
+    <Class rdf:about="&ont;Document">
+        <rdfs:subClassOf rdf:resource="&ont;Object_of_Trustworthiness"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&dcterms;created"/>
+                <someValuesFrom rdf:resource="&xsd;date"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&dcterms;modified"/>
+                <someValuesFrom rdf:resource="&xsd;date"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&dcterms;valid"/>
+                <someValuesFrom rdf:resource="&xsd;date"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Document_Inspection -->
+
+    <Class rdf:about="&ont;Document_Inspection">
+        <rdfs:label>Document Inspection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ont;Inspection_Process_in_Certification"/>
+        <disjointWith rdf:resource="&ont;Field_Inspection"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Evaluation_Decision -->
+
+    <Class rdf:about="&ont;Evaluation_Decision">
+        <rdfs:label>Evaluation Decision</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ont;Object_of_Trustworthiness"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Field_Inspection -->
+
+    <Class rdf:about="&ont;Field_Inspection">
+        <rdfs:label>Field Inspection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ont;Inspection_Process_in_Certification"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Inspection_Process_in_Certification -->
+
+    <Class rdf:about="&ont;Inspection_Process_in_Certification">
+        <rdfs:label>Inspection Process in Certification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ont;Object_of_Trustworthiness"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Inspector -->
+
+    <Class rdf:about="&ont;Inspector">
+        <rdfs:subClassOf rdf:resource="&dcterms;Agent"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;&apos;Report_To&apos;"/>
+                <someValuesFrom rdf:resource="&ont;Certifier"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Completed"/>
+                <someValuesFrom rdf:resource="&ont;Field_Inspection"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;Authorized_by"/>
+                <someValuesFrom rdf:resource="&ont;Certifier"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&dcterms;conformsTo"/>
+                <someValuesFrom rdf:resource="&ont;&apos;Compliance_Criteria&apos;"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&dcterms;creator"/>
+                <someValuesFrom rdf:resource="&ont;&apos;Inspection_Report&apos;"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Completed"/>
+                <someValuesFrom rdf:resource="&ont;Document_Inspection"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Internal_Certifer -->
+
+    <Class rdf:about="&ont;Internal_Certifer">
+        <rdfs:label>Internal Certifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ont;Certifier"/>
+        <disjointWith rdf:resource="&ont;Third_Party_Certifier"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Level_A_of_Trustworthiness -->
+
+    <Class rdf:about="&ont;Level_A_of_Trustworthiness">
+        <rdfs:label>Level A of Trustworthiness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ont;Level_Of_Trustworthiness_of_Certification"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Completed"/>
+                <someValuesFrom rdf:resource="&ont;Document_Inspection"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;Certified_by"/>
+                <allValuesFrom rdf:resource="&ont;Third_Party_Certifier"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;Inspected_by"/>
+                <onClass rdf:resource="&ont;Inspector"/>
+                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minQualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Standard_Setter"/>
+                <onClass rdf:resource="&ont;&apos;Standard_Setter&apos;"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Completed"/>
+                <someValuesFrom rdf:resource="&ont;Field_Inspection"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;Authorize"/>
+                <onClass rdf:resource="&ont;Certificate"/>
+                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minQualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Certifying_Officer"/>
+                <onClass rdf:resource="&ont;Certifying_Officer"/>
+                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minQualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Evaluation_Decision"/>
+                <someValuesFrom rdf:resource="&ont;Non_Conformity"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&dcterms;conformsTo"/>
+                <someValuesFrom rdf:resource="&dcterms;Standard"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Evaluation_Decision"/>
+                <someValuesFrom rdf:resource="&ont;Objective_Evidence"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;has_Evaluation_Decision"/>
+                <someValuesFrom rdf:resource="&ont;Corrective_Measure"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&ont;Accredited_by"/>
+                <onClass rdf:resource="&ont;&apos;Accreditation_Body&apos;"/>
+                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minQualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Level_Of_Trustworthiness_of_Certification -->
+
+    <Class rdf:about="&ont;Level_Of_Trustworthiness_of_Certification">
+        <rdfs:label>Level of Trustworthiness of Certification</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Non_Conformity -->
+
+    <Class rdf:about="&ont;Non_Conformity">
+        <rdfs:label>Non-Conformity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ont;Evaluation_Decision"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Object_of_Trustworthiness -->
+
+    <Class rdf:about="&ont;Object_of_Trustworthiness">
+        <rdfs:label>Object of Trust in Certification</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Objective_Evidence -->
+
+    <Class rdf:about="&ont;Objective_Evidence">
+        <rdfs:label>Objective Evidence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ont;Evaluation_Decision"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Third_Party_Certifier -->
+
+    <Class rdf:about="&ont;Third_Party_Certifier">
+        <rdfs:label>Third Party Certifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ont;Certifier"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/aboutdcmi#DCMI -->
+
+    <NamedIndividual rdf:about="http://purl.org/dc/aboutdcmi#DCMI"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/ -->
+
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/">
+        <dcterms:modified rdf:datatype="&xsd;date">2012-06-14</dcterms:modified>
+        <dcterms:title xml:lang="en">DCMI Metadata Terms - other</dcterms:title>
+        <dcterms:publisher rdf:resource="http://purl.org/dc/aboutdcmi#DCMI"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Bio_Cert -->
+
+    <NamedIndividual rdf:about="&ont;Bio_Cert">
+        <rdf:type rdf:resource="&ont;Third_Party_Certifier"/>
+        <rdfs:label>Bio Cert</rdfs:label>
+        <ont:Authorized_by rdf:resource="&ont;USDA_Organic"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Certimex -->
+
+    <NamedIndividual rdf:about="&ont;Certimex">
+        <rdf:type rdf:resource="&ont;Third_Party_Certifier"/>
+        <dcterms:created rdf:datatype="&xsd;integer">1997</dcterms:created>
+        <ont:Independency_Status rdf:datatype="&xsd;string">3rd Party</ont:Independency_Status>
+        <ont:Accredited_by rdf:datatype="&xsd;string">USDA NOP</ont:Accredited_by>
+        <ont:has_URI rdf:datatype="&xsd;string">www.certimexsc.com</ont:has_URI>
+        <ont:Authorized_by rdf:resource="&ont;USDA_Organic"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Commercio_Justo -->
+
+    <NamedIndividual rdf:about="&ont;Commercio_Justo">
+        <rdf:type rdf:resource="&ont;Third_Party_Certifier"/>
+        <rdfs:label>Commercio Justo</rdfs:label>
+        <dcterms:created rdf:datatype="&xsd;integer">2005</dcterms:created>
+        <ont:Independency_Status rdf:datatype="&xsd;string">3rd Party </ont:Independency_Status>
+        <ont:Accredited_by rdf:datatype="&xsd;string">ISO 65</ont:Accredited_by>
+        <ont:has_URI rdf:datatype="&xsd;string">www.comerciojusto.org</ont:has_URI>
+        <ont:Authorized_by rdf:resource="&ont;FLO_Labeling_International"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Control_Union -->
+
+    <NamedIndividual rdf:about="&ont;Control_Union">
+        <rdf:type rdf:resource="&ont;Third_Party_Certifier"/>
+        <rdfs:label>Control Union</rdfs:label>
+        <dcterms:created rdf:datatype="&xsd;integer">1920</dcterms:created>
+        <ont:Independency_Status rdf:datatype="&xsd;string">3rd Party</ont:Independency_Status>
+        <ont:Accredited_by rdf:datatype="&xsd;string">ISO 65</ont:Accredited_by>
+        <ont:has_URI rdf:datatype="&xsd;string">www.certifications.controlunion.com</ont:has_URI>
+        <ont:Authorized_by rdf:resource="&ont;Starbucks_and_Conservation_International"/>
+        <ont:Authorized_by rdf:resource="&ont;USDA_Organic"/>
+        <ont:Authorized_by rdf:resource="&ont;UTZ_Good_Inside"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Cote_dIvoire_Sociale_Cafe -->
+
+    <NamedIndividual rdf:about="&ont;Cote_dIvoire_Sociale_Cafe">
+        <rdf:type rdf:resource="&ont;Applicant"/>
+        <rdfs:label>Code dIvoire Sociale Cafe</rdfs:label>
+        <ont:Date_Certified rdf:datatype="&xsd;string">11-03-2012</ont:Date_Certified>
+        <ont:has_Certificate rdf:datatype="&xsd;string">Dave &amp; Nic Blue Earth</ont:has_Certificate>
+        <ont:Date_Inspected rdf:datatype="&xsd;string">Not Inspected</ont:Date_Inspected>
+        <ont:Certifying_Officer_is rdf:datatype="&xsd;string">Shady Hoodwink</ont:Certifying_Officer_is>
+        <ont:Certified_by rdf:resource="&ont;Dave_and_Nic"/>
+        <ont:Inspected_by rdf:resource="&ont;Earl_Scammer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Dave_and_Nic -->
+
+    <NamedIndividual rdf:about="&ont;Dave_and_Nic">
+        <rdf:type rdf:resource="&ont;&apos;Level_C_of_Trustworthiness&apos;"/>
+        <rdf:type rdf:resource="&ont;&apos;Standard_Setter&apos;"/>
+        <rdfs:label>Dave and Nic</rdfs:label>
+        <dcterms:created rdf:datatype="&xsd;integer">2009</dcterms:created>
+        <ont:has_Certifier rdf:datatype="&xsd;string">No Certifier</ont:has_Certifier>
+        <ont:has_URI rdf:datatype="&xsd;string">No Website</ont:has_URI>
+        <ont:Accredited_by rdf:datatype="&xsd;string">Not Accreditated</ont:Accredited_by>
+        <ont:LegalStatus rdf:datatype="&xsd;string">Private Organization</ont:LegalStatus>
+        <ont:Standard_Type rdf:datatype="&xsd;string">Private Voluntary Standard</ont:Standard_Type>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Earl_Scammer -->
+
+    <NamedIndividual rdf:about="&ont;Earl_Scammer">
+        <rdfs:label>Earl Scammer</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#FLO_Labeling_International -->
+
+    <NamedIndividual rdf:about="&ont;FLO_Labeling_International">
+        <rdf:type rdf:resource="&ont;&apos;Standard_Setter&apos;"/>
+        <rdf:type rdf:resource="&ont;Level_A_of_Trustworthiness"/>
+        <rdfs:label>FLO Labeling International</rdfs:label>
+        <dcterms:created rdf:datatype="&xsd;integer">1993</dcterms:created>
+        <ont:Accredited_by rdf:datatype="&xsd;string">ISEAL</ont:Accredited_by>
+        <ont:LegalStatus rdf:datatype="&xsd;string">Non-Governmental Organization</ont:LegalStatus>
+        <ont:Standard_Type rdf:datatype="&xsd;string">Private Voluntary Standard</ont:Standard_Type>
+        <ont:has_URI rdf:datatype="&xsd;string">www.fairtrade.net</ont:has_URI>
+        <ont:Authorize rdf:resource="&ont;Commercio_Justo"/>
+        <ont:Authorize rdf:resource="&ont;Fairtrade_USA"/>
+        <ont:Authorize rdf:resource="&ont;Flo-Cert"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#FSC -->
+
+    <NamedIndividual rdf:about="&ont;FSC"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Fair_for_Life -->
+
+    <NamedIndividual rdf:about="&ont;Fair_for_Life">
+        <rdf:type rdf:resource="&ont;&apos;Standard_Setter&apos;"/>
+        <rdf:type rdf:resource="&ont;Level_A_of_Trustworthiness"/>
+        <rdfs:label>Fair for Life</rdfs:label>
+        <dcterms:created rdf:datatype="&xsd;integer">2006</dcterms:created>
+        <ont:LegalStatus rdf:datatype="&xsd;string">Non-Governmental Organization</ont:LegalStatus>
+        <ont:Accredited_by rdf:datatype="&xsd;string">Not Available</ont:Accredited_by>
+        <ont:Standard_Type rdf:datatype="&xsd;string">Private Voluntary Standard</ont:Standard_Type>
+        <ont:has_URI rdf:datatype="&xsd;string">www.fairforlife.net</ont:has_URI>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Fairtrade_Certificate -->
+
+    <NamedIndividual rdf:about="&ont;Fairtrade_Certificate">
+        <rdf:type rdf:resource="&ont;Certificate"/>
+        <rdfs:label>Fairtrade Certificate</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Fairtrade_USA -->
+
+    <NamedIndividual rdf:about="&ont;Fairtrade_USA">
+        <rdf:type rdf:resource="&ont;Third_Party_Certifier"/>
+        <rdfs:label>Fairtrade USA</rdfs:label>
+        <dcterms:created rdf:datatype="&xsd;integer">1998</dcterms:created>
+        <ont:Independency_Status rdf:datatype="&xsd;string">3rd Party</ont:Independency_Status>
+        <ont:Accredited_by rdf:datatype="&xsd;string">ISO 65</ont:Accredited_by>
+        <ont:has_URI rdf:datatype="&xsd;string">www.fairtradeusa.org</ont:has_URI>
+        <ont:Authorized_by rdf:resource="&ont;FLO_Labeling_International"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Flo-Cert -->
+
+    <NamedIndividual rdf:about="&ont;Flo-Cert">
+        <rdf:type rdf:resource="&ont;Third_Party_Certifier"/>
+        <dcterms:created rdf:datatype="&xsd;integer">2004</dcterms:created>
+        <ont:Independency_Status rdf:datatype="&xsd;string">3rd Party</ont:Independency_Status>
+        <ont:Accredited_by rdf:datatype="&xsd;string">ISO 65</ont:Accredited_by>
+        <ont:has_URI rdf:datatype="&xsd;string">www.flo-cert.net/flo-cert/</ont:has_URI>
+        <ont:Authorized_by rdf:resource="&ont;FLO_Labeling_International"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ISEAL -->
+
+    <NamedIndividual rdf:about="&ont;ISEAL">
+        <rdf:type rdf:resource="&ont;&apos;Accreditation_Body&apos;"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ISO_65 -->
+
+    <NamedIndividual rdf:about="&ont;ISO_65">
+        <rdf:type rdf:resource="&ont;&apos;Accreditation_Body&apos;"/>
+        <rdfs:label>ISO 65</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#International_Organic_Accreditation_Service -->
+
+    <NamedIndividual rdf:about="&ont;International_Organic_Accreditation_Service">
+        <rdfs:label>International Organic Accreditation Service</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Martin_Siebel -->
+
+    <NamedIndividual rdf:about="&ont;Martin_Siebel">
+        <rdf:type rdf:resource="&ont;Certifying_Officer"/>
+        <rdfs:label>Martin Siebel</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Maya_Vinic -->
+
+    <NamedIndividual rdf:about="&ont;Maya_Vinic">
+        <rdf:type rdf:resource="&ont;Applicant"/>
+        <rdfs:label>Maya Vinic</rdfs:label>
+        <ont:Date_Inspected rdf:datatype="&xsd;string">14-11-2012</ont:Date_Inspected>
+        <ont:Date_Certified rdf:datatype="&xsd;string">14-11-2012</ont:Date_Certified>
+        <ont:has_Certificate rdf:datatype="&xsd;string">Fairtrade Certificate</ont:has_Certificate>
+        <ont:Certifying_Officer_is rdf:datatype="&xsd;string">Martin Siebel</ont:Certifying_Officer_is>
+        <ont:Certified_by rdf:resource="&ont;Commercio_Justo"/>
+        <ont:Inspected_by rdf:resource="&ont;Radamel_Falcao"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#No_Accreditation -->
+
+    <NamedIndividual rdf:about="&ont;No_Accreditation">
+        <rdfs:label>No Accreditation</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#No_Inspection -->
+
+    <NamedIndividual rdf:about="&ont;No_Inspection">
+        <rdfs:label>No Inspection</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Non_Violent_Dove_Certification -->
+
+    <NamedIndividual rdf:about="&ont;Non_Violent_Dove_Certification">
+        <rdf:type rdf:resource="&ont;&apos;Level_D_of_Trustworthiness&apos;"/>
+        <rdf:type rdf:resource="&ont;&apos;Standard_Setter&apos;"/>
+        <rdfs:label>Non Violent Dove Certification</rdfs:label>
+        <dcterms:created rdf:datatype="&xsd;integer">2008</dcterms:created>
+        <ont:has_Certifier rdf:datatype="&xsd;string">No Certifier</ont:has_Certifier>
+        <ont:has_URI rdf:datatype="&xsd;string">No Website</ont:has_URI>
+        <ont:Accredited_by rdf:datatype="&xsd;string">Not Accreditated</ont:Accredited_by>
+        <ont:LegalStatus rdf:datatype="&xsd;string">Private Organization</ont:LegalStatus>
+        <ont:Standard_Type rdf:datatype="&xsd;string">Private Voluntary Standard</ont:Standard_Type>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Plantacions_Forestales_Canopy_Cafe_(PFCC) -->
+
+    <NamedIndividual rdf:about="&ont;Plantacions_Forestales_Canopy_Cafe_(PFCC)">
+        <rdf:type rdf:resource="&ont;Applicant"/>
+        <rdfs:label>Plantacions Forestales Canopy Coffee (PFCC)</rdfs:label>
+        <ont:Date_Certified rdf:datatype="&xsd;string">13-05-2012</ont:Date_Certified>
+        <ont:has_Certificate rdf:datatype="&xsd;string">Green Scam Certificate</ont:has_Certificate>
+        <ont:Certifying_Officer_is rdf:datatype="&xsd;string">Hans Fraud-Sham</ont:Certifying_Officer_is>
+        <ont:Date_Inspected rdf:datatype="&xsd;string">Not Inspected</ont:Date_Inspected>
+        <ont:Inspected_by rdf:resource="&ont;No_Inspection"/>
+        <ont:Certified_by rdf:resource="&ont;Non_Violent_Dove_Certification"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#RAN -->
+
+    <NamedIndividual rdf:about="&ont;RAN">
+        <rdf:type rdf:resource="&ont;&apos;Level_B_of_Trustworthiness&apos;"/>
+        <rdf:type rdf:resource="&ont;&apos;Standard_Setter&apos;"/>
+        <rdf:type rdf:resource="&ont;Internal_Certifer"/>
+        <rdfs:label>Rainforest Alliance Network</rdfs:label>
+        <dcterms:created rdf:datatype="&xsd;integer">1992</dcterms:created>
+        <ont:Accredited_by rdf:datatype="&xsd;string">FSC</ont:Accredited_by>
+        <ont:Independency_Status rdf:datatype="&xsd;string">Internal</ont:Independency_Status>
+        <ont:Accredited_by rdf:datatype="&xsd;string">International Organic Accreditation Service</ont:Accredited_by>
+        <ont:LegalStatus rdf:datatype="&xsd;string">Non-Governmental Organization</ont:LegalStatus>
+        <ont:Standard_Type rdf:datatype="&xsd;string">Private Voluntary Standard</ont:Standard_Type>
+        <ont:has_URI rdf:datatype="&xsd;string">www.rainforest-alliance.org</ont:has_URI>
+        <ont:Authorized_by rdf:resource="&ont;RAN"/>
+        <ont:Authorize rdf:resource="&ont;RAN"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Radamel_Falcao -->
+
+    <NamedIndividual rdf:about="&ont;Radamel_Falcao">
+        <rdf:type rdf:resource="&ont;Inspector"/>
+        <rdfs:label>Radamel Falcao</rdfs:label>
+        <ont:License rdf:datatype="&xsd;string">ISO-9023</ont:License>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#SCS_Global_Service -->
+
+    <NamedIndividual rdf:about="&ont;SCS_Global_Service">
+        <rdf:type rdf:resource="&ont;Third_Party_Certifier"/>
+        <rdfs:label>SCS Global Service</rdfs:label>
+        <dcterms:created rdf:datatype="&xsd;integer">1984</dcterms:created>
+        <ont:Independency_Status rdf:datatype="&xsd;string">3rd Party</ont:Independency_Status>
+        <ont:Accredited_by rdf:datatype="&xsd;string">ISO 65</ont:Accredited_by>
+        <ont:has_URI rdf:datatype="&xsd;string">www.scsglobalservices.com</ont:has_URI>
+        <ont:Authorized_by rdf:resource="&ont;Starbucks_and_Conservation_International"/>
+        <ont:Authorized_by rdf:resource="&ont;USDA_Organic"/>
+        <ont:Authorized_by rdf:resource="&ont;UTZ_Good_Inside"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Starbucks_and_Conservation_International -->
+
+    <NamedIndividual rdf:about="&ont;Starbucks_and_Conservation_International">
+        <rdf:type rdf:resource="&ont;&apos;Standard_Setter&apos;"/>
+        <rdf:type rdf:resource="&ont;Level_A_of_Trustworthiness"/>
+        <rdfs:label>Starbucks &amp; Conservation International</rdfs:label>
+        <dcterms:created rdf:datatype="&xsd;integer">2003</dcterms:created>
+        <ont:Accredited_by rdf:datatype="&xsd;string">Not Available</ont:Accredited_by>
+        <ont:LegalStatus rdf:datatype="&xsd;string">Private Organization</ont:LegalStatus>
+        <ont:Standard_Type rdf:datatype="&xsd;string">Private Voluntary Standard</ont:Standard_Type>
+        <ont:has_URI rdf:datatype="&xsd;string">www.sgsglobalservices.com/starbucks-cafe-practices</ont:has_URI>
+        <ont:Authorize rdf:resource="&ont;Control_Union"/>
+        <ont:Authorize rdf:resource="&ont;SCS_Global_Service"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Tosepan_Titataniske -->
+
+    <NamedIndividual rdf:about="&ont;Tosepan_Titataniske">
+        <rdf:type rdf:resource="&ont;Applicant"/>
+        <rdfs:label>Tosepan Titataniske</rdfs:label>
+        <ont:Date_Certified rdf:datatype="&xsd;string">20-05-2011</ont:Date_Certified>
+        <ont:Date_Inspected rdf:datatype="&xsd;string">20-05-2011</ont:Date_Inspected>
+        <ont:has_Certificate rdf:datatype="&xsd;string">Fairtrade Certificate</ont:has_Certificate>
+        <ont:Certifying_Officer_is>Martin Siebel</ont:Certifying_Officer_is>
+        <ont:Certified_by rdf:resource="&ont;Commercio_Justo"/>
+        <ont:Inspected_by rdf:resource="&ont;Radamel_Falcao"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#USDA_Organic -->
+
+    <NamedIndividual rdf:about="&ont;USDA_Organic">
+        <rdf:type rdf:resource="&ont;&apos;Standard_Setter&apos;"/>
+        <rdf:type rdf:resource="&ont;Level_A_of_Trustworthiness"/>
+        <rdfs:label>USDA Organic</rdfs:label>
+        <dcterms:created rdf:datatype="&xsd;integer">1990</dcterms:created>
+        <ont:LegalStatus rdf:datatype="&xsd;string">Government Agency</ont:LegalStatus>
+        <ont:Standard_Type rdf:datatype="&xsd;string">Public Voluntary Standard</ont:Standard_Type>
+        <ont:Accredited_by rdf:datatype="&xsd;string">U.S. Legislation</ont:Accredited_by>
+        <ont:has_URI rdf:datatype="&xsd;string">www.ams.usda.gov/AMSv1.0</ont:has_URI>
+        <ont:Authorize rdf:resource="&ont;Bio_Cert"/>
+        <ont:Authorize rdf:resource="&ont;Certimex"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#UTZ_Good_Inside -->
+
+    <NamedIndividual rdf:about="&ont;UTZ_Good_Inside">
+        <rdf:type rdf:resource="&ont;&apos;Standard_Setter&apos;"/>
+        <rdf:type rdf:resource="&ont;Level_A_of_Trustworthiness"/>
+        <rdfs:label>UTZ Good Inside</rdfs:label>
+        <dcterms:created rdf:datatype="&xsd;integer">2002</dcterms:created>
+        <ont:Accredited_by rdf:datatype="&xsd;string">ISEAL</ont:Accredited_by>
+        <ont:LegalStatus rdf:datatype="&xsd;string">Non-Governmental Organization</ont:LegalStatus>
+        <ont:Standard_Type rdf:datatype="&xsd;string">Private Voluntary Standard</ont:Standard_Type>
+        <ont:has_URI rdf:datatype="&xsd;string">www.utzcertified.org</ont:has_URI>
+        <ont:Authorize rdf:resource="&ont;Control_Union"/>
+        <ont:Authorize rdf:resource="&ont;SCS_Global_Service"/>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&dcterms;IMT">
+        <rdfs:label xml:lang="en">IMT</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">The set of media types specified by the Internet Assigned Numbers Authority.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#IMT-004"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.iana.org/assignments/media-types/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dcterms;provenance">
+        <rdfs:label xml:lang="en">Provenance</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2004-09-20</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.</rdfs:comment>
+        <dcterms:description xml:lang="en">The statement may include a description of any changes successive custodians made to the resource.</dcterms:description>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#provenance-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dcterms;TGN">
+        <rdfs:label xml:lang="en">TGN</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">The set of places specified by the Getty Thesaurus of Geographic Names.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#TGN-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.getty.edu/research/tools/vocabulary/tgn/index.html"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dcterms;DCMIType">
+        <rdfs:label xml:lang="en">DCMI Type Vocabulary</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2012-06-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">The set of classes specified by the DCMI Type Vocabulary, used to categorize the nature or genre of the resource.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#DCMIType-005"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/dc/dcmitype/"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dcterms;DDC">
+        <rdfs:label xml:lang="en">DDC</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">The set of conceptual resources specified by the Dewey Decimal Classification.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#DDC-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.oclc.org/dewey/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dcterms;LCC">
+        <rdfs:label xml:lang="en">LCC</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">The set of conceptual resources specified by the Library of Congress Classification.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#LCC-003"/>
+        <rdfs:seeAlso rdf:resource="http://lcweb.loc.gov/catdir/cpso/lcco/lcco.html"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dcterms;UDC">
+        <rdfs:label xml:lang="en">UDC</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">The set of conceptual resources specified by the Universal Decimal Classification.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#UDC-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.udcc.org/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dcterms;NLM">
+        <rdfs:label xml:lang="en">NLM</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2005-06-13</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">The set of conceptual resources specified by the National Library of Medicine Classification.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#NLM-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://wwwcf.nlm.nih.gov/class/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dcterms;LCSH">
+        <rdfs:label xml:lang="en">LCSH</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">The set of labeled concepts specified by the Library of Congress Subject Headings.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#LCSH-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dcterms;MESH">
+        <rdfs:label xml:lang="en">MeSH</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">The set of labeled concepts specified by the Medical Subject Headings.</rdfs:comment>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#MESH-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/mesh/meshhome.html"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dcterms;instructionalMethod">
+        <rdfs:label xml:lang="en">Instructional Method</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2005-06-13</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2008-01-14</dcterms:modified>
+        <rdfs:comment xml:lang="en">A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support.</rdfs:comment>
+        <dcterms:description xml:lang="en">Instructional Method will typically include ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured.  Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback.</dcterms:description>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#instructionalMethod-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ont;Bio_Cert"/>
+            <rdf:Description rdf:about="&ont;Certimex"/>
+            <rdf:Description rdf:about="&ont;Commercio_Justo"/>
+            <rdf:Description rdf:about="&ont;Control_Union"/>
+            <rdf:Description rdf:about="&ont;Dave_and_Nic"/>
+            <rdf:Description rdf:about="&ont;FLO_Labeling_International"/>
+            <rdf:Description rdf:about="&ont;Fair_for_Life"/>
+            <rdf:Description rdf:about="&ont;Fairtrade_USA"/>
+            <rdf:Description rdf:about="&ont;Flo-Cert"/>
+            <rdf:Description rdf:about="&ont;Non_Violent_Dove_Certification"/>
+            <rdf:Description rdf:about="&ont;RAN"/>
+            <rdf:Description rdf:about="&ont;SCS_Global_Service"/>
+            <rdf:Description rdf:about="&ont;Starbucks_and_Conservation_International"/>
+            <rdf:Description rdf:about="&ont;USDA_Organic"/>
+            <rdf:Description rdf:about="&ont;UTZ_Good_Inside"/>
+        </distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ont;Cote_dIvoire_Sociale_Cafe"/>
+            <rdf:Description rdf:about="&ont;Maya_Vinic"/>
+            <rdf:Description rdf:about="&ont;Plantacions_Forestales_Canopy_Cafe_(PFCC)"/>
+            <rdf:Description rdf:about="&ont;Tosepan_Titataniske"/>
+        </distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
