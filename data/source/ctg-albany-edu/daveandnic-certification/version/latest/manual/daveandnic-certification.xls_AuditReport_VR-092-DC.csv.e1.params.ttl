@@ -129,8 +129,8 @@
          conversion:equivalent_property  dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
-         conversion:range_template  "[/sd]inspectionreport/version/latest/[.]";
-         conversion:range   rdfs:Resource;
+       #  conversion:range_template  "[/sd]inspectionreport/version/latest/[.]";
+         conversion:range   todo:Literal;
          #conversion:range_name  "Thing";
       ];
       conversion:enhance [

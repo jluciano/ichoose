@@ -125,11 +125,11 @@
          ov:csvCol          4;
          ov:csvHeader       "VERIFY-NO";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "InspectionReport";
+         #conversion:label   "InspectionReport";
          conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
-         conversion:range_template  "[/sd][.]";
+         #conversion:range_template  "[/sd][.]";
          conversion:range   todo:Literal;
          #conversion:range_name  "Thing";
       ];
@@ -137,7 +137,7 @@
          ov:csvCol          5;
          ov:csvHeader       "EVIDENCE";
          conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "objectiveEvidence";
+         #conversion:label   "objectiveEvidence";
          conversion:equivalent_property certin:objectiveEvidence;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
