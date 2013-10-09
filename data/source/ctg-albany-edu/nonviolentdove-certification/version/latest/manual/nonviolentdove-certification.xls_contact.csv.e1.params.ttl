@@ -35,8 +35,9 @@
 @prefix foaf:          <http://xmlns.com/foaf/0.1/> .
 @prefix ov:            <http://open.vocab.org/terms/> .
 @prefix conversion:    <http://purl.org/twc/vocab/conversion/> .
-@prefix :              <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/params/enhancement/1/> .
-@prefix certin:         <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> .
+@prefix :              <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/nonviolentdove-certification/version/latest/params/enhancement/1/> .
+@prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> .
+
 
 #:a_bundle
 #   a conversion:ImplicitBundle;
@@ -45,22 +46,22 @@
 #   #conversion:type_name     "My Class";   # Can also be a URI, e.g. foaf:Person.
 #.
 
-<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/conversion/enhancement/1>
+<http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/nonviolentdove-certification/version/latest/conversion/enhancement/1>
    a conversion:LayerDataset, void:Dataset;
 
    conversion:base_uri           "http://ichoose.tw.rpi.edu"^^xsd:anyURI;
    conversion:source_identifier  "ctg-albany-edu";
-   conversion:dataset_identifier "flo-certification";
+   conversion:dataset_identifier "nonviolentdove-certification";
    conversion:version_identifier "latest";
    conversion:enhancement_identifier "1";
 
    conversion:conversion_process [
       a conversion:EnhancementConversionProcess;
       conversion:enhancement_identifier "1";
-      conversion:subject_discriminator "ao-00023";
+ #     conversion:subject_discriminator  "nonviolentdove-certification.xls-contact";
 
       dcterms:creator [ a foaf:OnlineAccount; foaf:accountName "ndepaula" ];
-      dcterms:created "2013-08-04T21:50:58+00:00"^^xsd:dateTime;
+      dcterms:created "2013-08-11T21:51:29+00:00"^^xsd:dateTime;
 
 
       #conversion:enhance [
@@ -79,7 +80,7 @@
       #];
       conversion:enhance [
          conversion:domain_template "[#1]";
-         conversion:domain_name     certin:ComplianceCriteria;
+         conversion:domain_name     certin:Applicant;
       ];
       #conversion:enhance [
       #   conversion:class_name "Thing";
@@ -87,23 +88,23 @@
       #];
       conversion:enhance [
          ov:csvCol          1;
-         ov:csvHeader       "ComplianceCriterion";
+         ov:csvHeader       "NVD-ID";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Compliance Criteria";
-         conversion:equivalent_property certin:ComplianceCriteria;
+         conversion:label   "Applicant";
+         conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
-         conversion:range   rdfs:Resource;
+         conversion:range   todo:Literal;
          #conversion:range_name  "Thing";
       ];
       conversion:enhance [
          ov:csvCol          2;
-         ov:csvHeader       "ComplianceCriterion_Description";
+         ov:csvHeader       "Company Name";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Description";
-         conversion:equivalent_property dcterms:description;
-         #conversion:subproperty_of      dcterms:description;
+         conversion:label   "Company Name";
+         conversion:equivalent_property  foaf:name;
+         #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
          conversion:range   todo:Literal;
@@ -111,10 +112,10 @@
       ];
       conversion:enhance [
          ov:csvCol          3;
-         ov:csvHeader       "NON-CONFORMITY_AUDIT";
+         ov:csvHeader       "Address";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label "nonConformity";
-         conversion:equivalent_property certin:nonConformity;
+         conversion:label   "Address";
+         conversion:equivalent_property con:address;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -123,10 +124,10 @@
       ];
       conversion:enhance [
          ov:csvCol          4;
-         ov:csvHeader       "CORRECTIVE MEASURE";
+         ov:csvHeader       "Post Code";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "correctiveMeasure";
-         conversion:equivalent_property certin:correctiveMeasure;
+         conversion:label   "Post Code";
+         conversion:equivalent_property  con:postalCode;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -135,10 +136,10 @@
       ];
       conversion:enhance [
          ov:csvCol          5;
-         ov:csvHeader       "OBJECTIVE EVIDENCE";
+         ov:csvHeader       "City";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "objectiveEvidence";
-         conversion:equivalent_property certin:objectiveEvidence;
+         conversion:label   "City";
+         conversion:equivalent_property con:city;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -147,10 +148,58 @@
       ];
       conversion:enhance [
          ov:csvCol          6;
-         ov:csvHeader       "DATE OF OE";
+         ov:csvHeader       "Country";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "dateObjectiveEvidence";
-         conversion:equivalent_property certin:dateObjectiveEvidence;
+         conversion:label   "Country";
+         conversion:equivalent_property  con:country;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          7;
+         ov:csvHeader       "Phone";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:label   "Phone";
+         conversion:equivalent_property con:phone;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          8;
+         ov:csvHeader       "Contac Name";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:label   "Contact Name";
+         conversion:equivalent_property  con:office;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          9;
+         ov:csvHeader       "Fax";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:label   "Fax";
+         conversion:equivalent_property con:fax;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          10;
+         ov:csvHeader       "Email";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:label   "Email";
+         conversion:equivalent_property  foaf:mbox;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";

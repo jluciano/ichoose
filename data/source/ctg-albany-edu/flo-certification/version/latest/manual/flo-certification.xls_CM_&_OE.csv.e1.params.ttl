@@ -1,4 +1,3 @@
-@prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> .
 @prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix todo:          <http://www.w3.org/2000/01/rdf-schema#> .
@@ -37,7 +36,7 @@
 @prefix ov:            <http://open.vocab.org/terms/> .
 @prefix conversion:    <http://purl.org/twc/vocab/conversion/> .
 @prefix :              <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/params/enhancement/1/> .
-
+@prefix certin:          <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> .
 
 #:a_bundle
 #   a conversion:ImplicitBundle;
@@ -58,10 +57,10 @@
    conversion:conversion_process [
       a conversion:EnhancementConversionProcess;
       conversion:enhancement_identifier "1";
-      conversion:subject_discriminator  "ao-00245";
+      conversion:subject_discriminator  "inspectionreport";
 
       dcterms:creator [ a foaf:OnlineAccount; foaf:accountName "ndepaula" ];
-      dcterms:created "2013-08-04T21:51:00+00:00"^^xsd:dateTime;
+      dcterms:created "2013-09-14T02:11:17+00:00"^^xsd:dateTime;
 
 
       #conversion:enhance [
@@ -80,7 +79,7 @@
       #];
       conversion:enhance [
          conversion:domain_template "[#1]";
-         conversion:domain_name     certin:ComplianceCriteria;
+         conversion:domain_name     certin:CorrectiveMeasure;
       ];
       #conversion:enhance [
       #   conversion:class_name "Thing";
@@ -88,22 +87,22 @@
       #];
       conversion:enhance [
          ov:csvCol          1;
-         ov:csvHeader       "ComplianceCriterion";
+         ov:csvHeader       "CorrectiveMeasureID";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "ComplianceCriteria";
-         conversion:equivalent_property certin:ComplianceCriteria;
+         #conversion:label   "CorrectiveMeasureID";
+         conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
-         conversion:range   rdfs:Resource;
+         conversion:range   todo:Literal;
          #conversion:range_name  "Thing";
       ];
       conversion:enhance [
          ov:csvCol          2;
-         ov:csvHeader       "ComplianceCriterion_Description";
+         ov:csvHeader       "CMDescription_Audit";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "description";
-         conversion:equivalent_property dcterms:description;
+         #conversion:label   "CMDescription_Audit";
+         conversion:equivalent_property  certin:auditCorrectiveMeasure;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -112,10 +111,10 @@
       ];
       conversion:enhance [
          ov:csvCol          3;
-         ov:csvHeader       "Non-Conformity";
+         ov:csvHeader       "DATE CM REQUESTED";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "nonConformity";
-         conversion:equivalent_property certin:nonConformity;
+         #conversion:label   "DATE CM REQUESTED";
+         conversion:equivalent_property  certin:dateRequested;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -124,10 +123,10 @@
       ];
       conversion:enhance [
          ov:csvCol          4;
-         ov:csvHeader       "CORRECTIVE MEASURE PROPOSED";
+         ov:csvHeader       "DATE CM  DUE";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "correctiveMeasure";
-         conversion:equivalent_property certin:correctiveMeasure;
+       #  conversion:label   "DATE CM  DUE";
+	 conversion:equivalent_property  certin:dateDue;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -136,10 +135,10 @@
       ];
       conversion:enhance [
          ov:csvCol          5;
-         ov:csvHeader       "OBJECTIVE EVIDENCE";
+         ov:csvHeader       "CMDescription_Client";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "objectiveEvidence";
-         conversion:equivalent_property certin:objectiveEvidence;
+         #conversion:label   "CMDescription_Client";
+	 conversion:equivalent_property  certin:clientCorrectiveMeasure;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -148,10 +147,58 @@
       ];
       conversion:enhance [
          ov:csvCol          6;
-         ov:csvHeader       "DATE OF OE";
+         ov:csvHeader       "DATE CM RECEIVED";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "dateObjectiveEvidence";
-         conversion:equivalent_property certin:dateObjectiveEvidence;
+         #conversion:label   "DATE CM RECEIVED";
+         conversion:equivalent_property  certin:dateReceived;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          7;
+         ov:csvHeader       "DATE OE REQUESTED";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "DATE OE REQUESTED";
+         conversion:equivalent_property certin:objectiveEvidenceDateRequested;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          8;
+         ov:csvHeader       "DATE OE  DUE";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "DATE OE  DUE";
+         conversion:equivalent_property  certin:objectiveEvidenceDateDue;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          9;
+         ov:csvHeader       "OBJECTIVE EVIDENCE (OE)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "OBJECTIVE EVIDENCE (OE)";
+         conversion:equivalent_property dcterms:objectiveEvidence;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          10;
+         ov:csvHeader       "DATE OE RECEIVED";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "DATE OE RECEIVED";
+         conversion:equivalent_property certin:objectiveEvidenceDateReceived;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";

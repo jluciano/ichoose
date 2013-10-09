@@ -39,12 +39,12 @@ destDir="automatic"                 # convention has led to always be 'automatic
 
 
 #-----------------------------------
-# manual/flo-certification.xls_AO-00023.csv
+# manual/flo-certification.xls_address.csv
 sourceDir="manual"
-datafile="flo-certification.xls_AO-00023.csv"
+datafile="flo-certification.xls_address.csv"
 data="$sourceDir/$datafile"
 # Bootstrap conversion parameters (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-trigger):
-subjectDiscriminator="flo-certification.xls-ao-00023"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
+subjectDiscriminator="flo-certification.xls-address"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
 commentCharacter=""                 # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 cellDelimiter=","                   # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 header=                             # Line that header is on; only needed if not '1'. '0' means no header.
@@ -57,12 +57,12 @@ source $CSV2RDF4LOD_HOME/bin/convert.sh
 
 
 #-----------------------------------
-# manual/flo-certification.xls_AO-00245.csv
+# manual/flo-certification.xls_Audit_Status.csv
 sourceDir="manual"
-datafile="flo-certification.xls_AO-00245.csv"
+datafile="flo-certification.xls_Audit_Status.csv"
 data="$sourceDir/$datafile"
 # Bootstrap conversion parameters (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-trigger):
-subjectDiscriminator="flo-certification.xls-ao-00245"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
+subjectDiscriminator="flo-certification.xls-audit-status"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
 commentCharacter=""                 # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 cellDelimiter=","                   # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 header=                             # Line that header is on; only needed if not '1'. '0' means no header.
@@ -75,12 +75,12 @@ source $CSV2RDF4LOD_HOME/bin/convert.sh
 
 
 #-----------------------------------
-# manual/flo-certification.xls_AuditStatus.csv
+# manual/flo-certification.xls_Cert._Status.csv
 sourceDir="manual"
-datafile="flo-certification.xls_AuditStatus.csv"
+datafile="flo-certification.xls_Cert._Status.csv"
 data="$sourceDir/$datafile"
 # Bootstrap conversion parameters (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-trigger):
-subjectDiscriminator="flo-certification.xls-auditstatus"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
+subjectDiscriminator="flo-certification.xls-cert.-status"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
 commentCharacter=""                 # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 cellDelimiter=","                   # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 header=                             # Line that header is on; only needed if not '1'. '0' means no header.
@@ -93,12 +93,12 @@ source $CSV2RDF4LOD_HOME/bin/convert.sh
 
 
 #-----------------------------------
-# manual/flo-certification.xls_Certification.csv
+# manual/flo-certification.xls_CM_&_OE.csv
 sourceDir="manual"
-datafile="flo-certification.xls_Certification.csv"
+datafile="flo-certification.xls_CM_&_OE.csv"
 data="$sourceDir/$datafile"
 # Bootstrap conversion parameters (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-trigger):
-subjectDiscriminator="flo-certification.xls-certification"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
+subjectDiscriminator="flo-certification.xls-cm-&-oe"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
 commentCharacter=""                 # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 cellDelimiter=","                   # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 header=                             # Line that header is on; only needed if not '1'. '0' means no header.
@@ -111,12 +111,84 @@ source $CSV2RDF4LOD_HOME/bin/convert.sh
 
 
 #-----------------------------------
-# manual/flo-certification.xls_Contact.csv
+# manual/flo-certification.xls_ComplianceCriteria.csv
 sourceDir="manual"
-datafile="flo-certification.xls_Contact.csv"
+datafile="flo-certification.xls_ComplianceCriteria.csv"
+data="$sourceDir/$datafile"
+# Bootstrap conversion parameters (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-trigger):
+subjectDiscriminator="flo-certification.xls-compliancecriteria"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
+commentCharacter=""                 # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
+cellDelimiter=","                   # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
+header=                             # Line that header is on; only needed if not '1'. '0' means no header.
+dataStart=                          # Line that data starts; only needed if not immediately after header.
+repeatAboveIfEmptyCol=              # 'Fill in' value from row above for this column.
+onlyIfCol=                          # Do not process if value in this column is empty
+interpretAsNull=                    # NO SPACES
+dataEnd=                            # Line on which data stops; only needed if non-data bottom matter (legends, footnotes, etc).
+source $CSV2RDF4LOD_HOME/bin/convert.sh
+
+
+#-----------------------------------
+# manual/flo-certification.xls_contact.csv
+sourceDir="manual"
+datafile="flo-certification.xls_contact.csv"
 data="$sourceDir/$datafile"
 # Bootstrap conversion parameters (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-trigger):
 subjectDiscriminator="flo-certification.xls-contact"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
+commentCharacter=""                 # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
+cellDelimiter=","                   # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
+header=                             # Line that header is on; only needed if not '1'. '0' means no header.
+dataStart=                          # Line that data starts; only needed if not immediately after header.
+repeatAboveIfEmptyCol=              # 'Fill in' value from row above for this column.
+onlyIfCol=                          # Do not process if value in this column is empty
+interpretAsNull=                    # NO SPACES
+dataEnd=                            # Line on which data stops; only needed if non-data bottom matter (legends, footnotes, etc).
+source $CSV2RDF4LOD_HOME/bin/convert.sh
+
+
+#-----------------------------------
+# manual/flo-certification.xls_NonConformity.csv
+sourceDir="manual"
+datafile="flo-certification.xls_NonConformity.csv"
+data="$sourceDir/$datafile"
+# Bootstrap conversion parameters (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-trigger):
+subjectDiscriminator="flo-certification.xls-nonconformity"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
+commentCharacter=""                 # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
+cellDelimiter=","                   # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
+header=                             # Line that header is on; only needed if not '1'. '0' means no header.
+dataStart=                          # Line that data starts; only needed if not immediately after header.
+repeatAboveIfEmptyCol=              # 'Fill in' value from row above for this column.
+onlyIfCol=                          # Do not process if value in this column is empty
+interpretAsNull=                    # NO SPACES
+dataEnd=                            # Line on which data stops; only needed if non-data bottom matter (legends, footnotes, etc).
+source $CSV2RDF4LOD_HOME/bin/convert.sh
+
+
+#-----------------------------------
+# manual/flo-certification.xls_Product_Code.csv
+sourceDir="manual"
+datafile="flo-certification.xls_Product_Code.csv"
+data="$sourceDir/$datafile"
+# Bootstrap conversion parameters (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-trigger):
+subjectDiscriminator="flo-certification.xls-product-code"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
+commentCharacter=""                 # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
+cellDelimiter=","                   # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
+header=                             # Line that header is on; only needed if not '1'. '0' means no header.
+dataStart=                          # Line that data starts; only needed if not immediately after header.
+repeatAboveIfEmptyCol=              # 'Fill in' value from row above for this column.
+onlyIfCol=                          # Do not process if value in this column is empty
+interpretAsNull=                    # NO SPACES
+dataEnd=                            # Line on which data stops; only needed if non-data bottom matter (legends, footnotes, etc).
+source $CSV2RDF4LOD_HOME/bin/convert.sh
+
+
+#-----------------------------------
+# manual/flo-certification.xls_status.csv
+sourceDir="manual"
+datafile="flo-certification.xls_status.csv"
+data="$sourceDir/$datafile"
+# Bootstrap conversion parameters (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-trigger):
+subjectDiscriminator="flo-certification.xls-status"             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
 commentCharacter=""                 # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 cellDelimiter=","                   # ONLY one character; complain to http://sourceforge.net/projects/javacsv/ otherwise.
 header=                             # Line that header is on; only needed if not '1'. '0' means no header.

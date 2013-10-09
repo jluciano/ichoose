@@ -36,8 +36,7 @@
 @prefix ov:            <http://open.vocab.org/terms/> .
 @prefix conversion:    <http://purl.org/twc/vocab/conversion/> .
 @prefix :              <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/flo-certification/version/latest/params/enhancement/1/> .
-@prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> .
-
+@prefix certin:          <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> .
 
 
 #:a_bundle
@@ -59,10 +58,10 @@
    conversion:conversion_process [
       a conversion:EnhancementConversionProcess;
       conversion:enhancement_identifier "1";
-#      conversion:subject_discriminator  "flo-certification.xls-auditstatus";
+     conversion:subject_discriminator  "applicants";
 
       dcterms:creator [ a foaf:OnlineAccount; foaf:accountName "ndepaula" ];
-      dcterms:created "2013-08-04T21:51:03+00:00"^^xsd:dateTime;
+      dcterms:created "2013-09-14T02:11:30+00:00"^^xsd:dateTime;
 
 
       #conversion:enhance [
@@ -80,8 +79,8 @@
       #   conversion:interpretation conversion:null; 
       #];
       conversion:enhance [
-         conversion:domain_template "[#2]";
-         conversion:domain_name     certin:Inspection_Report;
+         conversion:domain_template "[#1]";
+         conversion:domain_name     certin:Applicant;
       ];
       #conversion:enhance [
       #   conversion:class_name "Thing";
@@ -89,34 +88,10 @@
       #];
       conversion:enhance [
          ov:csvCol          1;
-         ov:csvHeader       "FLO-ID";
+         ov:csvHeader       "ID";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "hasApplicant";
-         conversion:equivalent_property certin:hasApplicant;
-         #conversion:subproperty_of      dcterms:identifier;
-         conversion:comment "";
-         #conversion:range_template  "[/sd]thing[.]";
-         conversion:range   certin:Applicant;
-         #conversion:range_name  "Thing";
-      ];
-      conversion:enhance [
-         ov:csvCol          2;
-         ov:csvHeader       "Inspection";
-         #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Inspection_Report";
-         conversion:equivalent_property certin:Inspection_Report;
-         #conversion:subproperty_of      dcterms:identifier;
-         conversion:comment "";
-         #conversion:range_template  "[/sd]thing[.]";
-         conversion:range  rdfs:Resource;
-         #conversion:range_name  "Thing";
-      ];
-      conversion:enhance [
-         ov:csvCol          3;
-         ov:csvHeader       "AUDIT_DATE";
-         #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Inspection Date";
-         conversion:equivalent_property  dcterms:date;
+         #conversion:label   "ID";
+         conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -124,11 +99,35 @@
          #conversion:range_name  "Thing";
       ];
       conversion:enhance [
-         ov:csvCol          4;
-         ov:csvHeader       "AUDIT_TYPE";
+         ov:csvCol          2;
+         ov:csvHeader       "VAT Number";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Audit Type";
-         conversion:equivalent_property dcterms:type;
+         #conversion:label   "VAT Number";
+         conversion:equivalent_property dcterms:hasVATNumber;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          3;
+         ov:csvHeader       "Product Code";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Product Code";
+         conversion:equivalent_property  certin:hasProduct;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         conversion:range_template  "[/sd]product/version/latest/[.]";
+         conversion:range   rdfs:Resource;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          4;
+         ov:csvHeader       "Legal Status";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Legal Status";
+         conversion:equivalent_property certin:hasLegalStatus;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
@@ -137,98 +136,14 @@
       ];
       conversion:enhance [
          ov:csvCol          5;
-         ov:csvHeader       "auditReportURI";
+         ov:csvHeader       "Company Name";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Inspection Report URI";
-         conversion:equivalent_property  certin:inspectionReportURI;
+         #conversion:label   "Company Name";
+         conversion:equivalent_property  certin:hasName;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
          conversion:range   todo:Literal;
-         #conversion:range_name  "Thing";
-      ];
-      conversion:enhance [
-         ov:csvCol          6;
-         ov:csvHeader       "AUDITOR_SIG";
-         #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "signature";
-         conversion:equivalent_property certin:signature;
-         #conversion:subproperty_of      dcterms:identifier;
-         conversion:comment "";
-         #conversion:range_template  "[/sd]thing[.]";
-         conversion:range   todo:Literal;
-         #conversion:range_name  "Thing";
-      ];
-      conversion:enhance [
-         ov:csvCol          7;
-         ov:csvHeader       "AUDITOR_LICENSE";
-         #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "license";
-         conversion:equivalent_property dcterms:license;
-         #conversion:subproperty_of      dcterms:identifier;
-         conversion:comment "";
-         #conversion:range_template  "[/sd]thing[.]";
-         conversion:range   dcterms:LicenseDocument;
-         #conversion:range_name  "Thing";
-      ];
-      conversion:enhance [
-         ov:csvCol          8;
-         ov:csvHeader       "AUDITOR";
-         #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "hasInspector";
-         conversion:equivalent_property certin:hasInspector;
-         #conversion:subproperty_of      dcterms:identifier;
-         conversion:comment "";
-         #conversion:range_template  "[/sd]thing[.]";
-         conversion:range   certin:Inspector;
-         #conversion:range_name  "Thing";
-      ];
-      conversion:enhance [
-         ov:csvCol          9;
-         ov:csvHeader       "CERT_OFFICER";
-         #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "hasCertOfficer";
-         conversion:equivalent_property certin:hasCertOfficer;
-         #conversion:subproperty_of      dcterms:identifier;
-         conversion:comment "";
-         #conversion:range_template  "[/sd]thing[.]";
-         conversion:range   todo:Literal;
-         #conversion:range_name  "Thing";
-      ];
-      conversion:enhance [
-         ov:csvCol          10;
-         ov:csvHeader       "CERT_RESULT";
-         #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "hasCertResult";
-         conversion:equivalent_property certin:hasResult;
-         #conversion:subproperty_of      dcterms:identifier;
-         conversion:comment "";
-         #conversion:range_template  "[/sd]thing[.]";
-         conversion:range   todo:Literal;
-         #conversion:range_name  "Thing";
-      ];
-      conversion:enhance [
-         ov:csvCol          11;
-         ov:csvHeader       "CERT_OFFICER_SIGNATURE";
-         #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "certSignature";
-         conversion:equivalent_property certin:certSignature;
-         #conversion:subproperty_of      dcterms:identifier;
-         conversion:comment "";
-         #conversion:range_template  "[/sd]thing[.]";
-         conversion:range   todo:Literal;
-         #conversion:range_name  "Thing";
-      ];
-      conversion:enhance [
-         ov:csvCol          12;
-         ov:csvHeader       "CERT_BODY";
-         #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "hasCertifier";
-         conversion:equivalent_property certin:hasCertifier;
-         #conversion:subproperty_of      dcterms:identifier;
-         conversion:comment "";
-         #conversion:range_template  "[/sd]thing[.]";
-         conversion:range   certin:Certifier;
          #conversion:range_name  "Thing";
       ];
       #conversion:enhance [            
