@@ -57,7 +57,7 @@
    conversion:conversion_process [
       a conversion:EnhancementConversionProcess;
       conversion:enhancement_identifier "1";
-     # conversion:subject_discriminator  "daveandnic-certification.xls-certification";
+     conversion:subject_discriminator  "applicants";
 
       dcterms:creator [ a foaf:OnlineAccount; foaf:accountName "ndepaula" ];
       dcterms:created "2013-08-06T01:48:41+00:00"^^xsd:dateTime;
@@ -89,8 +89,8 @@
          ov:csvCol          1;
          ov:csvHeader       "DC-ID";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Applicant";
-         conversion:equivalent_property certin:hasID;
+         #conversion:label   "Applicant";
+         conversion:equivalent_property  dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]version/latest/[.]";
@@ -101,7 +101,7 @@
          ov:csvCol          2;
          ov:csvHeader       "CERT-DATE";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Certification Date";
+         #conversion:label   "Certification Date";
          conversion:equivalent_property certin:certificationDate;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
@@ -113,7 +113,7 @@
          ov:csvCol          3;
          ov:csvHeader       "STATUS";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Status";
+         #conversion:label   "Status";
          conversion:equivalent_property certin:hasStatus;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
@@ -125,11 +125,11 @@
          ov:csvCol          4;
          ov:csvHeader       "VERIFY-NO";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Inspection Report";
+         #conversion:label   "Inspection Report";
          conversion:equivalent_property certin:hasInspectionReport;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
-         conversion:range_template  "[/sd]version/latest/[.]";
+         conversion:range_template  "[/sd]inspectionreport/version/latest/[.]";
          conversion:range   rdfs:Resource;
          #conversion:range_name  "Thing";
       ];
@@ -137,7 +137,7 @@
          ov:csvCol          5;
          ov:csvHeader       "VERIFY_OFFICER";
          conversion:bundled_by [ ov:csvCol 4 ];
-         conversion:label   "Inspector";
+         #conversion:label   "Inspector";
          conversion:equivalent_property certin:hasInspector;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
@@ -149,7 +149,7 @@
          ov:csvCol          6;
          ov:csvHeader       "LAST_VERIFY";
          conversion:bundled_by [ ov:csvCol 4 ];
-         conversion:label   "Last Date";
+         #conversion:label   "Last Date";
          conversion:equivalent_property certin:hasLastDate;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
@@ -161,7 +161,7 @@
          ov:csvCol          7;
          ov:csvHeader       "CERT_OFFICER";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Certification Officer";
+         #conversion:label   "Certification Officer";
          conversion:equivalent_property certin:hasCertificationOfficer;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
@@ -173,7 +173,7 @@
          ov:csvCol          8;
          ov:csvHeader       "LAST_DUES";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Last Dues";
+         #conversion:label   "Last Dues";
          conversion:equivalent_property certin:LastDues;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
@@ -185,7 +185,7 @@
          ov:csvCol          9;
          ov:csvHeader       "NEXT_DUES";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Next Dues";
+         #conversion:label   "Next Dues";
          conversion:equivalent_property certin:nextDues;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
@@ -197,7 +197,7 @@
          ov:csvCol          10;
          ov:csvHeader       "CERT_VALIDITY";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Certification Validity";
+         #conversion:label   "Certification Validity";
          conversion:equivalent_property  certin:hasCertificationValidity;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
