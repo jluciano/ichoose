@@ -1,0 +1,131 @@
+<html>
+<head>
+<style type="text/css">
+h3 {color:green;}
+</style>
+</head>
+<body>
+<h3>Q1. Is certification standard openly published--?</h3>
+
+PREFIX certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#>
+<br/>PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+<br/>SELECT DISTINCT ?Standard ?OpenlyPublishedAt
+<br/>WHERE 
+<br/>{ ?x rdfs:label ?Standard .
+<br/> ?x certin:standardURI ?OpenlyPublishedAt .
+<br/> FILTER regex(?Standard, "FLO")}
+  
+ <h3>Q2. Are certification compliance criteria/control points openly published--?</h3> 
+<br/>PREFIX certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#>
+<br/>PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+<br/>SELECT DISTINCT ?StandardBody ?Certifier ?ComplianceCriteria_PublishedAt
+<br/>WHERE 
+<br/>{ ?x rdfs:label ?StandardBody .
+ <br/> ?x rdfs:label ?Certifier .
+<br/>  ?x certin:complianceCriteriaURI ?ComplianceCriteria_PublishedAt .
+ <br/> FILTER regex(?Certifier, "Fairtrade USA")
+<br/>}
+
+  <h3>Q3. Inspection/Audit results openly published--not quite right</h3> 
+<br/>prefix dcterms: <http://purl.org/dc/terms/>
+<br/>prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+<br/>prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#>
+<br/>prefix ov: <http://open.vocab.org/terms/>
+
+<br/><br/>SELECT DISTINCT ?ComplianceCriterion ?Description ?NonConformity
+
+<br/>WHERE {
+<br/>?x dcterms:identifier ?ComplianceCriterion .
+<br/>?x dcterms:description ?Description .
+<br/>?x certin:nonConformity ?NonConformity  }
+
+<br/>ORDER BY ?ComplianceCriterion
+
+  <h3>Q4. Can know date of the inspection</h3> 
+  
+<br/>prefix dcterms: <http://purl.org/dc/terms/>
+<br/>prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+<br/>prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#>
+
+<br/><br/>SELECT DISTINCT ?FLOID ?Inspection ?Date ?Inspector ?Certifier
+
+<br/>WHERE {
+<br/>?x rdfs:label ?Inspection .
+<br/>?x certin:hasInspector ?i .
+<br/>?i rdfs:label ?Inspector .
+<br/>?x dcterms:date ?Date .
+<br/>?x certin:hasCertifier ?c .
+<br/>?c rdfs:label ?Certifier .
+<br/>?x certin:hasApplicant ?f .
+<br/>?f dcterms:identifier ?FLOID .
+<br/>FILTER regex(?FLOID, "2178")}
+
+<br/>ORDER BY ?Inspection
+
+<h3>Q5. Can know location of audit/inspection</h3>
+
+<h3>Q6. Can know date of the certification; same as Q4</h3>
+
+<h3>Q7. Can know who is the inspector/auditor </h3>
+
+<br/>prefix dcterms: <http://purl.org/dc/terms/>
+<br/>prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+<br/>prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#>
+
+<br/><br/>SELECT DISTINCT ?FLOID ?Inspection ?Inspector ?Inspector_License
+
+<br/>WHERE {
+<br/>?x rdfs:label ?Inspection .
+<br/>?x certin:hasInspector ?i .
+<br/>?i rdfs:label ?Inspector .
+<br/>?x certin:hasApplicant ?f .
+<br/>?f dcterms:identifier ?FLOID .
+<br/>FILTER regex(?FLOID, "2178")
+
+<br/>OPTIONAL {
+<br/>?x dcterms:license ?y .
+<br/>?y rdfs:label ?Inspector_License }
+<br/>}
+
+<br/>ORDER BY ?Inspection
+
+
+<h3>Q8. Is inspection reports signed by an inspector </h3>
+
+<h3>Q9. Is the list of non-conformity (measured score below standard) information available </h3>
+
+<h3>Q10. Can know how non-conformities are handled by the applicant</h3>
+
+<h3>Q11. Is certificate signed by the certifier </h3>
+
+<h3>Q12. Does inspector/auditor have license </h3>
+
+<h3>Q13. Is certification standard confirming a government-based standard, e.g., USDA, EU-ECO-Regulation </h3>
+
+<h3>Q14. Can know who is the standard setting body </h3>
+
+<h3>Q15. Show the accreditation body of the standard setting organization </h3>
+
+<h3>Q16. Can know what type of organization made the standard (government, private, Non-profit) </h3>
+
+<h3>Q17. Who sponsor the development of the standard (consumer NGO, producer, manufacture) </h3>
+
+<h3>Q18. Can know who gives accreditation to the certifier </h3>
+
+<h3>Q19. Can know when the standard setting body was established </h3>
+
+<h3>Q20. Show the certification body of a particular standar organization setting organization</h3>
+
+<h3>Q21. Show the certification body of a particular applicant on particular certificate for a particular product </h3>
+
+<h3>Q22. Is standard setting body independent from the accreditation body, such as ISO </h3>
+
+<h3>Q23. Is certifier independent from the accreditation body </h3>
+
+<h3>Q24. Is certifier independent from the standard setting body </h3>
+
+<h3>Q25. Is Inspector/auditor independent from the standard setting body </h3>
+
+<h3>Q26. Is inspector/auditor independent from certifier </h3>
+</body>
+</html>
