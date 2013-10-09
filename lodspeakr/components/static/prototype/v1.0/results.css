@@ -1,0 +1,108 @@
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+ }
+#wrapper{
+ border:0 none;
+ margin:0 auto;
+ min-height:50px;
+ width:800px;
+ }
+ul.nav {
+font-family: 'Trebuchet MS', Helvetica, sans-serif;
+/*"Times New Roman", Times, serif;*/
+/*font-size: 1.2em; */
+margin: 0 0 1em 0;
+padding: 0;
+list-style: none;
+font-size:14px;
+}
+li.l { float: left;}
+li.r { float: right;}
+.nav a{padding-left:5px; padding-right:5px;}
+.nav a:link { color: white; text-decoration: none;}
+.nav a:visited { color: white; text-decoration: none;}
+.nav a:hover { background-color:#1A4C1A; text-decoration: none;}
+
+.nav a.current {padding-left:5px; padding-right:2px;}
+.nav a.current:link { background-color:#1A4C1A; text-decoration: none;}
+.nav a.current:visited { background-color:#1A4C1A; text-decoration: none;}
+.nav a.current:hover { color:white; text-decoration: none;}
+
+a:link { color: #1A4C1A; text-decoration: none;}
+a:visited { color:#339966; text-decoration: underline;}
+a:hover { color:#339966; text-decoration: underline;}
+
+hr.bottom {
+border-top: 1px dotted #1A4C1A; 
+color: #fff;
+background-color: #fff;
+height: 1px;
+width:100%;
+}
+
+.nav1 {
+font-family:'Trebuchet MS', Helvetica, sans-serif;
+/*font-size: 20px; */
+margin: 0 0 1em 0;
+padding: 0;
+list-style: none;
+}
+.nav1 a:link { color: #1A4C1A; text-decoration: none;}
+.nav1 a:visited { color: #1A4C1A; text-decoration: none;}
+.nav1 a:hover { color:#1A4C1A; text-decoration: none;}
+
+.nav1 a.pass:link { color:	#C0C0C0; text-decoration: none;}
+.nav1 a.pass:visited { color:	#C0C0C0; text-decoration: none;}
+.nav1 a.pass:hover { color:#1A4C1A; text-decoration: none;}
+
+.square{
+background-color:#F9F9F9;
+padding: 10px;
+border: 0.5px solid #777168;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+}
+table {
+border-collapse:collapse;
+/*width:400px;*/
+margin:auto;
+table-layout:fixed;
+font-size:14px;
+}
+
+td,th {
+vertical-align:top;
+text-align:left;
+padding-top:5px; padding-bottom:5px;
+padding-left:7px; padding-right:7px;
+white-space: pre-line;      /* CSS 3.0 */
+white-space: -pre-wrap;     /* Opera 4-6 */
+white-space: -o-pre-wrap;   /* Opera 7 */
+white-space: -moz-pre-wrap; /* Mozilla */
+word-wrap: break-word;      /* IE 5+ */
+}
+td{
+padding-left:10px;
+}
+
+.odd{
+background-color:#F9F9F9;
+border-bottom: 1px solid #C0C0C0;
+border-top: 1px solid #C0C0C0;
+}
+.odd:hover{background-color:#E6F5EB;}
+.even:hover{background-color:#E6F5EB;}
+
+input.txt{
+width:20px;
+display:none;
+}
+input.txt-s{
+width:20px;
+display:block;
+}
+
+</style>
