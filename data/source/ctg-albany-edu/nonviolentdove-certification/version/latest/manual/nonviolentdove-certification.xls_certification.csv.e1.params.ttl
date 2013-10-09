@@ -58,7 +58,7 @@
    conversion:conversion_process [
       a conversion:EnhancementConversionProcess;
       conversion:enhancement_identifier "1";
-    #  conversion:subject_discriminator  "nonviolentdove-certification.xls-certification";
+    conversion:subject_discriminator  "applicants";
 
       dcterms:creator [ a foaf:OnlineAccount; foaf:accountName "ndepaula" ];
       dcterms:created "2013-08-11T21:51:26+00:00"^^xsd:dateTime;
@@ -90,7 +90,7 @@
          ov:csvCol          1;
          ov:csvHeader       "DC-ID";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Applicant";
+        # conversion:label   "Applicant";
          conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
@@ -114,7 +114,7 @@
          ov:csvCol          3;
          ov:csvHeader       "STATUS";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Certification Status";
+	 #conversion:label   "Certification Status";
          conversion:equivalent_property  certin:certificationStatus;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
