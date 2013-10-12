@@ -1,0 +1,161 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://ichoose.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-June-22/> .
+@prefix provenance_raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/provenance/standard_setter/version/latest/conversion/raw/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix standard_setter: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/version/latest/> .
+@prefix ctg-albany-edu_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/vocab/> .
+@prefix base_vocab: <http://ichoose.tw.rpi.edu/vocab/> .
+@prefix standard_setter_vocab: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/vocab/> .
+@prefix raw: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/vocab/raw/> .
+@prefix standard_setter_global_value: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+
+raw:standardbody a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "StandardBody" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/version/latest/conversion/raw> ;
+	rdfs:label "StandardBody" ;
+	rdfs:range rdfs:Literal .
+
+raw:yearest a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "YearEst" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/version/latest/conversion/raw> ;
+	rdfs:label "YearEst" ;
+	rdfs:range rdfs:Literal .
+
+raw:standardbodyuri a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "StandardBodyURI" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/version/latest/conversion/raw> ;
+	rdfs:label "StandardBodyURI" ;
+	rdfs:range rdfs:Literal .
+
+raw:standardlegalstatus a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "StandardLegalStatus" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/version/latest/conversion/raw> ;
+	rdfs:label "StandardLegalStatus" ;
+	rdfs:range rdfs:Literal .
+
+raw:standarduri a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "StandardURI" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/version/latest/conversion/raw> ;
+	rdfs:label "StandardURI" ;
+	rdfs:range rdfs:Literal .
+
+raw:standardtype a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "StandardType" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/version/latest/conversion/raw> ;
+	rdfs:label "StandardType" ;
+	rdfs:range rdfs:Literal .
+
+raw:accreditationbody a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "AccreditationBody" ;
+	dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/version/latest/conversion/raw> ;
+	rdfs:label "AccreditationBody" ;
+	rdfs:range rdfs:Literal .
+
+standard_setter:thing_2 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/version/latest> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/version/latest> ;
+	raw:standardbody "FLO" ;
+	raw:yearest "1997" ;
+	raw:standardbodyuri "http://www.fairtrade.net/" ;
+	raw:standardlegalstatus "NGO" ;
+	raw:standarduri "http://www.fairtrade.net/" ;
+	raw:standardtype "Private Voluntary" ;
+	raw:accreditationbody "ISEAL" ;
+	ov:csvRow "2"^^xsd:integer .
+
+standard_setter:thing_3 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/version/latest> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/version/latest> ;
+	raw:standardbody "Rainforest Alliance Network" ;
+	raw:yearest "1987" ;
+	raw:standardbodyuri "http://www.rainforest-alliance.org/" ;
+	raw:standardlegalstatus "NGO" ;
+	raw:standarduri "http://www.rainforest-alliance.org/" ;
+	raw:standardtype "Private Voluntary" ;
+	raw:accreditationbody "ISEAL" ;
+	ov:csvRow "3"^^xsd:integer .
+
+standard_setter:thing_4 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/version/latest> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/version/latest> ;
+	raw:standardbody "UTZ Good Inside" ;
+	raw:yearest "2002" ;
+	raw:standardbodyuri "https://www.utzcertified.org/" ;
+	raw:standardlegalstatus "NGO" ;
+	raw:standarduri "https://www.utzcertified.org/" ;
+	raw:standardtype "Private Voluntary" ;
+	raw:accreditationbody "ISEAL" ;
+	ov:csvRow "4"^^xsd:integer .
+
+standard_setter:thing_5 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/version/latest> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/version/latest> ;
+	raw:standardbody "Fair for Life" ;
+	raw:yearest "2006" ;
+	raw:standardbodyuri "http://www.fairforlife.net/" ;
+	raw:standardlegalstatus "NGO" ;
+	raw:standarduri "http://www.fairforlife.net/" ;
+	raw:standardtype "Private Voluntary" ;
+	raw:accreditationbody "n/a" ;
+	ov:csvRow "5"^^xsd:integer .
+
+standard_setter:thing_6 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/version/latest> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/version/latest> ;
+	raw:standardbody "Starbuck & Conservation International" ;
+	raw:yearest "2003" ;
+	raw:standardbodyuri "http://www.scsglobalservices.com/starbucks-cafe-practices" ;
+	raw:standardlegalstatus "Private Organization" ;
+	raw:standarduri "http://www.scsglobalservices.com/starbucks-cafe-practices" ;
+	raw:standardtype "Private Voluntary" ;
+	raw:accreditationbody "n/a" ;
+	ov:csvRow "6"^^xsd:integer .
+
+standard_setter:thing_7 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/version/latest> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/version/latest> ;
+	raw:standardbody "Dave and Nic" ;
+	raw:yearest "2009" ;
+	raw:standardbodyuri "n/a" ;
+	raw:standardlegalstatus "Private Organization" ;
+	raw:standarduri "n/a" ;
+	raw:standardtype "Private Voluntary" ;
+	raw:accreditationbody "n/a" ;
+	ov:csvRow "7"^^xsd:integer .
+
+standard_setter:thing_8 dcterms:isReferencedBy <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/version/latest> ;
+	void:inDataset <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/standard_setter/version/latest> ;
+	raw:standardbody "NonViolent Dove Certification" ;
+	raw:yearest "2008" ;
+	raw:standardbodyuri "n/a" ;
+	raw:standardlegalstatus "Private Organization" ;
+	raw:standarduri "n/a" ;
+	raw:standardtype "Private Voluntary" ;
+	raw:accreditationbody "n/a" ;
+	ov:csvRow "8"^^xsd:integer .
