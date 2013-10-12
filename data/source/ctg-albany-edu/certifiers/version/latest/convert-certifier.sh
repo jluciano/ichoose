@@ -15,7 +15,7 @@ CSV2RDF4LOD_HOME=${CSV2RDF4LOD_HOME:?"not set; source my-csv2rdf4lod-source-me.s
 #            (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-process-phase:-name)
 surrogate="http://ichoose.tw.rpi.edu" # Came from $CSV2RDF4LOD_BASE_URI when cr-create-conversion-trigger.sh created this script.
 sourceID="ctg-albany-edu"               # Came from directory name ../../../ (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Directory-Conventions)
-datasetID="certifier"             # Came from directory name ../../ (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Directory-Conventions)
+datasetID="certifiers"             # Came from directory name ../../ (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Directory-Conventions)
 datasetVersion="latest"        # DEPRECATED
 versionID="latest"             # Came from directory name ../ (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Directory-Conventions) renaming datasetVersion (deprecating datasetVersion)
 eID="1"                             # enhancement identifier
@@ -39,9 +39,9 @@ destDir="automatic"                 # convention has led to always be 'automatic
 
 
 #-----------------------------------
-# manual/certifier.csv
+# manual/certifiers.csv
 sourceDir="manual"
-datafile="certifier.csv"
+datafile="certifiers.csv"
 data="$sourceDir/$datafile"
 # Bootstrap conversion parameters (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-trigger):
 subjectDiscriminator=""             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
