@@ -58,9 +58,10 @@
    conversion:conversion_process [
       a conversion:EnhancementConversionProcess;
       conversion:enhancement_identifier "1";
+      conversion:subject_discriminator  "certifiers";
 
       dcterms:creator [ a foaf:OnlineAccount; foaf:accountName "ndepaula" ];
-      dcterms:created "2013-08-03T19:42:13+00:00"^^xsd:dateTime;
+       dcterms:created "2013-08-03T19:42:13+00:00"^^xsd:dateTime;
 
 
       #conversion:enhance [
@@ -89,12 +90,12 @@
          ov:csvCol          1;
          ov:csvHeader       "Certifier";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "Certifier";
-         conversion:equivalent_property certin:Certifier;
+         #conversion:label   "Certifier";
+         conversion:equivalent_property  dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
-         conversion:range   rdfs:Class;
+         conversion:range   Literal:Thing;
          #conversion:range_name  "Thing";
       ];
       conversion:enhance [
@@ -113,7 +114,7 @@
          ov:csvCol          3;
          ov:csvHeader       "CertifierURI";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "certifierURI";
+         #conversion:label   "certifierURI";
          conversion:equivalent_property certin:certifierURI;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
@@ -125,7 +126,7 @@
          ov:csvCol          4;
          ov:csvHeader       "ComplianceCriteriaURI";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "complianceCriteriaURI";
+         #conversion:label   "complianceCriteriaURI";
          conversion:equivalent_property certin:complianceCriteriaURI;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
@@ -137,7 +138,7 @@
          ov:csvCol          5;
          ov:csvHeader       "CertificationIndependency";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "independency";
+         #conversion:label   "independency";
          conversion:equivalent_property certin:independency;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
@@ -149,7 +150,7 @@
          ov:csvCol          6;
          ov:csvHeader       "AccreditationBody";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "conformsTo";
+         #conversion:label   "conformsTo";
          conversion:equivalent_property  dcterms:conformsTo;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
