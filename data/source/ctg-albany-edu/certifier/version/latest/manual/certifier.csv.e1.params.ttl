@@ -95,19 +95,19 @@
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
-         conversion:range   Literal:Thing;
+         conversion:range   todo:Literal
          #conversion:range_name  "Thing";
       ];
       conversion:enhance [
          ov:csvCol          2;
          ov:csvHeader       "YearEst";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "yearEstablished";
+        # conversion:label   "yearEstablished";
          conversion:equivalent_property certin:yearEstablished;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
-         conversion:range   time:year;
+         conversion:range   todo:Literal;
          #conversion:range_name  "Thing";
       ];
       conversion:enhance [
@@ -143,7 +143,7 @@
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
-         conversion:range   rdfs:Class;
+         conversion:range   todo:Literal;
          #conversion:range_name  "Thing";
       ];
       conversion:enhance [
@@ -155,7 +155,7 @@
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
-         conversion:range   certin:Standard_Setter;
+         conversion:range   todo:Literal;
          #conversion:range_name  "Thing";
       ];
       #conversion:enhance [            
