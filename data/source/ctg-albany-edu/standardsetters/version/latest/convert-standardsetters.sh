@@ -5,7 +5,7 @@
 #3                  <https://github.com/timrdf/csv2rdf4lod-automation/blob/master/bin/cr-create-convert-sh.sh> .
 #
 # datasetID versionID (lastModDate):
-# certificationbodies 2013-Jul-16 ()
+# standardsetters latest ()
 #--------------------------------------------------------------
 
 see="https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD-not-set"
@@ -15,9 +15,9 @@ CSV2RDF4LOD_HOME=${CSV2RDF4LOD_HOME:?"not set; source my-csv2rdf4lod-source-me.s
 #            (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-process-phase:-name)
 surrogate="http://ichoose.tw.rpi.edu" # Came from $CSV2RDF4LOD_BASE_URI when cr-create-conversion-trigger.sh created this script.
 sourceID="ctg-albany-edu"               # Came from directory name ../../../ (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Directory-Conventions)
-datasetID="certificationbodies"             # Came from directory name ../../ (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Directory-Conventions)
-datasetVersion="2013-Jul-16"        # DEPRECATED
-versionID="2013-Jul-16"             # Came from directory name ../ (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Directory-Conventions) renaming datasetVersion (deprecating datasetVersion)
+datasetID="standardsetters"             # Came from directory name ../../ (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Directory-Conventions)
+datasetVersion="latest"        # DEPRECATED
+versionID="latest"             # Came from directory name ../ (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Directory-Conventions) renaming datasetVersion (deprecating datasetVersion)
 eID="1"                             # enhancement identifier
 if [[ "$1" == "-e" && $# -ge 2 ]]; then
    eID="$2" # see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Generating-enhancement-parameters
@@ -39,9 +39,9 @@ destDir="automatic"                 # convention has led to always be 'automatic
 
 
 #-----------------------------------
-# manual/certificationbodies.csv
+# manual/standardsetters.csv
 sourceDir="manual"
-datafile="certificationbodies.csv"
+datafile="standardsetters.csv"
 data="$sourceDir/$datafile"
 # Bootstrap conversion parameters (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-trigger):
 subjectDiscriminator=""             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).
