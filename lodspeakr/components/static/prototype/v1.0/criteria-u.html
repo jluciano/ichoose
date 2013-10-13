@@ -120,29 +120,60 @@ display:block;
     "WHERE { ?x rdfs:label ?StandardBody .  ?x rdfs:label ?Certifier . ?x certin:complianceCriteriaURI ?ComplianceCriteria_PublishedAt . "+
 	"FILTER regex(?Certifier, 'Commercio Justo')"+
     "}";
-	var query3="prefix dcterms: <http://purl.org/dc/terms/> prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> "+ 
-    "SELECT DISTINCT ?FLOID ?Inspection ?Date ?Inspector ?Certifier "+
-    'WHERE { ?x rdfs:label ?Inspection .  ?x certin:hasInspector ?i . ?i rdfs:label ?Inspector . ?x dcterms:date ?Date . ?x certin:hasCertifier ?c . ?c rdfs:label ?Certifier . ?x certin:hasApplicant ?f . ?f dcterms:identifier ?FLOID . FILTER regex(?FLOID, "6230")} '+
-    "ORDER BY ?Inspection";
-	var query4=query3;
-	var query5="prefix dcterms: <http://purl.org/dc/terms/> prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> "+
-    "SELECT DISTINCT ?FLOID ?Inspection ?Inspector ?Inspector_License "+
-    "WHERE { ?x rdfs:label ?Inspection . ?x certin:hasInspector ?i . ?i rdfs:label ?Inspector . ?x certin:hasApplicant ?f . "+
-    '?f dcterms:identifier ?FLOID . FILTER regex(?FLOID, "7855") OPTIONAL { ?x dcterms:license ?y . ?y rdfs:label ?Inspector_License }}'+
-    "ORDER BY ?Inspection";
-	var query6="";
+	var query3="prefix dcterms: <http://purl.org/dc/terms/> prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#>"+ 
+    "SELECT DISTINCT ?Applicant ?date ?InspectionReport "+
+    'WHERE  { ?Applicant certin:hasInspectionReport ?InspectionReport . ?InspectionReport dcterms:date ?date . '+
+    "FILTER regex (?Applicant, '7855')"+
+	"}";
+	var query4="prefix dcterms: <http://purl.org/dc/terms/> prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#>"+ 
+    "SELECT DISTINCT ?Applicant ?Name ?CertificationDate ?InspectionReport "+
+    'WHERE  { ?Applicant certin:hasName ?Name . ?Applicant certin:certificationDate ?CertificationDate . ?Applicant certin:hasInspectionReport ?InspectionReport .'+
+    "FILTER regex (?Applicant, '7855')"+
+	"}";
+	var query5="prefix dcterms: <http://purl.org/dc/terms/> prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> "+
+    "SELECT DISTINCT ?Applicant ?Inspector ?InspectionReport "+
+    "WHERE  { ?Applicant certin:hasName ?Name . ?Applicant certin:hasInspectionReport  ?InspectionReport .  ?InspectionReport certin:inspector ?Inspector ."+
+    "FILTER regex (?Applicant, '7855')"+
+    "}";
+	var query6="prefix dcterms: <http://purl.org/dc/terms/> prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> "+
+    "SELECT DISTINCT ?InspectionReport ?NonConformityIdentifier ?CorrectiveMeasure ?AuditProposed ?ClientProposed "+
+    "WHERE  { ?Applicant certin:hasInspectionReport ?InspectioReport . ?InspectionReport certin:hasNonConformity ?NonConformity . ?NonConformity dcterms:identifier ?NonConformityIdentifier . ?NonConformity certin:hasCorrectiveMeasure ?CorrectiveMeasure . ?CorrectiveMeasure certin:auditCorrectiveMeasure ?AuditProposed . ?CorrectiveMeasure certin:clientCorrectiveMeasure ?ClientProposed ."+
+    "}";
 	var query7="";
 	var query8="";
 	var query9="";
 	var query10="";
-	var query11="";
-	var query12="";
-	var query13="";
-	var query14="";
+	var query11="prefix dcterms: <http://purl.org/dc/terms/> prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> "+
+    "SELECT DISTINCT ?Applicant ?Inspector ?InspectionReport "+
+    "WHERE  { ?Applicant certin:hasName ?Name . ?Applicant certin:hasInspectionReport  ?InspectionReport .  ?InspectionReport certin:inspector ?Inspector ."+
+    "FILTER regex (?Applicant, '7855')"+
+    "}";
+	var query12="prefix dcterms: <http://purl.org/dc/terms/> prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> "+
+    "SELECT DISTINCT ?Name ?CertificateType ?CertificateDate "+
+    "WHERE  { ?Applicant certin:hasName ?Name . ?Applicant certin:hasCertificate ?CertificateType .  ?Applicant certin:certificationDate ?CertificateDate ."+
+    "FILTER regex (?Applicant, '7855')"+
+    "}";
+	var query13="prefix dcterms: <http://purl.org/dc/terms/> prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> prefix geonames: <http://www.geonames.org/ontology#>"+ 
+    "SELECT DISTINCT ?Applicant ?Name ?Street ?City ?Country ?InspectionReport "+
+    'WHERE { ?Applicant certin:hasName ?Name . ?Applicant con:street ?Street . ?Applicant con:city ?City . ?Applicant geonames:country ?Country . ?Applicant certin:hasInspectionReport ?InspectionReport .'+
+    "FILTER regex (?Applicant, '7855')"+
+	"}";
+	var query14="prefix dcterms: <http://purl.org/dc/terms/> prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> "+
+    "SELECT DISTINCT ?Applicant ?InspectionReport ?NonConformity ?Identifier ?Description "+
+    "WHERE  { ?Applicant certin:hasInspectionReport ?InspectionReport . ?InspectionReport certin:hasNonConformity ?NonConformity . ?NonConformity dcterms:identifier ?Identifier . ?NonConformity certin:descriptionComplianceCriterion  ?Description ."+
+    "}";
 	var query15="";
 	var query16="";
-	var query17="";
-	var query18="";
+	var query17="prefix dcterms: <http://purl.org/dc/terms/> prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> prefix geonames: <http://www.geonames.org/ontology#>"+ 
+    "SELECT DISTINCT ?Name ?CertificationBody "+
+    'WHERE { ?Applicant certin:hasName ?Name . ?Applicant certin:hasCertificationBody ?CertificationBody .'+
+    "FILTER regex (?Applicant, '7855')"+
+	"}";
+	var query18="prefix dcterms: <http://purl.org/dc/terms/> prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> prefix geonames: <http://www.geonames.org/ontology#>"+ 
+    "SELECT DISTINCT ?Name ?Inspector ?InspectorLicense "+
+    'WHERE { ?Applicant certin:hasName ?Name . ?Applicant certin:hasInspectionReport ?InspectionReport . ?InspectionReport certin:inspector ?Inspector . ?InspectionReport certin:auditorLicense ?InspectorLicense .'+
+    "FILTER regex (?Applicant, '7855')"+
+	"}";
 	var query19="prefix dcterms: <http://purl.org/dc/terms/> prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> prefix certin: <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/ontologies/version/latest/certification#> prefix ov: <http://open.vocab.org/terms/>"+ 
     "SELECT DISTINCT ?ComplianceCriterion ?Description ?NonConformity "+
     "WHERE { ?x dcterms:identifier ?ComplianceCriterion .  ?x dcterms:description ?Description . ?x certin:nonConformity ?NonConformity} "+
@@ -302,55 +333,55 @@ document.getElementById('v19').innerHTML = "<a href='javascript:void(0);' onClic
    document.getElementById('fs19').className = "txt-s";
   }
      if(f=="f20"){
-document.getElementById('v20').innerHTML = "<a href='javascript:void(0);' onClick='javascript: sparqlQueryJson(query20, endpoint, myCallback, false);'>Click</a>";
+document.getElementById('v20').innerHTML = "Sorry, cannot retrieve from the existing data.";
     document.getElementById('w20').className = "txt-s";
    document.getElementById('as20').className = "txt-s";
    document.getElementById('fs20').className = "txt-s";
   }
      if(f=="f21"){
-document.getElementById('v21').innerHTML = "<a href='javascript:void(0);' onClick='javascript: sparqlQueryJson(query21, endpoint, myCallback, false);'>Click</a>";
+document.getElementById('v21').innerHTML = "Sorry, cannot retrieve from the existing data.";
     document.getElementById('w21').className = "txt-s";
    document.getElementById('as21').className = "txt-s";
    document.getElementById('fs21').className = "txt-s";
   }
      if(f=="f22"){
-document.getElementById('v22').innerHTML = "<a href='javascript:void(0);' onClick='javascript: sparqlQueryJson(query22, endpoint, myCallback, false);'>Click</a>";
+document.getElementById('v22').innerHTML = "Sorry, cannot retrieve from the existing data.";
     document.getElementById('w22').className = "txt-s";
    document.getElementById('as22').className = "txt-s";
    document.getElementById('fs22').className = "txt-s";
   }
      if(f=="f23"){
-document.getElementById('v23').innerHTML = "<a href='javascript:void(0);' onClick='javascript: sparqlQueryJson(query23, endpoint, myCallback, false);'>Click</a>";
+document.getElementById('v23').innerHTML = "Sorry, cannot retrieve from the existing data.";
     document.getElementById('w23').className = "txt-s";
    document.getElementById('as23').className = "txt-s";
    document.getElementById('fs23').className = "txt-s";
   }
      if(f=="f24"){
-document.getElementById('v24').innerHTML = "<a href='javascript:void(0);' onClick='javascript: sparqlQueryJson(query24, endpoint, myCallback, false);'>Click</a>";
+document.getElementById('v24').innerHTML = "Sorry, cannot retrieve from the existing data.";
     document.getElementById('w24').className = "txt-s";
    document.getElementById('as24').className = "txt-s";
    document.getElementById('fs24').className = "txt-s";
   }
      if(f=="f25"){
-document.getElementById('v25').innerHTML = "<a href='javascript:void(0);' onClick='javascript: sparqlQueryJson(query25, endpoint, myCallback, false);'>Click</a>";
+document.getElementById('v25').innerHTML = "Sorry, cannot retrieve from the existing data.";
     document.getElementById('w25').className = "txt-s";
    document.getElementById('as25').className = "txt-s";
    document.getElementById('fs25').className = "txt-s";
   }
    if(f=="f26"){
-document.getElementById('v26').innerHTML = "<a href='javascript:void(0);' onClick='javascript: sparqlQueryJson(query26, endpoint, myCallback, false);'>Click</a>";
+document.getElementById('v26').innerHTML = "Sorry, cannot retrieve from the existing data.";
     document.getElementById('w26').className = "txt-s";
    document.getElementById('as26').className = "txt-s";
    document.getElementById('fs26').className = "txt-s";
   }
   if(f=="f27"){
-document.getElementById('v27').innerHTML = "<a href='javascript:void(0);' onClick='javascript: sparqlQueryJson(query26, endpoint, myCallback, false);'>Click</a>";
+document.getElementById('v27').innerHTML = "Sorry, cannot retrieve from the existing data.";
     document.getElementById('w27').className = "txt-s";
    document.getElementById('as27').className = "txt-s";
    document.getElementById('fs27').className = "txt-s";
   }
     if(f=="f28"){
-document.getElementById('v28').innerHTML = "<a href='javascript:void(0);' onClick='javascript: sparqlQueryJson(query26, endpoint, myCallback, false);'>Click</a>";
+document.getElementById('v28').innerHTML = "Sorry, cannot retrieve from the existing data.";
     document.getElementById('w28').className = "txt-s";
    document.getElementById('as28').className = "txt-s";
    document.getElementById('fs28').className = "txt-s";
